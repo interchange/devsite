@@ -6,7 +6,7 @@ Promo
 </h3>
 
 <ul>
-	<li> [page about]About</a> </li>
+	<li> [page about]About and History</a> </li>
 	<li> Features </li>
 	<li> Supported platforms </li>
 	<li> [page license]Copyright &amp; License</a> </li>
@@ -14,6 +14,10 @@ Promo
 	<li> Production sites running Interchange </li>
 	<li> Contact </li>
 </ul>
+
+<div class='extranote'>
+	<a href="http://demo.icdevgroup.org/">Live demo</a>
+</div>
 
 </div>
 </div>

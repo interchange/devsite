@@ -12,6 +12,35 @@ The current development release of Interchange is
 (For documentation downloads, please see [page docs]Documentation</a>.)
 </p>
 
+<p>
+Before downloading, you can try out our
+<a href="http://demo.icdevgroup.org/">Live Demo</a>.
+</p>
+
+<p>
+For a successful involvement with __IC__, consider subscribing to
+some of the Interchange
+<a href="http://www.icdevgroup.org/mailman/listinfo/">Public 
+Mailing Lists</a>.
+</p>
+
+<p>
+Existing users should refer to the
+<a href="http://ftp.icdevgroup.org/interchange/__STABLE__/WHATSNEW">WHATSNEW</a>
+file for all relevant additions to the codebase.
+</p>
+
+<p>
+GnuPG keys <a href="http://ftp.icdevgroup.org/keys/">are available</a>, use
+them to verify your downloads!
+</p>
+
+<p>
+RPM package users should first read the
+<a href="http://ftp.icdevgroup.org/interchange/__STABLE__/rpm/README.txt">Binary
+RPMS README file</a>.
+</p>
+
 <h3>Stable releases</h3>
 
 <h4>Cross-platform packages (download via HTTP)</h4>
@@ -87,10 +116,76 @@ cvs -z6 -d :pserver:cvs@cvs.icdevgroup.org:/var/cvs \
   checkout -P interchange
 </pre>
 </p>
-
-
-
 </div>
+
+<h2>A Note on CVS</h2>
+<div class="colbody">
+<p>
+Please note that there is a package manifest file (basically, a list of all
+files needed for the release) that is checked before installation is completed.
+Occasionally, during development, that list gets out of sync with the actual
+set of files in the repository. If that's the case and you get an error, do:
+
+<pre>
+rm -f MANIFEST
+make manifest
+</pre>
+And then try installing again.
+</p>
+<p>
+Once you've checkout out Interchange from CVS, it's easy to have CVS update
+just the changed files. From inside the <tt>interchange/</tt> directory you
+can type:
+<pre>
+cvs -z6 update -dP
+</pre>
+
+And your sources will be updated to the latest available.
+</p>
+<p>
+If you've made changes to your local copy and would like to produce a diff
+against the version you checked out from the repository, simply do:
+<pre>
+cvs diff
+</pre>
+</p>
+<p>
+To see what changes have been made to the repository since you checked
+out your copy, do:
+<pre>
+cvs diff -D tomorrow
+</pre>
+(Using a date of <tt>tomorrow</tt> should keep you from missing very recent
+changes due to timezone discrepancies.)
+</p>
+<p>
+If you frequently use CVS, it is helpful to create the <tt>~/.cvsrc</tt> file
+with commonly-used options such as these:
+<pre>
+cvs -z6 -q
+diff -u
+update -Pd
+checkout -P
+</pre>
+The above will direct CVS to automatically compress all data communicated
+between you and our server (saving bandwidth), and be quieter with notices
+output. It will also show unified diffs (the preferred type) and prune empty
+directories added or deleted since your last repository check-out.
+</div>
+
+
+
+<h2>Legacy Information</h2>
+<div class="colbody">
+<p>
+We keep legacy information on
+<a href="http://icdevgroup.com/minivend3/">Minivend 3</a>, 
+<a href="http://icdevgroup.com/minivend4/">Minivend 4</a> and 
+<A href="http://tallyman.akopia.com/">Tallyman</a> available.
+</p>
+</div>
+
+
 </div>
 
 [include templates/devel]

@@ -6,5 +6,9 @@ News (past 2 months)
 
 [include templates/news-atom]
 
+<div class='extranote'>
+See complete [page news]NEWS</a> page.
+</div>
+
 </div>
 </div>
