@@ -1,0 +1,50 @@
+[benchmark start=1]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Davor Ocelic <docelic@mail.inet.hr>" />
+	<meta name="keywords" content="Interchange,minivend,minimate,application,server,database,display,electronic,catalog,shopping,cart,ecommerce,commerce,perl,mod_perl,web,online" />
+	<meta name="description" content="Interchange software website">
+	<meta name="robots" content="all" />
+	<title>Interchange: </title>
+
+	[if !value web_style_plain]
+	<script type="text/javascript"></script>
+	
+	<style type="text/css">
+		@import "/new/style/g1.css";
+	</style>
+	[/if]
+	<!--
+	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />	
+	<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
+	-->
+</head>
+
+<body>
+
+<div class="topbar">
+	<form>
+	[page index]Home</a> |
+	[page news]News</a> | 
+	[page download]Download</a> | 
+	[page docs]Docs</a> | 
+	<!-- Hall of Fame | -->
+	About |
+	[page license]License &amp; Copyright</a> | 
+	Contact | 
+		Search: <input/>
+		<input type="submit" value="Go"> |
+		[include templates/disp_mode]
+	</form>
+</div>
+
+[if !value web_style_plain]
+<div align="center">
+  <img src="header3.png" alt="Interchange" border="0"/>
+</div>
+[/if]
+

@@ -1,0 +1,10 @@
+<div class="news">
+<div class="coln">
+<h3>
+News (past 2 months)
+</h3>
+
+[include templates/news-atom]
+
+</div>
+</div>

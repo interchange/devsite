@@ -1,0 +1,6 @@
+[if value web_style_plain]
+	[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
+[else]
+	[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
+[/else]
+[/if]

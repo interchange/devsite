@@ -1,0 +1,37 @@
+code	Variable
+IC	<a href="http://www.icdevgroup.org/">Interchange</a>
+GNU	<a href="http://www.gnu.org/">GNU</a>
+ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
+STABLE_SERIES	5.2
+STABLE	5.2.0
+DEVEL	5.3.0
+CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
+STABLE_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/?only_with_tag=REL_[perl](my $a="$::Variable->{STABLE}")=~s/\./\_/g; $a[/perl]">release</a>
+STABLE_CVS_SERIES	[perl](my $a="$::Variable->{STABLE}")=~s/(\d+\.\d+).*/$1/;$a=~s/\./_/g; $a[/perl]
+DEVEL_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/">development</a>
+DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
+STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
+DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
+STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
+STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
+NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly build</a>
+NIGHTLY_FTP	<a href="ftp://ftp.icdevgroup.org/pub/interchange/nightly_build/">nightly build</a>
+DOCBOOK	<a href="http://www.docbook.org">DocBook</a>
+XMLDOCS_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/xmldocs/">xmldocs</a>
+PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
+FREENODE	<a href="http://www.freenode.info">FreeNode</a>
+racke	Stefan Hornburg
+jon	Jon Jensen
+brevp	Brev Patterson
+jonc	Jonathan Clark
+docelic	Davor Ocelic
+ton	Ton Verhagen
+pvinci	Paul Vinciguerra
+ramoore	Randy Moore
+greg	Greg Hanson
+zeald	David Kelly
+markj	Mark Johnson
+mheins	Mike Heins
+kwalsh	Kevin Walsh
+edl	Ed LaFrance
+danb	Dan Browning
