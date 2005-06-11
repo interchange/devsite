@@ -9,17 +9,19 @@ Contributions to __IC__ have been made by:<br/>
 
 <table width='100%'>
   <tr><td>Andreas Koenig          </td><td> Jason Kohles            </td></tr>
+  <tr><td>Andrew Rich            </td><td>                          </td></tr>
   <tr><td>Bill Carr               </td><td> Javier Martin           </td></tr>
   <tr><td>Bill Dawkins            </td><td> Jeff Carnahan           </td></tr>
-  <tr><td>Bill Randle             </td><td> Jeff Nappi              </td></tr>
-  <tr><td>Birgitt Funk            </td><td> Jochen Wiedmann         </td></tr>
-  <tr><td>Bob Jordan              </td><td> Jon Jensen              </td></tr>
-  <tr><td>Brev Patterson          </td><td> Jonathan Clark          </td></tr>
-  <tr><td>Brian Bullen            </td><td> Josï¿½ Mï¿½ Revuelto    </td></tr>
+  <tr><td>Bill Randle             </td><td> Jeff Fearn              </td></tr>
+  <tr><td>Birgitt Funk            </td><td>  Jeff Nappi              </td></tr>
+  <tr><td>Brent Kelly             </td><td>  Jochen Wiedmann         </td></tr>
+  <tr><td>Bob Jordan              </td><td>            </td></tr>
+  <tr><td>Brev Patterson          </td><td>          </td></tr>
+  <tr><td>Brian Bullen            </td><td> Josï¿½ Mï¿½ Revuelto     </td></tr>
   <tr><td>Brian Kosick            </td><td> Jurgen Botz             </td></tr>
   <tr><td>Bruce Albrecht          </td><td> Keiko                   </td></tr>
   <tr><td>Cameron Prince          </td><td> Keith Oberlin           </td></tr>
-  <tr><td>Chen Naor               </td><td> Kevin Walsh             </td></tr>
+  <tr><td>Chen Naor               </td><td>            </td></tr>
   <tr><td>Christian Mueller       </td><td> Kim Lauritz Christensen </td></tr>
   <tr><td>Christopher Miller      </td><td> Larry Leszczynski       </td></tr>
   <tr><td>Christopher Thompson    </td><td> Marc Austin             </td></tr>
@@ -32,7 +34,10 @@ Contributions to __IC__ have been made by:<br/>
   <tr><td>David Kelly             </td><td> Mike Frager             </td></tr>
   <tr><td>Dennis Cronin           </td><td> Neil Evans              </td></tr>
   <tr><td>Don Grodecki            </td><td> Nelson Ferrari          </td></tr>
+  <tr><td>                        </td><td> Paul Jordan              </td></tr>
+  <tr><td>                        </td><td> Paul Vinciguerra        </td></tr>
   <tr><td>Ed LaFrance             </td><td> Raj Goel                </td></tr>
+  <tr><td>Ed LaFrance             </td><td> Randy Moore             </td></tr>
   <tr><td>Frank Bonita            </td><td> Ray Desjardins          </td></tr>
   <tr><td>Frederic Steinfels      </td><td> Ron Phipps              </td></tr>
   <tr><td>Greg Hanson             </td><td> Shozo Murahashi         </td></tr>
@@ -40,11 +45,11 @@ Contributions to __IC__ have been made by:<br/>
   <tr><td>Hamish Bradick          </td><td> Tim Baverstock          </td></tr>
   <tr><td>Hans-Joachim Leidinger  </td><td> Tom Friedel             </td></tr>
   <tr><td>Heinz Wittenbecher      </td><td> Tommi Laberno           </td></tr>
-  <tr><td>Hiroyuki Cozy Kojima    </td><td> Ton Verhagen            </td></tr>
-  <tr><td>Ignacio Lizarï¿½n       </td><td>   Troy Davis            </td></tr>
+  <tr><td>Hiroyuki Cozy Kojima    </td><td>                         </td></tr>
+  <tr><td>Ignacio Lizarï¿         </td><td>   Troy Davis            </td></tr>
   <tr><td>Jack Tsai               </td><td> Victor Nolton           </td></tr>
   <tr><td>Jason Holt              </td><td> William Dan Terry       </td></tr>
-  <tr><td>Davor Ocelic              </td><td> Andrew Rich       </td></tr>
+  <tr><td>                        </td><td>                        </td></tr>
 </table>
 
 and, of course, the entire Perl team without whom Interchange could not exist.
