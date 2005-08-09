@@ -7,12 +7,14 @@ Promo
 
 <ul>
 	<li> [page about]About and History</a> </li>
-	<li> Features </li>
-	<li> Supported platforms </li>
+	<!-- <li> Features </li> -->
+	<!-- <li> Supported platforms </li> -->
 	<li> [page license]Copyright &amp; License</a> </li>
+	<!--
 	<li> Promo (logos...) </li>
 	<li> Production sites running Interchange </li>
 	<li> Contact </li>
+	-->
 </ul>
 
 <div class='extranote'>
