@@ -35,7 +35,7 @@
 	<!-- Hall of Fame | -->
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
-	Contact | 
+	<!-- Contact | -->
 		Search: <input/>
 		<input type="submit" value="Go"> |
 		[include templates/disp_mode]
