@@ -1,4 +1,8 @@
 code	Variable
+CGI_URL	/i/new
+IMAGE_DIR	/new/style
+SECURE_SERVER	http://new.icdevgroup.org/
+SERVER_NAME	new.icdevgroup.org
 IC	<a href="http://www.icdevgroup.org/">Interchange</a>
 GNU	<a href="http://www.gnu.org/">GNU</a>
 ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
