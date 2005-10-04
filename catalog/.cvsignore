@@ -1,4 +1,5 @@
 etc
 session
 tmp
+*.log
 *.structure
