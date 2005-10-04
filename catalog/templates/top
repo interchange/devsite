@@ -27,7 +27,12 @@
 <body>
 
 <div class="topbar">
-	<form>
+	<form action="[process]" method="POST">
+	<input type="hidden" name="mv_todo" value="search"/>
+	<input type="hidden" name="st" value="swish"/>
+	<input type="hidden" name="sp" value="results"/>
+
+	[form-session-id]
 	[page index]Home</a> |
 	[page news]News</a> | 
 	[page download]Download</a> | 
@@ -36,7 +41,7 @@
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
-		Search: <input/>
+		Search: <input name="mv_searchspec"/>
 		<input type="submit" value="Go"> |
 		[include templates/disp_mode]
 	</form>
