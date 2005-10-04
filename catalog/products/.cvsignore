@@ -1,2 +1,4 @@
+*.autonumber
 *.gdbm
+*.sql
 site.txt
