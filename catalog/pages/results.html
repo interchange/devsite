@@ -3,6 +3,9 @@ __TOP__
 <div class="colw">
   <h2>Search Results for [value-extended name="mv_searchspec" index=0]</h2>
 <div class="colbody">
+[if value mv_search_error]
+The search has been failed, please contact interchange-users@icdevgroup.org for help.
+[else]
 [search-region]
 <table width="100%">
 <tr><th>Area</th><th>Title</th><th>Size</th><th>Score</th></tr>
@@ -11,6 +14,8 @@ __TOP__
 [/search-list]
 </table>
 [/search-region]
+[/else]
+[/if]
 </div>
 </div>
 
