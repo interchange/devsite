@@ -7,7 +7,7 @@ IC	<a href="http://www.icdevgroup.org/">Interchange</a>
 GNU	<a href="http://www.gnu.org/">GNU</a>
 ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
 STABLE_SERIES	5.2
-STABLE	5.2.0
+STABLE	5.2.1
 DEVEL	5.3.0
 CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
 STABLE_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/?only_with_tag=REL_[perl](my $a="$::Variable->{STABLE}")=~s/\./\_/g; $a[/perl]">release</a>
