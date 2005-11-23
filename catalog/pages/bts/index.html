@@ -3,9 +3,26 @@ __TOP__
 <div class="colw">
 <h2>Interchange BTS</h2>
 <div class="colbody">
-[loop search="st=db/fi=bts2ldap/ra=1"]
-[loop-increment]: [loop-code]<br>
+<table>
+<tr>
+<th>[L]Bug #[/L]</th>
+<th>[L]Submitter[/L]</th>
+<th>[L]Title[/L]</th>
+<th>[L]State[/L]</th>
+<th>[L]Severity[/L]</th>
+</tr>
+
+[loop search="st=db/fi=bts2ldap/rf=*/ra=1"]
+<tr>
+<td><a href="http://bugs.debian.org/[loop-param debbugsID]">[loop-param debbugsID]</a></td>
+<td>[loop-param debbugsSubmitter]</td>
+<td>[loop-param debbugsTitle]</td>
+<td>[loop-param debbugsState]</td>
+<td>[loop-param debbugsSeverity]</td>
+</tr>
 [/loop]
+</table>
+
 </div>
 </div>
 
