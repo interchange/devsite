@@ -1,0 +1,39 @@
+__TOP__
+
+<div class="colw">
+	<h2>Interchange Development Group</h2>
+<div class="colbody">
+[update values]
+<form method="post" action="[process]">
+<input type="hidden" name="mv_session_id" value="[data session id]">
+<input type="hidden" name="mv_todo" value="go">
+<input type="hidden" name="mv_nextpage" value="@@MV_PAGE@@">
+<input type="hidden" name="mv_form_profile" value="checker">
+<table>
+<tr><td>Check:</td>
+<td>[display name="check" type="select" options="codedef::OrderCheck" value="[value check]"]</td>
+</tr>
+<tr><td>Parameters/Message:</td>
+<td><input name="parms" value="[value parms]"></td>
+</tr>
+<tr><td>Value:</td>
+<td><input name="value" value="[value value]"></td>
+</tr>
+
+[if cgi mv_form_profile]
+<tr><td>Result:</td>
+<td>[if errors][error text="FAILED: " show_var=0 name=value][else]SUCCEEDED.[/else][/if]</td>
+</tr>
+[/if]
+</table>
+<p>
+[button text="OK"]
+[/button]
+
+[set checker]
+value=[cgi check] [cgi parms]
+[/set]
+
+</form>
+
+__BOTTOM__
