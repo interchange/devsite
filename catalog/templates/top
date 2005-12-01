@@ -1,36 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-	<meta name="author" content="Davor Ocelic <docelic@mail.inet.hr>" />
-	<meta name="keywords" content="Interchange,minivend,minimate,application,server,database,display,electronic,catalog,shopping,cart,ecommerce,commerce,perl,mod_perl,web,online" />
-	<meta name="description" content="Interchange software website">
-	<meta name="robots" content="all" />
-	<title>Interchange: </title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=ISO8859-1" />
+    <meta name="author" content="Davor Ocelic, docelic@icdevgroup.org" />
+    <meta name="generator" content="Interchange, http://www.icdevgroup.org/" />
+    <meta name="keywords" content="Interchange,minivend,minimate,application,server,database,display,electronic,catalog,shopping,cart,ecommerce,commerce,perl,mod_perl,web,online,sell,buy,auction,store,system" />
+    <meta name="description" content="Interchange software website">
+    <meta name="robots" content="all" />
 
-	[if !value web_style_plain]
-	<script type="text/javascript"></script>
-	
-	<style type="text/css">
-		@import "/new/style/g1.css";
-	</style>
-	[/if]
-	<!--
-	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />	
-	<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
-	-->
-</head>
+    [if !value web_style_plain]
+	    <script type="text/javascript"></script>
 
-<body>
+	    <link rel="stylesheet" type="text/css" href="/new/style/g4-screen.css" media="screen, tv, projection" title="Default" />
+	    <link rel="stylesheet alternative" type="text/css" href="./g4-print.css" media="screen" title="Print Preview" />
+	    <link rel="stylesheet" type="text/css" href="/new/style/g4-print.css" media="print" />
+    [/if]
 
-<div class="topbar">
+		<link rel="Shortcut Icon" type="image/x-icon" href="/new/favicon.ico" />
+<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
+-->
+
+    <title>Interchange</title>
+  </head>
+
+  <body>
+    <!-- For non-visual user agents: -->
+      <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+    <!-- ##### Header ##### -->
+
+    <div id="header">
+      <div class="superHeader">
 	<form action="[process]" method="POST">
 	<input type="hidden" name="mv_todo" value="search"/>
 	<input type="hidden" name="st" value="swish"/>
 	<input type="hidden" name="sp" value="results"/>
 
+	<div class="superTopHeader">
+<span class="doNotDisplay">
+Interchange: 
+</span>
+	A Full-Featured Application Server, Electronic Catalog and
+	Database Display System
+	</div>
+	<div class="dividingBorderAbove" style="padding-top: 0.5ex">
+	<span class="doNotDisplay">Navigation:</span>
 	[form-session-id]
 	[page index]Home</a> |
 	[page news]News</a> | 
@@ -42,13 +59,35 @@
 	[page contact]Contact</a> |
 		Search: <input name="mv_searchspec"/>
 		<input type="submit" value="Go"> |
-		[include templates/disp_mode]
+		[if value web_style_plain]
+			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
+		[else]
+			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
+		[/else]
+		[/if]
 	</form>
-</div>
+     </div>
+      </div>
 
-[if !value web_style_plain]
-<div align="center">
-  <img src="header3.png" alt="Interchange" border="0"/>
-</div>
-[/if]
+      <div class="midHeader">
+        <h1 class="headerTitle" lang="la">
+					[if !value web_style_plain]
+						<img src="header3.png" alt="Interchange" border="0"/>
+					[/if]
+				</h1>
 
+        <div class="headerSubTitle" title=""></div>
+
+        <br class="doNotDisplay doNotPrint" />
+
+        <div class="headerLinks">
+        </div>
+      </div>
+
+      <!-- <div class="subHeader">
+			</div> -->
+    </div>
+
+    <!-- ##### Main Copy ##### -->
+
+    <div id="main-copy">

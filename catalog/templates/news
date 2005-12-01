@@ -1,14 +1,54 @@
-<div class="news">
-<div class="coln">
-<h3>
-News (past 2 months)
-</h3>
+<h1>Latest News</h1>
 
-[include templates/news-atom]
+[loop prefix=news more=1 search=|
+	fi=news
+	st=db
+	tf=posted_on
+	to=r
+	ml=2
 
-<div class='extranote'>
-See complete [page news]NEWS</a> page.
-</div>
+	[if session arg]
+	sf=code
+	op=eq
+	se=[data session arg]
+	[else]
+	ra=yes
+	[/else]
+	[/if]
 
-</div>
-</div>
+	rf=*
+|]
+
+[on-match]
+<ul>
+[/on-match]
+
+[list]
+<li>
+<a href="[area href="news" arg="[news-param code]"]" class="newsHeading">[news-param title]</a>
+
+<p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] by [if-news-param posted_email]<a href="mailto:[news-param posted_email]">[news-param posted_by]</a>[else][news-param posted_by][/else][/if-news-param]</p>
+
+	<p class="newsSummary">
+[if session arg]
+[or value mv_search_match_count == 1]
+  [news-param body]
+[else]
+  [filter 200.][news-param body][/filter]<br>
+  <a href="[area href="news" arg="[news-param code]"]">[L]Read more[/L]...</a>
+[/else]
+[/if]
+	</p>
+</li>
+[/list]
+
+[on-match]
+</ul>
+[/on-match]
+
+[more-list]
+  <div align='center'>[more]</div>
+[/more-list]
+[/loop]
+
+<p class="filler"></p>

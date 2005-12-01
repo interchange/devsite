@@ -1,4 +1,18 @@
+    </div>
 
-</body>
+    <!-- ##### Footer ##### -->
+
+    <div id="footer">
+		<span class='doNotPrint'>
+		Hosting <a href="http://www.endpoint.com/">End Point Corp.</a> &bull;
+		Design
+			__docelic__, __haran__ &bull;
+		</span>
+		Copyright &copy; 2005&mdash; __ICDEVGROUP__ <br/>
+
+		<strong>URI &raquo;</strong> [base-url]
+		&bull; <strong>Updated &raquo;</strong> 2004-Oct-24 10:31 +1000
+		</div>
+	</body>
 </html>
 

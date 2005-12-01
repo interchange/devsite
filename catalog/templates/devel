@@ -1,24 +1,12 @@
+<h1>Users &amp; Developers</h1>
 
-
-<div class="devel">
-<div class="coln">
-<h3>
-Users &amp; Developers
-</h3>
 <ul>
 <li> [page docs]Documentation</a> </li>
 <li> [page download]Downloads and Source Code</a> </li>
 <li> [page devel/people]Interchange Developers and Contributors</a> </li>
+<li> [page bts/index]Bug Tracker</a> </li>
 <li> [page users/community]Community Resources</a> (mailing lists etc.)</li>
 <li> [page support/index]Professional Support</a> </li>
 </ul>
 
-
-<div class="footer">
- Hosting by <a href="http://www.endpoint.com/">End Point Corp.</a> |
- Designed by <a href="mailto:docelic@icdevgroup.org">Davor Ocelic</a>.<br>
- Copyright &copy; 2005&mdash; __ICDEVGROUP__ 
-</div>
-
-</div>
-</div>
+<p class='filler'></p>
