@@ -1,9 +1,9 @@
 __TOP__
 
-<div class="colw">
-<h2>Downloading Interchange</h2>
+      <div class="rowOfBoxes dividingBorderAbove">
+        <div class="twoThirds noBorderOnLeft">
+<h1>Downloading Interchange</h1>
 
-<div class="colbody">
 <p>
 The current stable release of Interchange is
 <tt>__STABLE__</tt>.<br/>
@@ -14,20 +14,20 @@ The current development release of Interchange is
 
 <p>
 Before downloading, you can try out our
-<a href="http://demo.icdevgroup.org/">Live Demo</a>.
+__DEMO__.
 </p>
 
 <p>
 For a successful involvement with __IC__, consider subscribing to
-some of the Interchange
-<a href="http://www.icdevgroup.org/mailman/listinfo/">Public 
-Mailing Lists</a>.
+some of the __PUBLIC_MLS__.
 </p>
 
 <p>
 Existing users should refer to the
 <a href="http://ftp.icdevgroup.org/interchange/__STABLE_SERIES__/WHATSNEW">WHATSNEW</a>
-file for all relevant additions to the codebase.
+file for all relevant additions to the codebase and upgrade instructions.
+For upgrades from legacy code (from MiniVend to Interchange 5.0), see 
+UPGRADE document in our [page docs]documentation</a> set.
 </p>
 
 <p>
@@ -41,9 +41,9 @@ RPM package users should first read the
 RPMS README file</a>.
 </p>
 
-<h3>Stable releases</h3>
+<h2>Stable releases</h2>
 
-<h4>Cross-platform packages (download via HTTP)</h4>
+<h3>Cross-platform packages (download via HTTP)</h3>
 <p>
 <a href="http://ftp.icdevgroup.org/interchange-latest.tar.gz">
 <tt>interchange-latest.tar.gz</tt></a> (symlink to __STABLE__)<br/>
@@ -53,7 +53,7 @@ RPMS README file</a>.
 <tt>interchange-__STABLE__.tar.bz2</tt></a><br/>
 </p>
 
-<h4>Cross-platform packages (download via FTP)</h4>
+<h3>Cross-platform packages (download via FTP)</h3>
 <p>
 <a href="ftp://ftp.icdevgroup.org/pub/interchange-latest.tar.gz">
 <tt>interchange-latest.tar.gz</tt></a> (symlink to __STABLE__)<br/>
@@ -64,7 +64,7 @@ RPMS README file</a>.
 </p>
 
 
-<h4>CVS</h4>
+<h3>CVS</h3>
 <p>
 You can browse the latest __STABLE_CVSWEB__ CVS tree online using __CVSWEB__.
 <br/>You can also use a cvs client to download a read-only copy from CVS
@@ -75,7 +75,7 @@ cvs -z6 -d :pserver:cvs@cvs.icdevgroup.org:/var/cvs \
 </pre>
 </p>
 
-<h4>Debian GNU packages</h4>
+<h3>Debian GNU packages</h3>
 <p>
 Packages for the __DEBIAN__ operating system are being maintained by
 __racke__, a Debian developer. You can find the packages and
@@ -84,7 +84,7 @@ in a separate __STABLE_DEBIAN__ (you can also browse the top-level
 __DIR_DEBIAN__ for other versions). 
 </p>
 
-<h4>RPM packages</h4>
+<h3>RPM packages</h3>
 <p>
 Packages for Red Hat-derived operating systems are being maintained by
 __jon__. You can find the packages in a __STABLE_RPM__ and 
@@ -92,21 +92,21 @@ __STABLE_SRPM__ directories.
 </p>
 
 
-<h3>Development source tree</h3>
+<h2>Development source tree</h2>
 
-<h4>Cross-platform packages (download via HTTP)</h4>
+<h3>Cross-platform packages (download via HTTP)</h3>
 <p>
 <a href="http://ftp.icdevgroup.org/interchange-nightly.tar.gz">
 <tt>interchange-nightly.tar.gz</tt></a> (symlink to latest __NIGHTLY_HTTP__)<br/>
 </p>
 
-<h4>Cross-platform packages (download via FTP)</h4>
+<h3>Cross-platform packages (download via FTP)</h3>
 <p>
 <a href="http://ftp.icdevgroup.org/pub/interchange-nightly.tar.gz">
 <tt>interchange-nightly.tar.gz</tt></a> (symlink to the latest __NIGHTLY_FTP__)<br/>
 </p>
 
-<h4>CVS</h4>
+<h3>CVS</h3>
 <p>
 You can browse the latest __DEVEL_CVSWEB__ CVS tree online using __CVSWEB__.
 <br/>You can also use a cvs client to download a read-only copy from CVS
@@ -116,10 +116,8 @@ cvs -z6 -d :pserver:cvs@cvs.icdevgroup.org:/var/cvs \
   checkout -P interchange
 </pre>
 </p>
-</div>
 
-<h2>A Note on CVS</h2>
-<div class="colbody">
+<h1>A Note on CVS</h1>
 <p>
 Please note that there is a package manifest file (basically, a list of all
 files needed for the release) that is checked before installation is completed.
@@ -171,27 +169,26 @@ The above will direct CVS to automatically compress all data communicated
 between you and our server (saving bandwidth), and be quieter with notices
 output. It will also show unified diffs (the preferred type) and prune empty
 directories added or deleted since your last repository check-out.
-</div>
+</p>
 
 
-
-<h2>Legacy Information</h2>
-<div class="colbody">
+<h1>Legacy Information</h1>
 <p>
-We keep legacy information on
+We keep legacy packages of
 <a href="ftp://ftp.icdevgroup.org/pub/minivend4/">Minivend 4</a>,
 <A href="ftp://ftp.icdevgroup.org/pub/tallyman/">Tallyman</a>,
 <a href="ftp://ftp.icdevgroup.org/pub/minivend3/">Minivend 3</a>, 
 <a href="ftp://ftp.icdevgroup.org/pub/minivend2/">Minivend 2</a>, 
 <a href="ftp://ftp.icdevgroup.org/pub/minivend1/">Minivend 1</a>,
 and even 
-<a href="ftp://ftp.icdevgroup.org/pub/vend/">Vend</a> available!
+<a href="ftp://ftp.icdevgroup.org/pub/vend/">Vend</a> available
+for download!
 </p>
 </div>
 
-
 </div>
-
+<div class='oneThird'>
 [include templates/devel]
+</div>
 
 __BOTTOM__

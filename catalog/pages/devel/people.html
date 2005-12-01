@@ -1,24 +1,65 @@
 __TOP__
 
-<div class="colw">
-	<h2>Interchange Development Group</h2>
-<div class="colbody">
 
-<h3>Core Team Members</h3>
-<table width="100%">
-[include textfiles/members]
-</table>
+      <div class="rowOfBoxes dividingBorderAbove">
+        <div class="twoThirds noBorderOnLeft">
+	<h1>Interchange Development Group</h1>
 
-<h3>Acknowledgements</h3>
+<h2>Core Team Members</h2>
 <p>
-<ul>
-	[include textfiles/acknowledgements]
-</ul>
+[table-organize cols=4 table='width=100%']
+[loop prefix=loop more=0 search=|
+  fi=core
+  st=db
+  tf=
+  to=r
+  ml=500
+  rf=*
+|]
+[list]
+[loop-alternate 0]
+<td class='th'>Name</td>
+<td class='th'>Username</td>
+<td class='th'>Since</td>
+<td class='th'>Tasks</td>
+[/loop-alternate]
+<td>[filter vars_and_comments][loop-param name][/filter]</td>
+<td>[loop-param username]</td>
+<td>[loop-param since]</td>
+<td>[loop-param task]</td>
+[/list]
+[/loop]
+[/table-organize]
+</p>
+
+<h2>Acknowledgements</h2>
+<p>
+Original author of Vend, ancestor to Minivend and Interchange, was Andrew
+Wilcox &lt;amw@wilcoxsolutions.com&gt;. Interchange was based on Vend 0.2, with
+portions from Vend 0.3; both were produced in 1995.
+</p>
+<p>
+[table-organize cols=3 table='width=100%']
+[loop prefix=loop more=0 search=|
+  fi=contrib
+  st=db
+  tf=name
+  to=r
+  ml=500
+  rf=*
+|]
+[list]
+<td>[loop-param name]</td>
+[/list]
+[/loop]
+[/table-organize]
+and, of course, the entire Perl team without whom Interchange could not exist.
 </p>
 
 </div>
 </div>
-
+<div class='oneThird'>
 [include templates/devel]
+</div>
 
 __BOTTOM__
