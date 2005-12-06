@@ -1,0 +1,4 @@
+code	Variable
+SQLDSN	dbi:mysql:icnew
+SQLUSER	icnew
+SQLPASS	foo

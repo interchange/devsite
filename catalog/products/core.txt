@@ -1,0 +1,16 @@
+name	username	since	task
+__brevp__	brevp	Mar 2001	
+__danb__	danb	Jun 2001	Graphics, Design, etc.
+__jon__	jon	mid 2000	Release manager, Red Hat package maintainer, mailing lists admin
+__jonc__	jonc	early 2001	
+__kwalsh__	kwalsh	Jan 2002	
+__mheins__	mheins		Interchange founder
+__racke__	racke	2000	Interchange team captain, Debian GNU package maintainer, I18N	
+__ton__	ton	Jun 2001
+__docelic__	docelic	Jun 2004	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
+__pvinci__	pvinci		
+__ramoore__	ramoore		
+__greg__	greg	Sep 2004	
+__zeald__	zeald	2003	Design etc.
+__markj__	markj	2003		
+__edl__	edl		
