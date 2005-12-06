@@ -21,7 +21,7 @@
 <p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] by [if-news-param posted_email]<a href="mailto:[news-param posted_email]">[news-param posted_by]</a>[else][news-param posted_by][/else][/if-news-param]</p>
 
 	<p class="newsSummary">
-  [filter 200.][news-param body][/filter]<br>
+  [filter 200. text2html][news-param body][/filter]<br>
   <a href="[area href="news" arg="[news-param code]"]">[L]Read more[/L]...</a>
 	</p>
 </li>
