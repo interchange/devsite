@@ -10,8 +10,10 @@
 		</span>
 		Copyright &copy; 2005&mdash; __ICDEVGROUP__ <br/>
 
-		<strong>URI &raquo;</strong> [base-url]
-		&bull; <strong>Updated &raquo;</strong> 2004-Oct-24 10:31 +1000
+		[comment]
+		<strong>URI &raquo;</strong> [data session last_url]
+		&bull; <strong>Updated &raquo;</strong> [perl][/perl]
+		[/comment]
 		</div>
 	</body>
 </html>
