@@ -13,9 +13,9 @@
     [if !value web_style_plain]
 	    <script type="text/javascript"></script>
 
-	    <link rel="stylesheet" type="text/css" href="/new/style/g4-screen.css" media="screen, tv, projection" title="Default" />
-	    <link rel="stylesheet alternative" type="text/css" href="./g4-print.css" media="screen" title="Print Preview" />
-	    <link rel="stylesheet" type="text/css" href="/new/style/g4-print.css" media="print" />
+	    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css" media="screen, tv, projection" title="Default" />
+	    <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
+	    <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
     [/if]
 
 		<link rel="Shortcut Icon" type="image/x-icon" href="/new/favicon.ico" />
