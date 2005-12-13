@@ -57,7 +57,7 @@ Interchange:
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
-		Search (<input type="checkbox" name="SEARCH_MLS" CHECKED> include MLs):
+		Search (<input type="checkbox" name="mv_search_file" value="mlindex.swish-e" CHECKED> include MLs):
 		<input name="mv_searchspec"/><input type="submit" value="Go"> |
 		[if value web_style_plain]
 			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
