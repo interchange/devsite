@@ -57,6 +57,7 @@ Interchange:
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
+		<input type="hidden" name="mv_search_file" value="products/swish-e.db" />
 		Search (<input type="checkbox" name="mv_search_file" value="products/mlindex.swish-e" CHECKED> include MLs):
 		<input name="mv_searchspec"/> <input type="submit" value="Go"> |
 		[if value web_style_plain]
