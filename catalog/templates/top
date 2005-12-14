@@ -18,7 +18,7 @@
 	    <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
     [/if]
 
-		<link rel="Shortcut Icon" type="image/x-icon" href="/new/favicon.ico" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
 <!--
 		<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
 -->
@@ -34,10 +34,10 @@
 
     <div id="header">
       <div class="superHeader">
-	<form action="[process]" method="POST">
-	<input type="hidden" name="mv_todo" value="search"/>
+	<form action="[process href=search]" method="GET">
 	<input type="hidden" name="st" value="swish"/>
 	<input type="hidden" name="sp" value="results"/>
+	<input type="hidden" name="ms" value="3"/>
 
 	<div class="superTopHeader">
 <span class="doNotDisplay">
@@ -57,7 +57,7 @@ Interchange:
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
-		<input type="hidden" name="mv_search_file" value="products/swish-e.db" />
+	<input type="hidden" name="mv_search_file" value="products/swish-e.db" />
 		Search (<input type="checkbox" name="mv_search_file" value="products/mlindex.swish-e" CHECKED> include MLs):
 		<input name="mv_searchspec"/> <input type="submit" value="Go"> |
 		[if value web_style_plain]
