@@ -2,7 +2,7 @@ code	Variable
 DEVEL	5.3.2
 STABLE_SERIES	5.2
 STABLE	5.2.1
-CGI_URL	/i/new
+CGI_URL	/i/dev
 CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
 DEVEL_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/">development</a>
@@ -12,12 +12,12 @@ FREENODE	<a href="http://www.freenode.info">FreeNode</a>
 GNU	<a href="http://www.gnu.org/">GNU</a>
 IC	<a href="http://www.icdevgroup.org/">Interchange</a>
 ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
-IMAGE_DIR	/new/style
+IMAGE_DIR	/style
 NIGHTLY_FTP	<a href="ftp://ftp.icdevgroup.org/pub/interchange/nightly_build/">nightly build</a>
 NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly build</a>
 PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
-SECURE_SERVER	http://new.icdevgroup.org/
-SERVER_NAME	new.icdevgroup.org
+SECURE_SERVER	https://www.icdevgroup.org/
+SERVER_NAME	www.icdevgroup.org
 STABLE_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/?only_with_tag=REL_[perl](my $a="$::Variable->{STABLE}")=~s/\./\_/g; $a[/perl]">release</a>
 STABLE_CVS_SERIES	[perl](my $a="$::Variable->{STABLE}")=~s/(\d+\.\d+).*/$1/;$a=~s/\./_/g; $a[/perl]
 STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
