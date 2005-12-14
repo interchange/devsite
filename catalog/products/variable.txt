@@ -1,7 +1,8 @@
 code	Variable
-DEVEL	5.3.3
 STABLE_SERIES	5.2
 STABLE	5.2.1
+DEVEL_SERIES	5.3
+DEVEL	5.3.3
 CGI_URL	/i/dev
 CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
