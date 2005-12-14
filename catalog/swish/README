@@ -1,0 +1,4 @@
+
+Swish config for mailing list archives.
+XMLDOCS are indexed by a script called within Debian chroot
+and are covered by /usr/local/bin/gendoc

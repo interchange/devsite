@@ -1,0 +1,197 @@
+__TOP__
+
+      <div class="rowOfBoxes dividingBorderAbove">
+        <div class="twoThirds noBorderOnLeft">
+
+[if cgi submit]
+[perl table=hallfame]
+	my $db = $Db{hallfame} or die "no db handle\n";
+
+	$CGI->{add_date} = $Tag->time(undef, {}, '%Y-%m-%d %H:%M:%S');
+
+	my @fields = qw(
+		site_name url link_text company developer developer_link
+		commentary contact_name contact_email add_date
+	);
+	my @values = map { local $_ = $CGI->{$_}; s/^\s+//; s/\s+$//; $_ } @fields;
+	$db->set_slice(undef, \@fields, \@values);
+
+	my $msg = "A new submission to the Interchange Hall of Fame has been received:\n\n";
+	for (my $i = 0; $i < @fields; $i++) {
+		$msg .= "$fields[$i]: $values[$i]\n";
+	}
+	$msg .= "\nPlease review it for approval when you have time.\n";
+
+	$Tag->email(
+		'ic-hall-fame@endpoint.com',
+		'New Interchange Hall of Fame submission',
+		undef,
+		'icdev@icdevgroup.org',
+		undef,
+		{},
+		$msg,
+	);
+
+	for (qw( contact_name contact_email )) {
+		$Values->{$_} = $CGI->{$_};
+	}
+
+	return <<'EOT';
+<p align=center>
+Your submission has been added to our database and
+will be reviewed shortly. Thank you!
+</p>
+EOT
+[/perl]
+[/if]
+
+<p><b>[scratch page_title]</b></p>
+
+<p>
+With thousands of developers having implemented sites on Interchange
+(and its predecessor Minivend) since 1995, there are many, many great
+sites out there running on our technology. We only have a small sampling
+listed here, but we've tried to select a cross-section of implementations
+from small and large companies spanning all industries and purposes.
+There are currently [query
+	list=1
+	sql=|
+SELECT COUNT(*)
+FROM hallfame
+WHERE active='Y'
+	|
+][sql-code][/query] sites listed.
+</p>
+
+<p>
+Disclaimer: The listing of these sites is in no way an endorsement by
+the Interchange Development Group. All sites are the responsibility of
+their respective owners, and we cannot guarantee the proper functioning
+of or quality of service provided by these sites.
+</p>
+
+<p>
+If there's a site that you've created or that you're aware of that should
+be listed here, please let us know about it with <a href="#form">the form
+at the bottom of this page</a>.
+</p>
+
+<H3>Cross-Section of Noteworthy Interchange Implementations</H3>
+
+<ul>
+[query
+	list=1
+	prefix=loop
+	sql=|
+SELECT *
+FROM hallfame
+WHERE active = 'Y'
+AND rank < 50
+ORDER BY site_name
+	|
+]
+<li>
+[if-loop-param url]<a href="[loop-param url]">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
+[loop-calc]
+	return '' unless q{[loop-param company]};
+	if (q{[loop-param company]} eq (q{[loop-param link_text]} || q{[loop-param site_name]})) {
+		return '';
+	} else {
+		return q{([loop-param company])};
+	}
+[/loop-calc]
+[if-loop-param developer]-- developed by [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
+[if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
+[/query]
+</ul>
+
+<H3>Other Sites Using Interchange Technology</H3>
+
+<ul>
+[query
+	list=1
+	prefix=loop
+	sql=|
+SELECT *
+FROM hallfame
+WHERE active = 'Y'
+AND rank >= 50
+ORDER BY site_name
+	|
+]
+<li>
+[if-loop-param url]<a href="[loop-param url]">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
+[loop-calc]
+	return '' unless q{[loop-param company]};
+	if (q{[loop-param company]} eq (q{[loop-param link_text]} || q{[loop-param site_name]})) {
+		return '';
+	} else {
+		return q{([loop-param company])};
+	}
+[/loop-calc]
+[if-loop-param developer]-- developed by [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
+[if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
+[/query]
+</ul>
+
+<p align=center><a name="form"><hr width="50%"></a></p>
+
+<form method=POST action="[area @@MV_PAGE@@]">
+<input type=hidden name=mv_session_id value="[data session id]">
+<input type=hidden name=submit value=1>
+
+<h3>Submit a site for inclusion in the Interchange Hall of Fame</h3>
+
+<table border=0 cellpadding=2 cellspacing=0>
+<tr>
+<td>Site name:</td>
+<td><input type=text name=site_name size=25></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><input type=text name=url size=40></td>
+</tr>
+<tr>
+<td>Company (if different from site name):</td>
+<td><input type=text name=company size=25></td>
+</tr>
+<tr>
+<td>Developer:</td>
+<td><input type=text name=developer size=40 value="[value developer]">
+</tr>
+<tr>
+<td>Developer URL:</td>
+<td><input type=text name=developer_link size=40 value="[value developer_link]">
+</tr>
+<tr>
+<td>Noteworthy features:</td>
+<td><input type=text name=commentary size=60>
+</tr>
+<tr>
+<td>Contact name (not displayed in Hall of Fame):</td>
+<td><input type=text name=contact_name size=40>
+</tr>
+<td>Contact email (in case we have questions):</td>
+<td><input type=text name=contact_email size=40>
+</tr>
+</table>
+
+<p>Please note that the site will be reviewed before it is included in the
+Hall of Fame, and not all sites will be included. In particular, new sites may
+not be added until they've proven themselves for a few months, and are still
+running Interchange when we check them. Thanks for your understanding.
+</p>
+
+<p><input type="submit" value="Submit"></p>
+
+</form>
+        </div>
+      </div>
+
+        <div class="oneThird">
+          [include templates/promo]
+        </div>
+      </div>
+
+
+__BOTTOM__

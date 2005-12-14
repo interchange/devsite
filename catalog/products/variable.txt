@@ -1,8 +1,10 @@
 code	Variable
+DEVEL	5.3.2
+STABLE_SERIES	5.2
+STABLE	5.2.1
 CGI_URL	/i/new
 CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
-DEVEL	5.3.2
 DEVEL_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/">development</a>
 DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
 DOCBOOK	<a href="http://www.docbook.org">DocBook</a>
@@ -16,12 +18,10 @@ NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nigh
 PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
 SECURE_SERVER	http://new.icdevgroup.org/
 SERVER_NAME	new.icdevgroup.org
-STABLE	5.2.1
 STABLE_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/?only_with_tag=REL_[perl](my $a="$::Variable->{STABLE}")=~s/\./\_/g; $a[/perl]">release</a>
 STABLE_CVS_SERIES	[perl](my $a="$::Variable->{STABLE}")=~s/(\d+\.\d+).*/$1/;$a=~s/\./_/g; $a[/perl]
 STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
 STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
-STABLE_SERIES	5.2
 STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
 XMLDOCS_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/xmldocs/">xmldocs</a>
 brevp	Brev Patterson
@@ -39,3 +39,9 @@ racke	Stefan Hornburg
 ramoore	Randy Moore
 ton	Ton Verhagen
 zeald	David Kelly
+markj	Mark Johnson
+mheins	Mike Heins
+kwalsh	Kevin Walsh
+edl	Ed LaFrance
+danb	Dan Browning
+haran	<a href="http://haran.freeshell.org/oswd/">haran</a>
