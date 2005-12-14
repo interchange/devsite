@@ -1,5 +1,5 @@
 code	Variable
-DEVEL	5.3.2
+DEVEL	5.3.3
 STABLE_SERIES	5.2
 STABLE	5.2.1
 CGI_URL	/i/dev
