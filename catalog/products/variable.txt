@@ -28,7 +28,7 @@ STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/s
 XMLDOCS_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/xmldocs/">xmldocs</a>
 brevp	Brev Patterson
 danb	Dan Browning
-docelic	Davor Ocelic
+docelic	<a href="mailto:docelic@mail.inet.hr">Davor Ocelic</a>
 edl	Ed LaFrance
 greg	Greg Hanson
 jon	Jon Jensen
