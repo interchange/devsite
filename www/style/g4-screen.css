@@ -85,12 +85,6 @@ dd {
 }
 
 
-.smallCaps {
-  font-size: 117%;
-  font-variant: small-caps;
-}
-
-
 input, textarea, select {
   border: 1px dotted #004183;
 }
@@ -115,7 +109,7 @@ input, textarea, select {
 
 .superTopHeader {
   text-align: center;
-  font-variant: small-caps;
+  /*font-variant: small-caps;*/
 	font-size: 145%;
 	font-weight: bold;
 	background-color: #004183;
