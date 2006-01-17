@@ -16,17 +16,16 @@ There are two __IC__ IRC channels in existence:
 <ul>
 [calc]
 
-push @nodes, q{<li>#interchange at the __FREENODE__ network (<tt>irc.gnu.org</tt> for example)</li> };
-push @nodes, q{<li>#interchange at <tt>irc.icdevgroup.org</tt></li>};
+push @nodes, q{<li>#interchange at the __FREENODE__ network (<a href="irc://irc.gnu.org/interchange"><tt>irc.gnu.org</tt></a> for example)</li> };
+push @nodes, q{<li>#interchange at <a href="irc://irc.icdevgroup.org/interchange"><tt>irc.icdevgroup.org</tt></a></li>};
 
 if(rand() > 0.5) {
-	return join "", @nodes;
+    return join "", @nodes;
 }
 else {
-	return join "", reverse @nodes;
+    return join "", reverse @nodes;
 }
 [/calc]
-
 </ul>
 </p>
 
