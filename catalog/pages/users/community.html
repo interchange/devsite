@@ -14,8 +14,19 @@ at the __PUBLIC_MLS__ page.
 <p>
 There are two __IC__ IRC channels in existence:
 <ul>
-	<li>#interchange at the __FREENODE__ network (<tt>irc.gnu.org</tt> for example)</li>
-	<li>#interchange at <tt>irc.icdevgroup.org</tt></li>
+[calc]
+
+push @nodes, q{<li>#interchange at the __FREENODE__ network (<tt>irc.gnu.org</tt> for example)</li> };
+push @nodes, q{<li>#interchange at <tt>irc.icdevgroup.org</tt></li>};
+
+if(rand() > 0.5) {
+	return join "", @nodes;
+}
+else {
+	return join "", reverse @nodes;
+}
+[/calc]
+
 </ul>
 </p>
 
