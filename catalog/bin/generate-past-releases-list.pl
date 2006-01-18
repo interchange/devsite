@@ -22,7 +22,7 @@ for (@files) {
 	print
 		'<tr><td>Interchange ' . $series .
 		( $series =~ s/\-SERIES// ? ' series' : '').  '</td>'.
-		'<td>' . scalar localtime($mtime) . '</td>' .
+		'<td align="right">' . scalar localtime($mtime) . '</td>' .
 		"<td><a href='$ftp_ann'>Announcement</a></td>" .
 		"<td><a href='$ftp_dir'>FTP release directory</a></td></tr>" .
 		"\n";
