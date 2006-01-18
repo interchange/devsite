@@ -20,8 +20,7 @@ for (@files) {
 	s/.*ANNOUNCEMENT-(\d+\.\d+.+)\.txt// and $series = $1;
 
 	print
-		'<tr><td>Interchange ' . $series .
-		( $series =~ s/\-SERIES// ? ' series' : '').  '</td>'.
+		'<tr><td>Interchange ' . $series . '</td>'.
 		'<td align="right">' . scalar localtime($mtime) . '</td>' .
 		"<td><a href='$ftp_ann'>Announcement</a></td>" .
 		"<td><a href='$ftp_dir'>FTP release directory</a></td></tr>" .
