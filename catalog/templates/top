@@ -73,9 +73,7 @@ Interchange:
       <div class="midHeader">
         <h1 class="headerTitle" lang="la">
 					[if !value web_style_plain]
-						<img src="/style/leftgray.jpg" alt="" height="150" border="0"/>
-						<img src="/style/yep.jpg" alt="Interchange" height="150" border="0"/>
-						<img src="/style/serving.jpg" alt="version 5.4" height="150" border="0"/>
+						<img src="/style/intro.jpg" alt="Interchange" border="0"/>
 					[/if]
 				</h1>
 
