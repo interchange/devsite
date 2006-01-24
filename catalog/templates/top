@@ -73,7 +73,11 @@ Interchange:
       <div class="midHeader">
         <h1 class="headerTitle" lang="la">
 					[if !value web_style_plain]
-						<img src="/style/intro.jpg" alt="Interchange" border="0"/>
+						[calc]
+						return $Tag->var('MV_PAGE', 1) eq 'index' ?
+							qq{<img src="/style/intro.jpg" alt="Interchange" border="0"/>}
+							: ''
+						[/calc]
 					[/if]
 				</h1>
 
