@@ -44,7 +44,8 @@
 Interchange: 
 </span>
 	A Full-Featured Application Server, Electronic Catalog and
-	Database Display System
+	Database Display System 
+[calc]$Tag->var('MV_PAGE',1) eq 'index' and return 'since 1995!';return[/calc]
 	</div>
 	<div class="dividingBorderAbove" style="padding-top: 0.5ex">
 	<span class="doNotDisplay">Navigation:</span>
