@@ -44,6 +44,6 @@ zeald	David Kelly
 markj	Mark Johnson
 mheins	Mike Heins
 kwalsh	Kevin Walsh
-edl	Ed LaFrance
+ethan	Ethan Rowe
 danb	Dan Browning
 haran	<a href="http://haran.freeshell.org/oswd/">haran</a>
