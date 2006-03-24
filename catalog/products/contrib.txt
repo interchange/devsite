@@ -15,7 +15,6 @@ Jochen Wiedmann
 Bob Jordan
 Brev Patterson
 Brian Bullen
-Josï¿½ Mï¿½ Revuelto
 Brian Kosick
 Jurgen Botz
 Bruce Albrecht
@@ -68,11 +67,12 @@ Tom Friedel
 Heinz Wittenbecher
 Tommi Laberno
 Hiroyuki Cozy Kojima
-Ignacio Lizarï¿
 Troy Davis
 Jack Tsai
 Victor Nolton
 Jason Holt
 William Dan Terry
 Ed LaFrance
+José Mª Revuelto
+Ignacio Lizarán
 Gert van der Spoel
