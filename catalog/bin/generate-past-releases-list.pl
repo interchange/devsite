@@ -5,6 +5,8 @@ use strict;
 
 my @files = `find /var/ftp/pub/interchange/ -name "ANNOUNCEMENT-*" | tac`;
 chomp for @files;
+@files = sort {  (stat $b)[9] <=> (stat $a)[9] } @files;
+
 
 my $series;
 
