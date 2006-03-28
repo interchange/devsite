@@ -37,6 +37,8 @@
 	<form action="[process href=search]" method="GET">
 	<input type="hidden" name="st" value="swish"/>
 	<input type="hidden" name="sp" value="results"/>
+	<input type="hidden" name="fn" value="code,score,url,title,filesize,mod_date,area">
+	<input type="hidden" name="rf" value="code,score,url,title,filesize,mod_date,area">
 	<input type="hidden" name="ms" value="2"/>
 
 	<div class="superTopHeader">
