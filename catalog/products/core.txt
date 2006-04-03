@@ -6,7 +6,7 @@ __ethan__	ethan	2005
 __greg__	greg	Sep 2004	
 __jonc__	jonc	early 2001	
 __jon__	jon	mid 2000	Release manager, Red Hat package maintainer, mailing lists admin
-__kwalsh__	kwalsh	Jan 2002	Interchange core hacker, RTFM website, irc.icdevgroup.org
+__kwalsh__	kwalsh	Jan 2002	User support via irc.icdevgroup.org, mod_interchange Apache module
 __markj__	markj	2003		
 __mheins__	mheins		Interchange founder
 __pvinci__	pvinci		
