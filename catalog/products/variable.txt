@@ -39,7 +39,7 @@ kwalsh	Kevin Walsh
 markj	Mark Johnson
 mheins	Mike Heins
 pvinci	Paul Vinciguerra
-racke	Stefan Hornburg
+racke	<a href="mailto:racke@linuxia.de">Stefan Hornburg</a>
 ramoore	Randy Moore
 ton	Ton Verhagen
 zeald	David Kelly

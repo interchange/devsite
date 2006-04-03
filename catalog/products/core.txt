@@ -10,7 +10,7 @@ __kwalsh__	kwalsh	Jan 2002	User support via irc.icdevgroup.org, mod_interchange 
 __markj__	markj	2003		
 __mheins__	mheins		Interchange founder
 __pvinci__	pvinci		
-__racke__	racke	2000	Interchange team captain, Debian GNU package maintainer, I18N	
+__racke__	racke	Jun 1999	Interchange team captain, Debian GNU package maintainer, I18N	
 __ramoore__	ramoore		
 __ton__	ton	Jun 2001
 __zeald__	zeald	2003	Design etc.
