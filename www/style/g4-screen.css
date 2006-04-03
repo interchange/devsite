@@ -383,3 +383,9 @@ input, textarea, select {
 #footer a:hover {
   text-decoration: none;
 }
+
+/* Results page submenu */
+a.results { 
+  color: rgb(61,92,122);
+  text-decoration: none;
+}
