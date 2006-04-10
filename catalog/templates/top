@@ -62,7 +62,7 @@ Interchange:
 	[page contact]Contact</a> |
 	<input type="hidden" name="mv_search_file" value="products/swish-e.db" />
 		Search (<input type="checkbox" name="mv_search_file" value="products/mlindex.swish-e" CHECKED> include MLs):
-		<input name="mv_searchspec"/> <input type="submit" value="Go"> |
+		<input type="text" name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go"> |
 		[if value web_style_plain]
 			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
 		[else]
