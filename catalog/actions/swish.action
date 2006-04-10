@@ -1,0 +1,37 @@
+ActionMap Swish <<EOF
+sub {
+	my (@args) = split('/', shift);
+
+	# specify search type
+	$CGI->{mv_searchtype} = 'swish';
+	
+	# specify output fields
+	my @fields = qw/code dbfile score url title filesize mod_date area purpose/;
+	$CGI->{mv_return_fields} = $CGI->{mv_field_names} = join(',', @fields);
+
+	# search string minimum is 2 characters
+	$CGI->{mv_min_string} = 2;
+
+	# directory containing Swish index files
+	$CGI->{mv_base_directory} = 'swish/db';
+
+	# index files to search
+	$CGI->{mv_search_file} = 'olddocs,xmldocs,mailinglists';
+	
+	# derive search string from URL or from parameter
+	if ($args[1]) {
+		$CGI->{mv_searchspec} = $args[1];
+	}
+
+	# results page
+	$CGI->{mv_nextpage} = 'results';
+
+	# advise Interchange to perform search with the parameters we
+	# specified above
+
+	$CGI->{mv_todo} = 'search';
+	$Tag->update('process');
+
+	return 1;
+}
+EOF
