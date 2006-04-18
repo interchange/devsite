@@ -16,8 +16,12 @@ sub {
 	$CGI->{mv_base_directory} = 'swish/db';
 
 	# index files to search
-	$CGI->{mv_search_file} = 'olddocs,xmldocs,mailinglists';
+	$CGI->{mv_search_file} = 'olddocs,xmldocs';
 	
+	if ($CGI->{search_mailinglists}) {
+		$CGI->{mv_search_file} .= ',mailinglists';
+	}
+
 	# derive search string from URL or from parameter
 	if ($args[1]) {
 		$CGI->{mv_searchspec} = $args[1];
