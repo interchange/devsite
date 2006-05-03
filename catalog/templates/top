@@ -34,12 +34,7 @@
 
     <div id="header">
       <div class="superHeader">
-	<form action="[process href=search]" method="GET">
-	<input type="hidden" name="st" value="swish"/>
-	<input type="hidden" name="sp" value="results"/>
-	<input type="hidden" name="fn" value="code,score,url,title,filesize,mod_date,area,purpose">
-	<input type="hidden" name="rf" value="code,score,url,title,filesize,mod_date,area,purpose">
-	<input type="hidden" name="ms" value="2"/>
+	<form action="[process href=Swish]" method="GET">
 
 	<div class="superTopHeader">
 <span class="doNotDisplay">
@@ -60,9 +55,9 @@ Interchange:
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
-	<input type="hidden" name="mv_search_file" value="products/swish-e.db" />
-		Search (<input type="checkbox" name="mv_search_file" value="products/mlindex.swish-e" CHECKED> include MLs):
-		<input type="text" name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go"> |
+		Search (<input type="checkbox" name="search_mailinglists" value="1" CHECKED> include MLs):
+		<input name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go"> |
+							
 		[if value web_style_plain]
 			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
 		[else]
