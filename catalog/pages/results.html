@@ -11,18 +11,45 @@ __TOP__
 [comment] The search has been failed, please contact interchange-users@icdevgroup.org for help. [/comment]
 [else]
 [search-region]
+[on-match]
 <table width="100%">
 <tr><th align="left">Area</th>
 <th align="left">Title</th>
 <th align="left">Date</th>
 <th align="left">Size</th>
 <th align="left">Score</th></tr>
+[/on-match]
 [search-list]
-<tr><td>[if-item-param area][item-param area][else]-[/else][/if-item-param]</td><td>[if-item-param url =~ ^http:]<a href="[item-param url]">[else]<a href="http://__SERVER_NAME__/docs/[item-param url]">[/else][/if-item-param][item-param title]</a>[if-item-param purpose =~ \S] - [item-param purpose][/if_item-param]</td>
-<td>[if-item-param area]-[else][item-param mod_date][/else][/if-item-param]</td>
-<td>[item-param filesize]</td><td>[item-param score]</td></tr>
+[if-item-param dbfile =~ mailinglists]
+<tr><td>Mailing List</td>
+<td><a href="[item-param url]">[item-param title]</a></td>
+<td>[item-param mod_date]</td>
+<td>[item-param filesize]</td>
+<td>[item-param score]</td>
+</tr>[else]
+[if-item-param dbfile =~ olddocs]
+<tr><td>Old Documentation</td>
+<td><a href="[item-param url]">[item-param title]</a></td>
+<td>[item-param mod_date]</td>
+<td>[item-param filesize]</td>
+<td>[item-param score]</td>
+</tr>
+[else]
+<tr><td>[item-param area]</td>
+<td><a href="http://__SERVER_NAME__/docs/[item-param url]">[item-param title][if-item-param purpose =~ \S] - [item-param purpose][/if-item-param]</a></td>
+<td>[item-param mod_date]</td>
+<td>[item-param filesize]</td>
+<td>[item-param score]</td>
+</tr>
+[/else]
+[/if-item-param]
+[/else]
+[/if-item-param]
 [/search-list]
+[on-match]
 </table>
+[/on-match]
+[no-match]No matching entries found.[/no-match]
 [more-list]<p>More results: [more]</p>[/more-list]
 [/search-region]
 [/else]
