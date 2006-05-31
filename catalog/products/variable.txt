@@ -35,7 +35,7 @@ edl	Ed LaFrance
 greg	Greg Hanson
 jon	Jon Jensen
 jonc	Jonathan Clark
-kwalsh	Kevin Walsh
+kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
 markj	Mark Johnson
 mheins	Mike Heins
 pvinci	Paul Vinciguerra
@@ -45,7 +45,6 @@ ton	Ton Verhagen
 zeald	David Kelly
 markj	Mark Johnson
 mheins	Mike Heins
-kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
 ethan	Ethan Rowe
 danb	Dan Browning
 haran	<a href="http://haran.freeshell.org/oswd/">haran</a>
