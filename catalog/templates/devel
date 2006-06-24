@@ -6,7 +6,7 @@
 <li> [page href=news arg=00013]<strong>Incompatible changes in CVS-HEAD and upcoming 6.0</strong></a>! </li>
 <li> [page devel/people]Interchange Developers and Contributors</a> </li>
 <li> [page releases]Chronological list of releases</a> </li>
-<li> [page bts/index]Bug Tracker</a> </li>
+<li> [page bts/index]Bug Tracker</a> (reload page if necessary)</li>
 <li> [page users/community]Community Resources</a> (mailing lists etc.)</li>
 <li> [page support/index]Professional Support</a> </li>
 </ul>
