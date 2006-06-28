@@ -12,6 +12,7 @@ __TOP__
 [if value mv_search_error]
 [comment] The search has been failed, please contact interchange-users@icdevgroup.org for help. [/comment]
 [else]
+[tag pragma safe_data]1[/tag]
 [search-region]
 [on-match]
 <table width="100%">
@@ -24,7 +25,7 @@ __TOP__
 [search-list]
 [if-item-param dbfile =~ mailinglists]
 <tr><td>Mailing List</td>
-<td><a href="[item-param url]">[item-param title]</a></td>
+<td><a href="[item-param url]">[item-filter encode_entities][item-param title][/item-filter]</a></td>
 <td>[item-param mod_date]</td>
 <td>[item-param filesize]</td>
 <td>[item-param score]</td>
@@ -54,6 +55,7 @@ __TOP__
 [no-match]No matching entries found.[/no-match]
 [more-list]<p>More results: [more]</p>[/more-list]
 [/search-region]
+[tag pragma safe_data]0[/tag]
 [/else]
 [/if]
 
