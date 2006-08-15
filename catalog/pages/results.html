@@ -36,6 +36,13 @@ __TOP__
 <td>[item-param mod_date]</td>
 <td>[item-param filesize]</td>
 <td>[item-param score]</td>
+</tr>[else]
+[if-item-param dbfile =~ rtfm]
+<tr><td>RTFM site</td>
+<td><a href="[item-param url]">[item-param title]</a></td>
+<td>[item-param mod_date]</td>
+<td>[item-param filesize]</td>
+<td>[item-param score]</td>
 </tr>
 [else]
 <tr><td>[item-param area]</td>
@@ -44,6 +51,8 @@ __TOP__
 <td>[item-param filesize]</td>
 <td>[item-param score]</td>
 </tr>
+[/else]
+[/if-item-param]
 [/else]
 [/if-item-param]
 [/else]
