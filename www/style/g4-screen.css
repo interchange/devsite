@@ -94,6 +94,9 @@ input, textarea, select {
 	font-size: 120%;
 }
 
+.noWrap { 
+  white-space: nowrap;
+}
 
 /* ##### Header ##### */
 
