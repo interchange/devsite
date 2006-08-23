@@ -9,6 +9,7 @@ __jon__	jon	mid 2000	Release manager, Red Hat package maintainer, mailing lists 
 __kwalsh__	kwalsh	Jan 2002	User support via irc.icdevgroup.org, mod_interchange Apache module
 __markj__	markj	2003		
 __mheins__	mheins		Interchange founder
+__pajamian__	pajamian	Aug 2006
 __pvinci__	pvinci		
 __racke__	racke	Jun 1999	Interchange team captain, Debian GNU package maintainer, I18N	
 __ramoore__	ramoore		

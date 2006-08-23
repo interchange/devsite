@@ -38,6 +38,7 @@ jonc	Jonathan Clark
 kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
 markj	Mark Johnson
 mheins	Mike Heins
+pajamian	<a href="mailto:peter@pajamian.dhs.org">Peter Ajamian</a>
 pvinci	Paul Vinciguerra
 racke	<a href="mailto:racke@linuxia.de">Stefan Hornburg</a>
 ramoore	Randy Moore
