@@ -43,6 +43,7 @@ pvinci	Paul Vinciguerra
 racke	<a href="mailto:racke@linuxia.de">Stefan Hornburg</a>
 ramoore	Randy Moore
 ton	Ton Verhagen
+thunder	<a href="mailto:ic@3edge.com">Gert van der Spoel</a>
 zeald	David Kelly
 markj	Mark Johnson
 mheins	Mike Heins
