@@ -1,4 +1,31 @@
+<STYLE type="text/css">
+#container {
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+#container .box {
+color: black;
+float: left;
+line-height: 1.5;
+margin: 0.5em;
+text-align: left;
+font-size: 10px;
+height: 280px;
+width: 204px;
+
+}
+
+.box img{
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #c0c0c0;
+}
+
+</STYLE>
+
 __TOP__
+
 
       <div class="rowOfBoxes dividingBorderAbove">
         <div class="twoThirds noBorderOnLeft">
@@ -76,9 +103,23 @@ be listed here, please let us know about it with <a href="#form">the form
 at the bottom of this page</a>.
 </p>
 
-<H3>Cross-Section of Noteworthy Interchange Implementations</H3>
+        </div>
+      </div>
 
-<ul>
+        <div class="oneThird">
+          [include templates/promo]
+        </div>
+
+
+     <div class="rowOfBoxes dividingBorderAbove">
+        <div class="fullwidth noBorderOnLeft">
+
+<table width="100%">
+<tr>
+<td>
+<div id="container">
+
+<H3>Cross-Section of Noteworthy Interchange Implementations</H3>
 [query
 	list=1
 	prefix=loop
@@ -90,8 +131,14 @@ AND rank < 50
 ORDER BY site_name
 	|
 ]
-<li>
-[if-loop-param url]<a href="[loop-param url]">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
+<div class="box">
+[if-loop-param url]<a href="[loop-param url]" target="_blank">[/if-loop-param]
+<img src="hall/[loop-code].jpg" width="202" height="152" border=0>
+[if-loop-param url]</a>[/if-loop-param]
+<br>
+[if-loop-param url]<a href="[loop-param url]" style="font-size: 12;" target="_blank">[/if-loop-param][either][loop-param 
+link_text][or][loop-param 
+site_name][/either][if-loop-param url]</a>[/if-loop-param]
 [loop-calc]
 	return '' unless q{[loop-param company]};
 	if (q{[loop-param company]} eq (q{[loop-param link_text]} || q{[loop-param site_name]})) {
@@ -100,11 +147,12 @@ ORDER BY site_name
 		return q{([loop-param company])};
 	}
 [/loop-calc]
-[if-loop-param developer]-- developed by [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
+[if-loop-param developer]<br>By: [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
 [if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
+</div>
 [/query]
-</ul>
-
+</div>
+</td></tr></table>
 <H3>Other Sites Using Interchange Technology</H3>
 
 <ul>
@@ -188,10 +236,10 @@ running Interchange when we check them. Thanks for your understanding.
         </div>
       </div>
 
-        <div class="oneThird">
-          [include templates/promo]
-        </div>
-      </div>
 
+
+
+
+      </div>
 
 __BOTTOM__
