@@ -13,7 +13,6 @@ Jeff Nappi
 Brent Kelly
 Jochen Wiedmann
 Bob Jordan
-Brev Patterson
 Brian Bullen
 Brian Kosick
 Jurgen Botz
@@ -28,8 +27,6 @@ Christopher Miller
 Larry Leszczynski
 Christopher Thompson
 Marc Austin
-Dan Browning
-Mark Johnson
 Dan Busarow
 Mark Stosberg
 Dan Helfman
@@ -47,16 +44,12 @@ Neil Evans
 Don Grodecki
 Nelson Ferrari
 Paul Jordan
-Paul Vinciguerra
 Ed LaFrance
 Raj Goel
 Ed LaFrance
-Randy Moore
 Frank Bonita
 Ray Desjardins
 Frederic Steinfels
-Ron Phipps
-Greg Hanson
 Shozo Murahashi
 Gunnar Hellekson
 Sonny Cook
@@ -77,4 +70,7 @@ José Mª Revuelto
 Ignacio Lizarán
 Donald Alexander
 Mark Lipscombe
-
+Brian Miller
+Jeff Boes
+Max Cohan
+Dan Collis-Puro

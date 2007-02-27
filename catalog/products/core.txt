@@ -13,6 +13,7 @@ __pajamian__	pajamian	Aug 2006
 __pvinci__	pvinci		
 __racke__	racke	Jun 1999	Interchange team captain, Debian GNU package maintainer, I18N	
 __ramoore__	ramoore		
+__ron__	ron	Feb 2007	
 __thunder__	thunder	Aug 2006
 __ton__	ton	Jun 2001
 __zeald__	zeald	2003	Design etc.
