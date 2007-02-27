@@ -42,6 +42,7 @@ pajamian	<a href="mailto:peter@pajamian.dhs.org">Peter Ajamian</a>
 pvinci	Paul Vinciguerra
 racke	<a href="mailto:racke@linuxia.de">Stefan Hornburg</a>
 ramoore	Randy Moore
+ron	Ron Phipps
 ton	Ton Verhagen
 thunder	<a href="mailto:ic@3edge.com">Gert van der Spoel</a>
 zeald	David Kelly
