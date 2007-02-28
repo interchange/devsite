@@ -51,8 +51,11 @@
 	[page about]About</a> |
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
-		Search (<input type="checkbox" name="search_mailinglists" value="1" CHECKED> include MLs):
-		<input name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go">
+
+	Search:&nbsp;
+	<input name="mv_searchspec" value="[cgi mv_searchspec]">
+	<input type="hidden" name="search_mailinglists" value="1">
+	<input type="submit" value="Go">
 							
 [comment]
 		|
