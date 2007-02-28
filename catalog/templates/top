@@ -23,7 +23,7 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
 -->
 
-    <title>Interchange</title>
+    <title>[either][scratch page_title][or][L]Interchange[/L][/either]</title>
   </head>
 
   <body>
@@ -37,12 +37,7 @@
 	<form action="[process href=Swish]" method="GET">
 
 	<div class="superTopHeader">
-<span class="doNotDisplay">
-Interchange: 
-</span>
-	A Full-Featured Application Server, Electronic Catalog and
-	Database Display System 
-[calc]$Tag->var('MV_PAGE',1) eq 'index' and return 'since 1995!';return[/calc]
+	    [L]Powering web-based applications since 1995[/L]
 	</div>
 	<div class="dividingBorderAbove" style="padding-top: 0.5ex">
 	<span class="doNotDisplay">Navigation:</span>
@@ -57,14 +52,17 @@ Interchange:
 	[page license]License &amp; Copyright</a> | 
 	[page contact]Contact</a> |
 		Search (<input type="checkbox" name="search_mailinglists" value="1" CHECKED> include MLs):
-		<input name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go"> |
+		<input name="mv_searchspec" value="[cgi mv_searchspec]"/> <input type="submit" value="Go">
 							
+[comment]
+		|
 		[if value web_style_plain]
 			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
 		[else]
 			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
 		[/else]
 		[/if]
+[/comment]
 	</form>
      </div>
       </div>
