@@ -118,8 +118,7 @@ input, textarea, select {
 	background-color: #004183;
 	color: white;
 	margin-bottom: 0.1ex;
-	padding: 0.2ex;
-	padding-bottom: 0.1ex;
+	padding: 5px;
 }
 
 .superHeader span {
