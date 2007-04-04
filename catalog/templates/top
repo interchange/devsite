@@ -75,7 +75,11 @@
 					[if !value web_style_plain]
 						[calc]
 						return $Tag->var('MV_PAGE', 1) eq 'index' ?
-							qq{<img src="/style/intro.jpg" alt="Interchange" border="0"/>}
+							qq{
+							<img src="/style/intro.jpg" alt="Interchange" border="0"/>
+							&nbsp;&nbsp;
+							<img src="/style/linuxtag2007.jpg" alt="LinuxTag 2007" border="0"/>
+							}
 							: ''
 						[/calc]
 					[/if]
