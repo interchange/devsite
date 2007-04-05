@@ -77,7 +77,9 @@
 						return $Tag->var('MV_PAGE', 1) eq 'index' ?
 							qq{
 							<img src="/style/intro.jpg" alt="Interchange" border="0"/>
-							<img src="/style/linuxtag2007.jpg" alt="LinuxTag 2007" border="0"/>
+							[page href=news arg=00021]
+							<img src="/style/linuxtag2007.png" alt="LinuxTag 2007" border="0"/>
+							</a>
 							}
 							: ''
 						[/calc]
