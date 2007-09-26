@@ -3,10 +3,10 @@
 <ul>
 <li> <a href="[area docs]">Documentation</a> </li>
 <li> <a href="[area download]">Downloads and Source Code</a> </li>
-<li> <a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/interchange/UPGRADE?content-type=text%2Fplain">Upgrade notes for CVS HEAD, daily snapshots and upcoming releases</a> </li>
+<li> <a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/interchange/UPGRADE?content-type=text%2Fplain">Upgrade notes for CVS development branch, daily snapshots and upcoming releases</a> </li>
 <li> <a href="[area devel/people]">Interchange Developers and Contributors</a> </li>
 <li> <a href="[area releases]">Chronological list of releases</a> </li>
-<li> <a href="[area bts/index]">Bug Tracker</a> (reload page if necessary)</li>
+<li> <a href="http://rt.icdevgroup.org/">Bug Tracker</a> (use guest/guest for anonymous login)</li>
 <li> <a href="[area users/community]">Community Resources</a> (mailing lists etc.)</li>
 <li> <a href="[area support/index]">Professional Support</a> </li>
 </ul>
