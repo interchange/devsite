@@ -1,14 +1,14 @@
 <h1>Users &amp; Developers</h1>
 
 <ul>
-<li> [page docs]Documentation</a> </li>
-<li> [page download]Downloads and Source Code</a> </li>
-<li> [page href=news arg=00013]<strong>Incompatible changes in CVS-HEAD and upcoming 6.0</strong></a>! </li>
-<li> [page devel/people]Interchange Developers and Contributors</a> </li>
-<li> [page releases]Chronological list of releases</a> </li>
-<li> [page bts/index]Bug Tracker</a> (reload page if necessary)</li>
-<li> [page users/community]Community Resources</a> (mailing lists etc.)</li>
-<li> [page support/index]Professional Support</a> </li>
+<li> <a href="[area docs]">Documentation</a> </li>
+<li> <a href="[area download]">Downloads and Source Code</a> </li>
+<li> <a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/interchange/UPGRADE?content-type=text%2Fplain">Upgrade notes for CVS HEAD, daily snapshots and upcoming releases</a> </li>
+<li> <a href="[area devel/people]">Interchange Developers and Contributors</a> </li>
+<li> <a href="[area releases]">Chronological list of releases</a> </li>
+<li> <a href="[area bts/index]">Bug Tracker</a> (reload page if necessary)</li>
+<li> <a href="[area users/community]">Community Resources</a> (mailing lists etc.)</li>
+<li> <a href="[area support/index]">Professional Support</a> </li>
 </ul>
 
 <p class='filler'></p>
