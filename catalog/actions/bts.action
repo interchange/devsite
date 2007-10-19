@@ -1,0 +1,15 @@
+ActionMap bts <<EOF
+sub {
+	my (@args) = split('/', shift);
+
+	if ($args[1] =~ /^(\d)+$/) {
+		$Session->{arg} = $args[1];
+		$CGI->{mv_nextpage} = "$args[0]/flypage";
+	} else {
+		$CGI->{mv_nextpage} = "$args[0]/index";
+	}
+	
+	$CGI->{mv_todo} = 'go';
+	return 1;
+}
+EOF

@@ -1,0 +1,30 @@
+__TOP__
+
+
+      <div class="rowOfBoxes dividingBorderAbove">
+        <div class="twoThirds noBorderOnLeft">
+
+[rt function=display type="[data session arg]"]
+<h1>#[data session arg]: [loop-param Subject]</h1>
+<p>
+Requestor: [loop-param Requestors]<br>
+Status: [loop-param Status]<br>
+Priority: [loop-param Priority]<br>
+Created: [loop-param Created]<br>
+LastUpdated: [loop-param LastUpdated]<br>
+</p>
+[/rt]
+
+[rt function=list type="history" ticket="[data session arg]"]
+<p>By [loop-param Creator] on [loop-param Created]</p>
+<pre>
+[loop-param Content]
+</pre>
+[/rt]
+
+</div>
+<div class="oneThird">
+	[include templates/devel]
+</div>
+
+__BOTTOM__
