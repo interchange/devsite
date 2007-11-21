@@ -5,29 +5,69 @@ __TOP__
 	<h1>Interchange Support</h1>
 
 <p>
-__IC__ has a wide variety of <b>community and commercial support</b> options
-available for users. The [page users/community]Community</a> page
+__IC__ has a wide variety of <strong>community and commercial support</strong> options
+available for users. The [page users/community]Community page</a>
 details the support options available to users from the Interchange
 community, including mailing lists and IRC.
-</p><p>
-
+</p>
+<p>
 <b>Commercial support</b> is available from many companies
 providing professional services.
 </p>
 
 <p>
-[comment]
-<ul>
-	<li> See [page support/commercial]Commercial</a> for a list of
-	__IC__ support companies</li>
-	<li>See [page support/hosting]Hosting</a> for Interchange-enabled
-	hosting arrangements</li>
-</p><p>
-[/comment]
-You can conveniently post commercial __IC__ support, hosting and quote requests
-on our business mailing list
-([filter mailto]interchange-biz@icdevgroup.org[/filter]).
+You can conveniently post commercial Interchange support, hosting and quote requests
+on our <strong>business mailing list</strong> ([filter mailto]interchange-biz@icdevgroup.org[/filter]) or <strong>contact one of the following companies directly</strong>:
 </p>
+
+[query sql=|
+SELECT c.code, c.name, c.address, c.zip, c.city, c.state, c.country, c.phone, c.fax, c.email, c.url, c.contact_name
+FROM companies c
+	[if cgi support_type]
+		,support_companies sc
+		WHERE c.code = sc.company_code 
+		AND sc.support_code ='[cgi support_type]' 
+	[/if]
+ORDER BY c.name
+|
+table=companies
+type=list
+more=1
+ml=10
+]
+	[list]
+		<h2>[sql-param name]</h2>
+		<ul>
+		[query sql=| 
+		SELECT s.code, s.name
+		FROM support_companies c, support_types s
+		WHERE c.support_code = s.code AND c.company_code='[sql-param code]' ORDER BY s.name|
+		table=companies
+		type=list
+		prefix=support]
+		[on-match]
+		<li><strong>Services:</strong>
+		[/on-match]
+		[support-list]
+		[support-param name][if value mv_search_match_count > [support-increment]], [/if]
+		[/support-list]
+		[on-match]
+		</li>
+		[/on-match]
+		[/query]
+			<li><strong> Address: </strong> [sql-param address], [sql-param zip] 
+			[sql-param city],[if-sql-param state] [sql-param state],[/if-sql-param] [data table="country" key="[sql-param country]" field="name"]</li>
+			<li><strong> Phone: </strong> [sql-param phone]</li>
+			[if-sql-param fax]<li><strong> Fax: </strong> [sql-param fax]</li>[/if-sql-param]
+			<li><strong> Email: </strong> [sql-param email]</li>
+			<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>
+			[if sql-param contact_name]<li><strong> Contact person: </strong>[sql-param contact_name]</li>[/if]
+		</ul>
+	[/list]
+	[more-list]
+	[more]
+	[/more-list]
+[/query]
 
 </div>
 </div>
