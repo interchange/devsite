@@ -1,5 +1,6 @@
 code	company_code	support_code
 1	perusion	consulting
+20	spinlock	hosting
 4	linuxia	consulting
 5	linuxia	development
 6	linuxia	hosting
@@ -16,5 +17,7 @@ code	company_code	support_code
 17	cursor	consulting
 18	cursor	development
 19	cursor	hosting
-20	spinlock	hosting
 21	endpoint	hosting
+22	alamerce	consulting
+23	alamerce	hosting
+24	alamerce	hosting
