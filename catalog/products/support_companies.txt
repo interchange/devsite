@@ -11,3 +11,5 @@ code	company_code	support_code
 12	3edge	development
 13	endpoint	consulting
 14	endpoint	development
+15	spinlock	development
+16	spinlock	consulting
