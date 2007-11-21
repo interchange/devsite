@@ -57,7 +57,7 @@ ml=10
 		[/query]
 			<li><strong> Address: </strong> [sql-param address], [sql-param zip] 
 			[sql-param city],[if-sql-param state] [sql-param state],[/if-sql-param] [data table="country" key="[sql-param country]" field="name"]</li>
-			<li><strong> Phone: </strong> [sql-param phone]</li>
+			[if-sql-param phone]<li><strong> Phone: </strong> [sql-param phone]</li>[/if-sql-param]
 			[if-sql-param fax]<li><strong> Fax: </strong> [sql-param fax]</li>[/if-sql-param]
 			<li><strong> Email: </strong> [sql-param email]</li>
 			<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>
