@@ -13,3 +13,6 @@ code	company_code	support_code
 14	endpoint	development
 15	spinlock	development
 16	spinlock	consulting
+17	cursor	consulting
+18	cursor	development
+19	cursor	hosting
