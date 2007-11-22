@@ -1,6 +1,6 @@
 code	name	address	zip	city	state	country	phone	fax	email	url	contact_name
 perusion	Perusion	1506 Gilbert Avenue	83814	Coeur d'Alene	Idaho	US	+1-800-949-1889		sales@perusion.com	http://www.perusion.com/	Mike Heins, Greg Hanson
-endpoint	End Point Corporation	920 Broadway, Suite 701	10010	New York	New York	US	+1-888-351-3239	+1-212-929-6927	sales@endpoint.com	http://www.endpoint.com/	Rick Peltzman
+endpoint	End Point Corporation	920 Broadway, Suite 701	10010	New York	New York	US	+1-888-351-3239 or +1-212-929-6923		sales@endpoint.com	http://www.endpoint.com/	Rick Peltzman
 3edge	3Edge Technologies	Asomata 101	59100	Veria		GR			ic@3edge.com	http://www.3edge.com/	Gert van der Spoel
 tenalt	Tenalt d.o.o.	Dalmatinova ulica 2	1000	Ljubljana		SI	+386-590-13-083		info@tenalt.com	http://www.tenalt.com/	Jure Kodzoman
 linuxia	LinuXia Systems	Fillerheide 4	30900	Wedemark		DE	+49-511-97820019	+49-511-97820011	biz@linuxia.de	http://www.linuxia.de/	Stefan Hornburg (Racke)
