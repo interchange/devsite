@@ -23,8 +23,38 @@ sub {
 	}
 
 	# derive search string from URL or from parameter
-	if ($args[1]) {
-		$CGI->{mv_searchspec} = $args[1];
+	shift(@args);
+
+	if (@args > 1) {
+		my ($rev, $norm);
+
+		if ($args[0] eq $CGI->{sort_before}) {
+			$norm = 'r';
+		} else {
+			$rev = 'r';
+		}
+
+		$Tag->tmp('sort_before', $args[0]);
+
+		if ($args[0] eq 'ByDate') {
+			$CGI->{mv_sort_field} = 'mod_date';
+			$CGI->{mv_sort_option} = "${rev}n";
+		} elsif ($args[0] eq 'ByTitle') {
+			$CGI->{mv_sort_field} = 'title';
+			$CGI->{mv_sort_option} = "${norm}f";
+		} elsif ($args[0] eq 'ByScore') {
+			$CGI->{mv_sort_field} = 'score';
+			$CGI->{mv_sort_option} = "${rev}n";
+		} elsif ($args[0] eq 'BySize') {
+			$CGI->{mv_sort_field} = 'size';
+			$CGI->{mv_sort_option} = "${rev}n";
+		}
+
+		shift(@args);
+	}
+
+	if ($args[0]) {
+		$CGI->{mv_searchspec} = "$args[0]";
 	}
 
 	# results page

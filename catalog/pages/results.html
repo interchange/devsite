@@ -17,10 +17,11 @@ __TOP__
 [on-match]
 <table width="100%">
 <tr><th align="left">Area</th>
-<th align="left">Title</th>
-<th align="left">Date</th>
-<th align="left">Size</th>
-<th align="left">Score</th></tr>
+[loop acclist=1 list="title=Title,date=Date,size=Size,score=Score"]
+<th align="left"><a href="[area href="Swish/By[loop-filter ucfirst][loop-code][/loop-filter]/[scratch searchspec]" form="search_mailinglists=[cgi search_mailinglists]
+sort_before=[scratch sort_before]"]">[loop-param label]</a></th>
+[/loop]
+</tr>
 [/on-match]
 [search-list]
 [if-item-param dbfile =~ mailinglists]
