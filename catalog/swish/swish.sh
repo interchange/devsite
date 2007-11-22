@@ -1,4 +1,5 @@
-#!/bin/sh
-cd ~icnew/catalogs/dev/swish
-/usr/local/bin/swish-e -c swish-e.conf > /dev/null 2>/dev/null
-#/usr/local/bin/swish-e icusers-swish.conf > /dev/null 2>/dev/null
+#! /bin/sh
+if [ -d "$1" ]; then
+	cd "$1"
+fi
+swish-e -c swish-e.conf 
