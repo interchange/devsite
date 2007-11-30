@@ -28,7 +28,6 @@ STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]
 STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
 STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
 XMLDOCS_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/xmldocs/">xmldocs</a>
-brevp	Brev Patterson
 danb	Dan Browning
 docelic	<a href="mailto:docelic@mail.inet.hr">Davor Ocelic</a>
 edl	Ed LaFrance

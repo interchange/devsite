@@ -1,5 +1,4 @@
 name	username	since	task
-__brevp__	brevp	Mar 2001	
 __danb__	danb	Jun 2001	Graphics, Design, etc.
 __docelic__	docelic	Jun 2004	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
 __ethan__	ethan	2005
