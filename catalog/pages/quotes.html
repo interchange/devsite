@@ -5,7 +5,7 @@
 [query sql="select * from quotes order by company" list=1]
 <p>
 <div class="quote">
-<i>"[sql-param quote]"</i>,<br>
+<i>"[sql-param quote]"</i><br>
 [sql-param name], [if-sql-param company_pos][sql-param company_pos] at [/if-sql-param][if-sql-param company_url]<a href="[sql-param company_url]">[sql-param company]</a>[else][sql-param company][/else][/if-sql-param].
 </div>
 </p>
