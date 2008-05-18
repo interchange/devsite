@@ -1,0 +1,89 @@
+[set ui_class]HOF[/set]
+[tmp page_title][L]Hall Of Fame - Pending Entries[/L][/tmp]
+[set icon_name]icon_stats.gif[/set]
+@_UI_STD_HEAD_@
+
+<!-- ----- BEGIN REAL STUFF ----- -->
+
+[output name=""]
+
+<h1>Pending Entries</h1>
+
+<table width="100%" border=0 cellpadding=0 cellspacing=1 class=rseparator>
+	<tr class=rhead>
+		<th ALIGN=LEFT class=rhead>&nbsp;Code</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Update</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Name</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Link</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Developer</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Commentary</th>
+		<th ALIGN=LEFT class=rhead>&nbsp;Add Date</th>
+	</tr>
+
+[query sql="SELECT code, site_name, url, link_text, company, developer, 
+developer_link, commentary, add_date FROM hallfame WHERE active = 'R' 
+ORDER BY add_date ASC, site_name"  type=list]
+
+<FORM ACTION="[process-target]" METHOD=POST NAME="hof[sql-param code]">
+<INPUT TYPE=hidden name=mv_session_id VALUE="[data session id]">
+<INPUT TYPE=hidden NAME=mv_todo  VALUE=return>
+<INPUT TYPE=hidden NAME=mv_nextpage  VALUE=admin/hall_pending>
+<INPUT TYPE=hidden NAME=mv_successpage  VALUE=admin/hall_pending>
+
+	<tr class=[sql-alternate 2]rowalt[else]rownorm[/else][/sql-alternate]>
+		<td align=left><a href="[area href='admin/flex_editor' form='item_id=[sql-param code]
+									mv_data_table=hallfame
+ui_return_to=admin/hall_pending']">[sql-param code]</a></td>
+		<td align=left>
+[button
+        text="Normal [sql-param code]"
+        hidetext=1
+        form="hof[sql-param code]"
+]
+        [query sql="UPDATE hallfame SET active='Y', rank=50 WHERE code='[sql-param code]'" type=list]
+        [/query]
+[/button]
+<br>
+[button
+        text="Featured [sql-param code]"
+        hidetext=1
+        form="hof[sql-param code]"
+]
+        [query sql="UPDATE hallfame SET active='Y', rank=20 WHERE code='[sql-param code]'" type=list]
+        [/query]
+[/button]
+<br>
+[button
+        text="Inactive [sql-param code]"
+        hidetext=1
+        form="hof[sql-param code]"
+]
+        [query sql="UPDATE hallfame SET active='N' WHERE code='[sql-param code]'" type=list]
+        [/query]
+[/button]
+<br>
+[button
+        text="Delete [sql-param code]"
+        hidetext=1
+        form="hof[sql-param code]"
+]
+        [query sql="DELETE FROM hallfame WHERE code='[sql-param code]'" type=list]
+        [/query]
+[/button]
+		</td>
+
+		<td align=left>[sql-param site_name]</td>
+		<td align=left><a href="[sql-param url]" target="_blank">[sql-param url]</a></td>
+		<td align=left>[sql-param developer]</td>
+		<td align=left>[sql-param commentary]</td>
+		<td align=left>[sql-param add_date]</td>
+	</tr>
+</form>
+[/query]
+
+</table>
+
+[output name=""]
+<!-- ----- END REAL STUFF ----- -->
+
+@_UI_STD_FOOTER_@
