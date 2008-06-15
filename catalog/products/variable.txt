@@ -35,6 +35,7 @@ edl	Ed LaFrance
 greg	Greg Hanson
 jon	Jon Jensen
 jonc	Jonathan Clark
+jure	<a href="mailto:jure@tenalt.com">Jure Kodzoman</a>
 kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
 markj	Mark Johnson
 mheins	Mike Heins
