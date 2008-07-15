@@ -4,7 +4,8 @@ sub filter_url {
 	my ($uri) = @_;
 
 	$path = $uri->path;
-	if ($path =~ m%http://(.*?)/+%) {
+
+	if ($path =~ m%^/(.*?)//%) {
 		$uri->path($path);
 		warn "Path with double-slashes found: $path\n";
 		return;
@@ -15,11 +16,30 @@ sub filter_url {
 
 sub filter {
 	my ($uri) = @_;
+	my ($path, @frags);
+	
+	$path = $uri->path;
 
-	if ($uri->path =~ m%/index\.html$%) {
+	if ($path =~ m%/index\.html$%) {
 		return;
 	}
 
+	if ($path !~ m%[^/]+\.html$%) {
+		return;
+	}
+
+	if ($path =~ m%/cgi-bin/offline/%) {
+		return;
+	}
+
+	# accept only paths with at least two directories
+	@frags = split(/\//, $path);
+
+	if (@frags <= 2) {
+		warn "Ignoring document $path (", scalar(@frags), ")\n";
+		return;
+	}
+	
 	return 1;
 }
 
