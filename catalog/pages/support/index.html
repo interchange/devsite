@@ -63,7 +63,7 @@ ml=10
 			[if-sql-param phone]<li><strong> Phone: </strong> [sql-param phone]</li>[/if-sql-param]
 			[if-sql-param fax]<li><strong> Fax: </strong> [sql-param fax]</li>[/if-sql-param]
 			<li><strong> Email: </strong> [sql-param email]</li>
-			<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>
+			[if-sql-param url]<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>[/if-sql-param]
 			[if sql-param contact_name]<li><strong> Contact person: </strong>[sql-param contact_name]</li>[/if]
 		</ul>
 	[/list]

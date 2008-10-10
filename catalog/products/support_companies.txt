@@ -17,6 +17,5 @@ code	company_code	support_code
 21	endpoint	hosting
 22	alamerce	consulting
 23	alamerce	hosting
-24	alamerce	hosting
 25	pajamian	consulting
 26	pajamian	development
