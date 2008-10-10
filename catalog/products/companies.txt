@@ -5,5 +5,5 @@ endpoint	End Point Corporation	920 Broadway, Suite 701	10010	New York	New York	U
 tenalt	Tenalt d.o.o.	Dalmatinova ulica 2	1000	Ljubljana		SI	+386-590-13-083		info@tenalt.com	http://www.tenalt.com/	Jure Kodzoman
 linuxia	LinuXia Systems	Fillerheide 4	30900	Wedemark		DE	+49-511-97820019	+49-511-97820011	biz@linuxia.de	http://www.linuxia.de/	Stefan Hornburg (Racke)
 spinlock	Spinlock Solutions	Antona Mihica 6	51410	Opatija		HR	+385-51-680-650	+385-51-711-200	docelic@spinlocksolutions.com	http://www.spinlocksolutions.com/	Davor Ocelic
-cursor	Cursor Software			Godstone	Surrey	UK	+44-845-004-3003		cursor@cursor.biz	http://www.cursor.biz/	Kevin Walsh
 alamerce	Alamerce Nederland	Postbus 1170	5602BD	Eindhoven		NL	+31-40-2374381		tverhagen@alamerce.nl	http://www.alamerce.nl/	Ton Verhagen
+pajamian	Peter Ajamian			Tauranga		NZ	+64-7-5714-254		peter@pajamian.dhs.org		Peter Ajamian

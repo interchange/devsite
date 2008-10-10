@@ -14,10 +14,9 @@ code	company_code	support_code
 14	endpoint	development
 15	spinlock	development
 16	spinlock	consulting
-17	cursor	consulting
-18	cursor	development
-19	cursor	hosting
 21	endpoint	hosting
 22	alamerce	consulting
 23	alamerce	hosting
 24	alamerce	hosting
+25	pajamian	consulting
+26	pajamian	development
