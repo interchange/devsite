@@ -13,7 +13,7 @@
 </ul>
 
 <p>
-<b>What Interchange users are saying:</b>
+<b>What Interchange users are saying:</b><br><br>
 </p>
 
 [query sql="select * from quotes" random=1 list=1]
