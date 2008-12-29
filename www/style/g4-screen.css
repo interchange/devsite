@@ -391,3 +391,7 @@ a.results {
   color: rgb(61,92,122);
   text-decoration: none;
 }
+
+.quote {
+  text-align: justify;
+}
