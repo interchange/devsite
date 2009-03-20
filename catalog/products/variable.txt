@@ -12,7 +12,7 @@ DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
 DOCBOOK	<a href="http://www.docbook.org">DocBook</a>
 FREENODE	<a href="http://www.freenode.net">FreeNode</a>
 GNU	<a href="http://www.gnu.org/">GNU</a>
-IC	Interchange
+IC	<a href="http://www.icdevgroup.org/">Interchange</a>
 ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
 IMAGE_DIR	/style
 DEMO	<a href="[area demo]">Online DEMO</a>
