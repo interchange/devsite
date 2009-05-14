@@ -2,5 +2,6 @@ etc
 logs
 session
 tmp
+var
 *.log
 *.structure
