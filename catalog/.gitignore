@@ -3,4 +3,5 @@ logs
 session
 tmp
 *.log
+*.log.*
 *.structure
