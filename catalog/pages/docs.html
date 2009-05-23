@@ -4,60 +4,34 @@ __TOP__
         <div class="twoThirds noBorderOnLeft">
 	<h1>Interchange documentation</h1>
 
-<p>
-</p><p>
-
 <ul>
-<li><a href="/docs/">ONLINE version</a></li>
-<li><a href="ftp://ftp.icdevgroup.org/pub/interchange/docs/interchange-doc-latest.tar.gz">OFFLINE version (tarball)</a></li>
-<li><a href="http://interchange.rtfm.info/">Interchange RTFM (Kevin Walsh's documentation)</a>.
-<li><a href="/interchange-doc-5.2.0/">Online version (OLD documentation)</a> (Until everything is updated and ported to the new format).
+<li>Current primary documentation <a href="/docs/">browsable online</a> or <a href="http://ftp.icdevgroup.org/interchange/docs/interchange-doc-latest.tar.gz">downloadable tarball</a></li>
+<li><a href="http://interchange.rtfm.info/">Interchange RTFM site</a> by Kevin Walsh</li>
+<li><a href="/interchange-doc-5.2.0/">Old documentation</a> for historical reference</li>
 </ul>
-</p>
 
 <h1>Building documentation from source</h1>
 <p>
-You can browse the __XMLDOCS_CVSWEB__ documentation sources online using
-__CVSWEB__. To build the documentation yourself, you need to checkout your
-own local copy, as follows:
+You can browse the documentation source repository using <a href="__GITWEB_XMLDOCS_URL__">our Gitweb service</a> or at <a href="__GITHUB_XMLDOCS_URL__">our GitHub repository</a>. To build the documentation yourself, you need to clone your own local copy, as follows:
 </p>
 <pre>
-cvs -z6 -d :pserver:cvs@cvs.icdevgroup.org:/var/cvs checkout -P xmldocs
+git clone git://git.icdevgroup.org/xmldocs
 </pre>
 <p>
 You should then read the
-<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/xmldocs/README?rev=HEAD">README</a>
+<a href="http://git.icdevgroup.org/?p=xmldocs.git;a=blob;f=README;hb=HEAD">README</a>
 file for build instructions and a list of prerequisites.
 </p>
 
 <h1>Helping with the documentation</h1>
 <p>
 There are many ways how you can help with the documentation.
-[comment]
-The simplest one
-includes browsing our on-line documentation and submitting feedback forms
-found at the bottom of the pages. Using feedback forms, you can notify us
-of smaller errors, request clarification, or you can express your
-satisfaction with the page content.<br/><br/>
-As you might know, we're currently in the process of wading through 
-the <a href="http://www.icdevgroup.org/mailman/listinfo/interchange-users">interchange-users</a> mailing list archives in search of useful information
-that never made it to the documentation. This requires an enormous amount 
-of work, due to large number of user posts and spam that added up over the
-years. We want
-to bring attention of the users' community to the problem.
-By registering on our site, you obtain access to a conveniently sorted lists
-of mailing list posts which allow you to quickly read and rate individual posts.
-By doing a good work (eliminating spam and "dry" messages, or bringing our
-attention to useful posts) you will not only help us a great deal, but also 
-earn yourself a recognition and public acknowledgement with __ICDEVGROUP__.
-[/comment]
 </p><p>
-You can checkout a local copy from our CVS server, as shown above,
-and work on providing us with <tt>diff</tt> patches.
+You can fork our <a href="__GITWEB_XMLDOCS_URL__">xmldocs project on GitHub</a> and publish changes in your own fork.
 For an introduction to our build system and ways to write documentation, see the
-<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/xmldocs/README?rev=HEAD">README</a>
+<a href="http://git.icdevgroup.org/?p=xmldocs.git;a=blob;f=README;hb=HEAD">README</a>
 and
-<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/~checkout~/xmldocs/WRITING?rev=HEAD">WRITING</a>
+<a href="http://git.icdevgroup.org/?p=xmldocs.git;a=blob;f=WRITING;hb=HEAD">WRITING</a>
 files.
 To get more deeply involved in __DOCBOOK__ (DocBook XML in particular), see
 __DOCBOOK__ and <a href="http://www.sagehill.net">Sagehill.net</a>.
