@@ -19,9 +19,9 @@
     [/if]
 
 		<link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
-<!--
+[comment]
 		<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
--->
+[/comment]
 
     <title>[either][scratch page_title][or][L]Interchange[/L][/either]</title>
   </head>
@@ -43,13 +43,11 @@
 	<span class="doNotDisplay">Navigation:</span>
 	[form-session-id]
 	[page index]Home</a> |
-	[page news]News</a> | 
 	[page download]Download</a> | 
-	[page http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/]CVS</a> | 
+	<a href="__GITWEB_INTERCHANGE_URL__">Gitweb</a> | 
+	<a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> | 
 	[page docs]Docs</a> | 
-	<!-- Hall of Fame | -->
-	[page about]About</a> |
-	[page license]License &amp; Copyright</a> | 
+	[page hall]Active sites</a> |
 	[page contact]Contact</a> |
 
 	Search:&nbsp;
