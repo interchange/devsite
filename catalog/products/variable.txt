@@ -5,30 +5,31 @@ PREVIOUS_DEVEL_SERIES	5.5
 DEVEL_SERIES	5.7
 DEVEL	5.7.1
 CGI_URL	/i/dev
-CVSWEB	<a href="http://www.freebsd.org/projects/cvsweb.html">CVSWeb</a>
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
-DEVEL_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/">development</a>
 DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
-DOCBOOK	<a href="http://www.docbook.org">DocBook</a>
-FREENODE	<a href="http://www.freenode.net">FreeNode</a>
+DOCBOOK	<a href="http://www.docbook.org/">DocBook</a>
+FREENODE	<a href="http://www.freenode.net/">FreeNode</a>
+GITWEB_INDEX_URL	http://git.icdevgroup.org/
+GITHUB_INDEX_URL	http://github.com/interchange/
+GITWEB_INTERCHANGE_URL	http://git.icdevgroup.org/?p=interchange.git
+GITHUB_INTERCHANGE_URL	http://github.com/interchange/interchange/tree/master
+GITWEB_XMLDOCS_URL	http://git.icdevgroup.org/?p=xmldocs.git
+GITHUB_XMLDOCS_URL	http://github.com/interchange/xmldocs/tree/master
 GNU	<a href="http://www.gnu.org/">GNU</a>
 IC	Interchange
 ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
 IMAGE_DIR	/style
-DEMO	<a href="[area demo]">Online DEMO</a>
+DEMO	<a href="[area demo]">Online demo</a>
 DEMO1	<a href="http://demo.icdevgroup.org/demo1" target="_blank">demo</a> (will open a new window)
 DEMO4	<a href="http://demo.icdevgroup.org/i/demo4" target="_blank">demo</a> (will open a new window)
-NIGHTLY_FTP	<a href="ftp://ftp.icdevgroup.org/pub/interchange/nightly_build/">nightly build</a>
-NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly build</a>
+NIGHTLY_FTP	<a href="ftp://ftp.icdevgroup.org/pub/interchange/nightly_build/">nightly builds</a>
+NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly builds</a>
 PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
 SECURE_SERVER	https://www.icdevgroup.org/
 SERVER_NAME	www.icdevgroup.org
-STABLE_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/interchange/?only_with_tag=REL_[perl](my $a="$::Variable->{STABLE}")=~s/\./\_/g; $a[/perl]">release</a>
-STABLE_CVS_SERIES	[perl](my $a="$::Variable->{STABLE}")=~s/(\d+\.\d+).*/$1/;$a=~s/\./_/g; $a[/perl]
 STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
 STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
 STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
-XMLDOCS_CVSWEB	<a href="http://www.icdevgroup.org/cgi-bin/cvsweb/xmldocs/">xmldocs</a>
 danb	Daniel Browning
 docelic	<a href="mailto:docelic@mail.inet.hr">Davor Ocelic</a>
 edl	Ed LaFrance

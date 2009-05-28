@@ -4,4 +4,5 @@ session
 tmp
 var
 *.log
+*.log.*
 *.structure
