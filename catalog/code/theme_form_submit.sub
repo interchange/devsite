@@ -1,0 +1,18 @@
+Sub theme_form_submit <<EOS
+sub {
+	my ($series, $part, $buttons) = @_;
+	my $submit;
+
+	if (@$buttons) {
+		for (@$buttons) {
+			$submit .= qq{<input type="submit" name="$_->{name}" value="$_->{label}">
+};
+		}
+	}
+	else {
+		$submit = q{<input type="submit" name="submit" value="OK">};
+	}
+
+	return $submit;
+}
+EOS

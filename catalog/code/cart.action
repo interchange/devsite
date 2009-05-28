@@ -1,0 +1,21 @@
+ActionMap cart <<EOA
+sub {
+	# always update values and set targetpage first
+	$Tag->update('values');
+
+	$CGI->{mv_nextpage} = 'cart';
+
+	# remove function?
+	for (my $i = 0; $i < @$Items; $i++) {
+		if ($CGI->{"zeroquantity$i"}) {
+			$CGI->{"quantity$i"} = 0;
+			$Tag->update('quantity');
+			return 1;
+		}	    
+	}
+
+	# update quantities in the cart
+	$Tag->update('quantity');
+	return 1;
+}
+EOA

@@ -1,0 +1,32 @@
+<title>__TITLE__</title>
+<style type="text/css">
+@import "/style/content.css";
+</style>
+<SCRIPT type="text/javascript" src="/js/slideshow.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+SLIDES = new slideshow("SLIDES");
+
+s = new slide();
+s.src =  "/style/case1.jpg";
+s.text = "<p class='quote'>\"We built a $100M+ company using Interchange.\"</p><p class='name'>Dave Jenkins, CTO, 2005-2007 at Backcountry.com</p>";
+SLIDES.add_slide(s);
+s.filter = 'progid:DXImageTransform.Microsoft.Fade()';
+
+
+s = new slide();
+s.src =  "/style/case2.jpg";
+s.text = "<p class='quote'>\"There is nothing that cannot be done with Interchange.\"</p><p class='name'>Mark Friga, Jr., President at FrozenCPU.com</p>";
+SLIDES.add_slide(s);
+SLIDES.timeout=4000;
+s.filter = 'progid:DXImageTransform.Microsoft.Fade()';
+
+s = new slide();
+s.src =  "/style/case3.jpg";
+s.text = "<p class='quote'>\"Interchange is a truly great technology.\"</p><p class='name'>Luke Lozier, Co-Founder of Bibliopolis LLC. </p>";
+SLIDES.add_slide(s);
+SLIDES.timeout=4000;
+s.filter = 'progid:DXImageTransform.Microsoft.Fade()';
+
+//-->
+</SCRIPT>

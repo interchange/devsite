@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+{HTMLHEAD}
+</head>
+<body onLoad="SLIDES.update()">
+<div id="header">
+{LOGO}
+<div id="nav">
+<div class="menu">
+<ul>
+	<li class="selected"><a href="index.html"> Home </a></li>
+	<li><a href="storitve.html"> Download </a></li>
+	<li><a href="kontakt.html"> Case Studies </a></li>
+	<li><a href="kontakt.html"> Support </a></li>
+</ul>
+</div>
+</div>
+<div id="introbox">
+<div id="casestudy">
+<div style="float:left;">
+<IMG name="slideimg" src="case1.jpg" alt="Slideshow image"></A>
+</div>
+<DIV ID="slidetext">
+</DIV>
+<SCRIPT type="text/javascript">
+<!--
+if (document.images) {
+  SLIDES.image = document.images.slideimg;
+  SLIDES.textid = "slidetext";
+  SLIDES.update();
+  SLIDES.play();
+
+// Create a function to ramp up the image opacity in Mozilla
+var fadein_opacity = 0.04;
+var fadein_img = SLIDES.image;
+function fadein(opacity) {
+  if (typeof opacity != 'undefined') { fadein_opacity = opacity; }
+  if (fadein_opacity < 0.99 && fadein_img && fadein_img.style &&
+      typeof fadein_img.style.MozOpacity != 'undefined') {
+
+    fadein_opacity += .05;
+    fadein_img.style.MozOpacity = fadein_opacity;
+    setTimeout("fadein()", 50);
+  }
+}
+
+// Tell the slideshow to call our function whenever the slide is changed
+SLIDES.post_update_hook = function() { fadein(0.04); }
+
+}
+//-->
+</SCRIPT>
+</div>
+{BODY}
+</body>
+</html>

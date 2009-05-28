@@ -1,0 +1,428 @@
+
+/* CONTENT PAGE HEADER DEFINITION */
+BODY{
+	/*font-family: 'Trebuchet MS', trebuchet, sans-serif;*/
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4c4c4c;
+	font-size: 12px;
+	font-style: normal;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background: url(header-back-front.gif) top repeat-x; 
+	text-align: justify;
+}
+
+a {
+	color: Black;
+	border: 0;
+}
+
+img {
+	border: 0;
+}
+
+a:hover {
+	color: Black;
+	text-decoration: none;
+}
+
+
+h1 { font-size: 250%; }
+h2 { font-size: 200%; }
+h3 { font-size: 150%; }
+h4 { font-size: 130%; }
+
+h1, h2, h3, h4{
+	color:#4a000f;
+}
+
+h1, h2, h3, h4, p{
+	text-align:left;
+	margin: 0 0 5px 0;
+	font-weight: normal;
+}
+
+p{
+	padding-bottom: 6px;
+	padding-top: 3px;
+	
+}
+
+tr,td {
+  border-bottom: 1px dotted #595241;
+  vertical-align: top;
+}
+
+#logo{
+	width: 196px;
+	height: 88px;
+	float: left;
+	padding: 0;
+	margin: 18px; 
+}
+
+#header{
+	width: 900px;
+	height: 420px;
+	position: relative;
+	margin-right: auto;
+	background:url("home-back.jpg") no-repeat right top;
+	margin-left: auto;
+	padding: 0;
+}
+
+#casestudy {
+	font-size: 36px;
+	height: 32px;
+	color: #f2ebc7;
+	float: right;
+}
+
+#nav {
+	float: right;
+	margin:0;
+	width:650px;
+	position: relative;
+	vertical-align: bottom;
+	padding: 0;
+	margin: 0;
+	}
+	  
+#nav ul {
+	float: right;
+	position: relative;
+	height: 25px;
+	margin: 0;
+	padding: 4px 24px 0 50px;
+	list-style:none;
+	}
+	  
+#nav li {
+	float:left;
+	background:url("menu_right.gif") no-repeat right top;
+	margin:0 0 0 0px;
+	padding:0;
+	width: 120px;
+	background-color: transparent;
+	text-align: center;
+	}
+	
+#nav a {
+	margin:0;
+	height: 26px;
+	display:block;
+	left:-14px;
+	margin-right:1px;
+	background:url("menu_left.gif") no-repeat left top;
+	padding: 7px 5px 3px 12px;
+	text-decoration:none;
+	color:#f07822;
+	font-size: 16px;
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	}
+	  
+#nav > ul a {width:auto;}
+    
+/* Commented Backslash Hack hides rule from IE5 \*/
+#nav a {float:none;}
+/* End IE5 */
+
+#nav a:hover, #nav .selected a{
+	color:#353c42;
+	}
+	
+/* doesn't work in IE5.x or IE6 */
+#nav li:hover, 
+#nav li:hover a, #nav .selected a, #nav .selected {
+	background-position:100% -42px;
+	color:#353c42;
+	}
+
+#nav li:hover a, #nav .selected a {
+	background-position:0 -42px;
+	}
+
+.mainContent {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#casestudy{
+	margin-right: 68px;
+	margin-top: 59px;
+	z-index: 0;
+  width: 428px;
+  height: 278px;
+  position: relative;
+
+}
+
+img {
+  z-index: 1;
+}
+#casestudy #slidetext {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 2px 5px;
+  color: #353c42;
+  font-size: 0.8em;
+  height: 120px;
+}
+
+#casestudy #slidetext .name{
+	font-size: 18px;
+	padding-bottom: 0;
+	margin: 0;
+	color: #706D51;
+}
+
+#casestudy #slidetext .quote{
+	font-size: 26px;
+	padding-top: 4px;
+}
+
+#header #intro h3{
+	   font-size: 22px;
+		font-weight: bold;
+		color: white;
+}
+
+#header #intro {
+   font-size: 16px;
+	color: white;
+	height: 198px;
+	width: 300px;
+	padding-left: 25px;
+	text-align: left;
+	float: left;
+}
+
+/* ##### Footer ##### */
+
+#footer {
+	background:url("footer.jpg") repeat-x left top;
+	height: 280px;
+	color: #fff;
+	text-align: center;
+	background-color: transparent;
+	padding: 20px 10px;
+	clear: left;
+	
+}
+
+#footer a {
+	color: White;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+.greyBox{
+	background-color: #4a000f;
+	color: white;
+	font-size: 12px;
+	padding: 8px;
+	margin-top: 15px;
+	margin-left: 12px;
+	margin-right: 30px;
+}
+
+.greyBox:hover{
+	background-color: #464646;
+}
+
+.greyBox h4{
+		font-size: 16px;
+		color: white;
+}
+
+.greyBox h4 a{
+		color: white;
+		text-decoration: underline;
+}
+.greyBox a{
+		color: white;
+		text-decoration: none;
+}
+
+
+.oneThirdGrad {
+	padding-top: 15px;
+	margin: 10px;
+	background:url("box-grad.jpg") repeat-x left top;
+   padding: 0 1.9%;
+	width: 243px;
+	float: left;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.news {
+	background:url("right_side.gif") repeat-x left top;
+}
+
+.oneThirdGrad ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.oneThirdGrad li{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-top: 1px dotted #C2C2C2;
+	text-align: left;
+}
+
+.oneThirdGrad h3{
+   font-size: 26px;
+	margin-top: 10px;
+}
+
+.oneThirdGrad .intro{
+	padding: 0;
+	font-size: 18px;
+}
+
+.oneThirdGrad .cena, .oneThirdGrad .cena a{
+	color: #710019;
+	font-size: larger;
+	font-weight: bolder;
+}
+
+#banner{
+	text-align: center;
+}
+
+#footer ul {
+	list-style: none;
+	padding-left: 14px;
+}
+
+#footer li, .uvod_storitve li {
+	margin-top: 5px;
+}
+
+#footer .phone, .uvod_storitve .phone {
+	font-size: 28px;
+}
+
+#footer .phone a{
+	text-decoration: none;
+}
+
+#footer h2{
+	color: #5eb1c2
+}
+/*
+
+This part is completely reusable
+
+*/
+
+.rowOfBoxes {
+	clear: both;
+}
+
+.quarter, .oneThird, .half, .twoThirds, .fullWidth {
+  margin: 1em 0;
+  float: left;
+  /*border-left: 1px solid rgb(204,204,204);*/
+}
+
+.quarter {
+  width: 21%;
+  padding: 0 1.9%;
+}
+
+.oneThird {
+  width: 28%;
+  padding: 0 1.9%;
+  text-align: left;
+}
+
+.half {
+  text-align: justify;
+  width: 46%;
+  padding: 0 1.9%;
+}
+
+.twoThirds {
+  text-align: justify;
+  width: 63%;
+  padding: 0 1.9%;
+}
+
+.fullWidth {
+  text-align: justify;
+  width: 96%;
+  padding: 0 1.2em;
+  border-left: none;
+}
+
+.filler {  /* use with an empty <p> element to add padding to the end of a text box */
+  border: 1px solid white;
+}
+ 
+.noBorderOnLeft {
+  border-left: none;
+}
+
+.dividingBorderAbove {
+  border-top: 1px dotted #595241;
+}
+
+.storitve{
+	padding-top: 20px;
+	padding-left: 24px;
+	width: 245px;
+	height: 360px;
+	background-image: url(box_back.gif);
+}
+
+.storitve li{
+	border-bottom: 1px dotted #7D7D7D;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0px;
+	margin-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.storitve ul{
+	margin: 0;
+	padding-left: 0px;
+	padding-bottom: 6px;
+}
+
+.storitve_dodatne .cena{
+	color: #710019;
+	margin-bottom: 20px;
+}
+
+.storitve_dodatne img{
+ float: left;
+ margin-right: 3px;
+ margin-bottom: 30px;
+}
+
+.uvod_storitve {
+	font-size: larger;
+}
+
+.uvod_storitve ul{
+	list-style-type: none;
+}
+
+.uvod_storitve .intro {
+	font-size: 22px;
+	color: #2C7380;
+}

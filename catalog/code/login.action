@@ -1,0 +1,38 @@
+ActionMap login <<EOA
+sub {
+	my $ret;
+	
+	$Tag->perl({tables => 'users'});
+
+	$CGI->{mv_nextpage} = 'login';
+
+	if ($Session->{logged_in}) {
+		$Tag->warnings({message => 'You are already logged in as user %s',
+			param => $Session->{username}});
+		return 1;
+	}
+
+	# look for user submission
+	if (exists $CGI->{mv_username}) {
+		$Tag->perl({tables => 'users'});
+
+		if ($CGI->{mv_username} =~ /\@/) {
+			# login with email address
+			$ret = $Tag->userdb({function => 'login',
+						 indirect_login => 'email'});
+		} else {
+			# login with username
+			$ret = $Tag->userdb({function => 'login',
+						 indirect_login => 'username'});
+		}
+
+		if ($ret) {
+			$Tag->warnings('Logged in successfully.');
+		} else {
+			$Tag->error({name => login, set => $Session->{failure}});
+		}
+	}
+
+	return 1;
+}
+EOA

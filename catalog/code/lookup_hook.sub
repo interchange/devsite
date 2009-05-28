@@ -1,0 +1,56 @@
+Sub lookup_hook <<EOS
+sub {
+	my ($name, @plugins, $sub, $retval, $page);
+
+	$name = shift;
+	@plugins = split(/,/, $Variable->{PLUGINS});
+
+	for my $plugin (@plugins) {
+		if ($sub = $Config->{Sub}->{"lookup_$plugin"}) {
+			($retval, $page) = $sub->($name);
+
+			if ($retval) {
+				return ($retval, $page);
+			}
+		}
+	}
+
+	# check if it matches category URI
+	my (@parts, $set, $page, $lookup);
+
+	@parts = grep {/\S/} split(/\//, $name);
+	if ($parts[$#parts] =~ /^(\d+)$/) {
+		$page = pop(@parts);
+		$lookup = join('/', @parts);
+		push(@parts, $page);
+	}
+	else {
+		$lookup = $name;
+	}
+
+	$Tag->perl({tables => 'categories'});
+	
+	$set = $Db{categories}->query(q{select code from categories where uri = '%s'},
+								  $lookup);
+
+	if (@$set == 1) {
+		$CGI->{category} = $set->[0]->[0];
+		$CGI->{category_page} = $page;
+		return(1, 'overview');
+	}
+	
+	# finally assume that link contains SKU at the end
+	my $sku;
+
+	if (@parts > 1) {
+		$sku = pop(@parts);
+
+		$Tag->perl({tables => 'products'});
+
+		if ($Db{products}->record_exists($sku)) {
+			$Session->{arg} = $sku;
+			return (1, $Config->{Special}->{flypage});
+		}
+	}
+}
+EOS
