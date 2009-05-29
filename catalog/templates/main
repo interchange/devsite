@@ -44,6 +44,10 @@ SLIDES.post_update_hook = function() { fadein(0.04); }
 //-->
 </SCRIPT>
 </div>
+{TEASER}
+<div class="mainContent">
 {BODY}
+</div>
+{FOOTER}
 </body>
 </html>

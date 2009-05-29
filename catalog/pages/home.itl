@@ -1,3 +1,4 @@
 [compose
-	components.body="home"
+	components.teaser="intro download_box"
+	components.body="shop_owners_teaser developers_teaser news_teaser"
 ]
