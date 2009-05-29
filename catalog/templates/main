@@ -6,14 +6,7 @@
 <div id="header">
 {LOGO}
 <div id="nav">
-<div class="menu">
-<ul>
-	<li class="selected"><a href="index.html"> Home </a></li>
-	<li><a href="storitve.html"> Download </a></li>
-	<li><a href="kontakt.html"> Case Studies </a></li>
-	<li><a href="kontakt.html"> Support </a></li>
-</ul>
-</div>
+{MENU}
 </div>
 <div id="introbox">
 <div id="casestudy">
