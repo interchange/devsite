@@ -1,4 +1,5 @@
 code	Variable
+TITLE	The e-commerce platform: Interchange
 MV_TEMPLATE_DIR	templates
 MV_COMPONENT_DIR	components
 STABLE_SERIES	5.6
