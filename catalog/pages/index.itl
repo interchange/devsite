@@ -1,4 +1,6 @@
 [compose
-	components.teaser="intro download_box"
+	components.htmlhead="slideshow_head"
+	components.teaser="slideshow intro download_box"
 	components.body="shop_owners_teaser developers_teaser search_box news_teaser"
+	attributes.htmlhead.css="front"
 ]

@@ -18,6 +18,10 @@ sub {
 	my ($template, $opt, $body) = @_;
 	my (%acl, %forms, $template_file);
 
+	if ($Variable->{div})  {
+		$opt->{div} = 1;
+	}
+
 	if ($opt->{acl})  {
 		# check permissions first
 		for my $k (keys %{$opt->{acl}}) {
@@ -198,7 +202,8 @@ sub {
 				if ($component_content =~ /\S/
 					|| ! $component_attributes->{skipblank}) {
 					if (exists $component_attributes->{container}
-						&& $component_attributes->{container} eq '') {
+						&& $component_attributes->{container} eq ''
+						|| !$opt->{div} ) {
 						push (@content, $component_content);
 					} else {
 						push (@content,

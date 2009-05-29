@@ -1,5 +1,7 @@
 
 /* CONTENT PAGE HEADER DEFINITION */
+
+/* CONTENT PAGE HEADER DEFINITION */
 BODY{
 	/*font-family: 'Trebuchet MS', trebuchet, sans-serif;*/
 	font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +10,6 @@ BODY{
 	font-style: normal;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	background: url(header-back-front.gif) top repeat-x; 
 	text-align: justify;
 }
 
@@ -56,19 +57,17 @@ tr,td {
 }
 
 #logo{
-	width: 196px;
+	width: 322px;
 	height: 88px;
 	float: left;
 	padding: 0;
-	margin: 18px; 
+	margin: 16px 0 0 0; 
 }
 
 #header{
-	width: 900px;
-	height: 420px;
+	width: 980px;
 	position: relative;
 	margin-right: auto;
-	background:url("home-back.jpg") no-repeat right top;
 	margin-left: auto;
 	padding: 0;
 }
@@ -76,8 +75,8 @@ tr,td {
 #casestudy {
 	color: #f2ebc7;
 	float: right;
-	margin-right: 68px;
-	margin-top: 59px;
+	margin: 0 0 0 0;
+	padding: 0 67px 0 0;
 	z-index: 0;
 	width: 428px;
 	height: 278px;
@@ -86,7 +85,8 @@ tr,td {
 
 #nav {
 	float: right;
-	width:650px;
+	width:600px;
+	height: 88px;
 	position: relative;
 	vertical-align: bottom;
 	padding: 0;
@@ -117,7 +117,7 @@ tr,td {
 	display:block;
 	left:-14px;
 	background:url("menu_left.gif") no-repeat left top;
-	padding: 7px 5px 3px 12px;
+	padding: 7px 5px 3px 7px;
 	text-decoration:none;
 	color:#f07822;
 	font-size: 16px;
@@ -139,7 +139,7 @@ tr,td {
 #nav li:hover, 
 #nav li:hover a, #nav .selected a, #nav .selected {
 	background-position:100% -42px;
-	color:#353c42;
+	color:Black;
 	}
 
 #nav li:hover a, #nav .selected a {
@@ -147,7 +147,7 @@ tr,td {
 	}
 
 .mainContent {
-	width: 900px;
+	width: 980px;
 	margin: 0 auto;
 }
 
@@ -158,7 +158,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 2px 5px 0 0;
+  padding: 0 71px 0 0;
   color: #353c42;
   width: 415px;
   height: 120px;
@@ -185,24 +185,23 @@ img {
 #header #intro {
    font-size: 16px;
 	color: white;
-	height: 198px;
-	width: 300px;
-	padding-left: 25px;
+	height: 220px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 10px;
+	width: 360px;
 	text-align: left;
 	float: left;
 }
 
 #search_box {
-    width: 278px;
     height: 31px;
-    background: url(bg_search_box.gif);
 }
 #search_box #s {
     float: left;
     padding: 0;
     margin: 6px 0 0 6px;
     border: 0;
-    width: 159px;
+    width: 232px;
     background: none;
 }
 #search_box #go {
@@ -261,11 +260,23 @@ clear: both;
 }
 
 .oneThirdGrad {
-	margin: 10px 0 0 0;
-   padding: 3px 17px 10px 17px;
-	width: 243px;
+	margin: 0 0 0 0;
+   padding: 12px 17px 10px 17px;
+	width: 273px;
 	float: left;
 	font-size: 14px;
+}
+
+.leftmenu {
+				background:url(leftback.jpg) repeat-y left top;
+}
+
+.leftmenu li a {
+	font-weight: bold;
+}
+
+.leftmenu li li a {
+	font-weight: normal;
 }
 
 .oneThirdClean {
@@ -325,7 +336,7 @@ clear: both;
 }
 
 #banner{
-	text-align: center;
+	text-align: left;
 }
 
 #footer ul {
@@ -398,50 +409,42 @@ This part is completely reusable
   border-top: 1px dotted #595241;
 }
 
-.storitve{
-	padding-top: 20px;
-	padding-left: 24px;
-	width: 245px;
-	height: 360px;
-	background-image: url(box_back.gif);
-}
+/* CRUMBS */
 
-.storitve li{
-	border-bottom: 1px dotted #7D7D7D;
-	list-style-type: none;
-	margin: 0;
-	padding-left: 0px;
-	margin-right: 10px;
-	padding-top: 4px;
-	padding-bottom: 5px;
-}
-
-.storitve ul{
-	margin: 0;
-	padding-left: 0px;
-	padding-bottom: 6px;
-}
-
-.storitve_dodatne .cena{
-	color: #710019;
-	margin-bottom: 20px;
-}
-
-.storitve_dodatne img{
- float: left;
- margin-right: 3px;
- margin-bottom: 30px;
-}
-
-.uvod_storitve {
-	font-size: larger;
-}
-
-.uvod_storitve ul{
-	list-style-type: none;
-}
-
-.uvod_storitve .intro {
-	font-size: 22px;
-	color: #2C7380;
-}
+#crumbs ul, #crumbs li {
+	list-style-type:none;
+	margin:0;
+	}		
+	
+#crumbs {
+	height:2.3em;
+	/*border:1px solid #dedede;*/
+	margin: 0 0 0 0;
+	padding: 0 0 0 13px;
+	}
+	
+#crumbs li {
+	float:left;
+	line-height:18px;
+	color:#777;
+	padding-left:.4em;
+	}		
+	
+#crumbs li a {
+	background:url(crumbs.gif) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+	}			
+					
+#crumbs li a:link,
+#crumbs li a:visited {
+	color:#5C5C3D;
+	text-decoration:underline;
+	}	
+	
+#crumbs a:link, #crumbs a:visited,	
+#crumbs li a:hover,
+#crumbs li a:focus {
+	color:#111B21;
+	text-decoration: underline;
+	}		
