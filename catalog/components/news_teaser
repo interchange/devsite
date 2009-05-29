@@ -1,11 +1,22 @@
 
 <div class="oneThirdGrad news">
 <h3>News</h3>
-<p class="intro">
-... 
+[loop prefix=news more=1 search=|
+	fi=news
+	st=db
+	tf=posted_on
+	to=r
+	ml=2
+	ra=yes
+	rf=*
+|]
+[list]
+<h4><a href="[area href="news" arg="[news-param code]"]">[news-param title]</a></h4>
+<p class="more">[convert-date][news-param posted_on][/convert-date] by [news-param posted_by]</p>
+<p>
+[filter 200. text2html][news-param body][/filter]
 </p>
-
-<ul>
-<li>...</li>
-</ul>
+<p class="more"><a href="[area href="news" arg="[news-param code]"]">Read the entire story</a></p>
+[/list]
+[/loop]
 </div>
