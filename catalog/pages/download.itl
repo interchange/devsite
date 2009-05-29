@@ -1,0 +1,8 @@
+[compose
+	title = "Download"
+	components.teaser="title breadcrumbs"
+	components.body="leftmenu"
+
+	attributes.title.title="Download"
+	attributes.title.size="2"
+]
