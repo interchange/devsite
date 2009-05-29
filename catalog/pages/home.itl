@@ -1,4 +1,4 @@
 [compose
 	components.teaser="intro download_box"
-	components.body="shop_owners_teaser developers_teaser news_teaser"
+	components.body="shop_owners_teaser developers_teaser search_box news_teaser"
 ]
