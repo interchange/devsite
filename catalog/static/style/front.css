@@ -6,11 +6,5 @@ BODY{
 
 #header{
 		background:url("home-back.jpg") no-repeat right top;
-		height: 420px;
-}
-
-#search_box{
-		margin: 0 0 10px 0;
-	   width: 309px;
-	   background: url(bg_search_box.gif);
+		height: 440px;
 }

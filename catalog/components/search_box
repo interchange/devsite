@@ -1,11 +1,6 @@
-<div>
-<div class="oneThirdClean">
-<div id="search_box">
-    <form id="search_form" method="post" action="[process href=Swish]" method="GET">
-[form-session-id]
-		<input type="hidden" name="search_mailinglists" value="1">
-        <input type="text" name="mv_searchspec" id="s" value="Search" class="swap_value" />
-        <input type="image" src="btn_search_box.gif" width="27" height="24" id="go" alt="Search" title="Search" />
-    </form>
-</div>
+<div class="search_box">
+	<form id="search_form" method="post" action="/">
+		<input type="text" class="s" title="Search">
+		<input type="image" src="btn_search_box.gif"  class="go" alt="Search">
+	</form>
 </div>

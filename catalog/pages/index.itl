@@ -1,6 +1,10 @@
 [compose
+	template=front
+	components.topheader="search_box"
 	components.htmlhead="slideshow_head"
-	components.teaser="slideshow intro download_box"
-	components.body="shop_owners_teaser developers_teaser search_box news_teaser"
+	components.teaser="slideshow"
+	components.intro="intro"
+	components.banner="download_box"
+	components.body="shop_owners_teaser developers_teaser news_teaser"
 	attributes.htmlhead.css="front"
 ]

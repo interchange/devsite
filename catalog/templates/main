@@ -1,18 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
 {HTMLHEAD}
 </head>
+
 <body onLoad="SLIDES.update()">
 <div id="header">
-{LOGO}
-<div id="nav">
-{MENU}
+	{LOGO}
+<div id="nav"><div class="menu">
+	{MENU}
+</div></div>
+<div id="banner">
+	{BANNER}
 </div>
-<div id="introbox">
-{TEASER}
+</div>
 <div class="mainContent">
-{BODY}
+	{BODY}
 </div>
-{FOOTER}
+<div id="footer">
+	{FOOTER}
+</div>
 </body>
 </html>

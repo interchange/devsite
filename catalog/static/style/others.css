@@ -9,38 +9,10 @@ BODY{
 		height: 216px;
 }
 
-#banner {
-	margin: 12px 0 0 10px;
+.banner {
+	margin: 16px 0 0 10px;
 	width: 950px;
 	height: 100px;
 	text-align: left;
 	float: left;
-}
-
-#banner h2{
-	font-size: 32px;
-	margin: 0;
-	padding: 0;
-}
-
-#banner p{
-	font-size: 12px;
-	padding: 0;
-}
-
-#search_box{
-	    background: url(bg_search_box1.gif);
-		 width: 278px;
-}
-
-banner .twoThirds, #banner .oneThird{
-	height: 51px;
-	text-align: left;
-}
-
-#banner .fullWidth{
-	margin: 0;
-	padding: 0;
-	text-align: left;
-}
-
+	}
