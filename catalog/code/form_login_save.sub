@@ -1,0 +1,23 @@
+Sub form_login_save <<EOS
+sub {
+	my %parms;
+
+	%parms = (function => 'login',
+			username => $Values->{username},
+			password => $Values->{password});
+
+	if ($Values->{username} =~ /\@/) {
+		# login with email address
+		$ret = $Tag->userdb(\%parms);
+	} else {
+		$parms{indirect_login} = 'username';
+		$ret = $Tag->userdb(\%parms);
+	}
+	
+	unless ($ret) {
+		return {jump => 'login'};
+	}
+
+	return;
+}
+EOS
