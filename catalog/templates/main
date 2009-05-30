@@ -3,13 +3,16 @@
 {HTMLHEAD}
 </head>
 
-<body onLoad="SLIDES.update()">
+<body>
+<div class="top_header">
+{TOPHEADER}
+</div>
 <div id="header">
 	{LOGO}
 <div id="nav"><div class="menu">
 	{MENU}
 </div></div>
-<div id="banner">
+<div class="banner">
 	{BANNER}
 </div>
 </div>

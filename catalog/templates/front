@@ -18,7 +18,7 @@
 <div id="intro">
 	{INTRO}
 </div>
-<div id="banner">
+<div class="banner">
 	{BANNER}
 </div>
 </div>
