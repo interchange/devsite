@@ -1,3 +1,4 @@
 [compose
 	components.body="login"
+	forms.login.name="login"
 ]
