@@ -1,5 +1,6 @@
 <title>__TITLE__</title>
 <style type="text/css">
 @import "/style/content.css";
+@import "/style/forms.css";
 @import "/style/__CSS__.css";
 </style>
