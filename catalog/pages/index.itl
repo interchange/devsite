@@ -5,6 +5,6 @@
 	components.intro="intro"
 	components.banner="download_box"
 	components.body="shop_owners_teaser developers_teaser news_teaser"
-	skipauto="menu_crumbs"	
+	skipauto="menu_crumbs title"	
 	attributes.htmlhead.css="front"
 ]
