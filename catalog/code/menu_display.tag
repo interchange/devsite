@@ -3,7 +3,7 @@ UserTag menu_display AddAttr
 UserTag menu_display Routine <<EOR
 sub {
 	my ($name, $opt) = @_;
-	my ($set, $uri, @entries, $name_qtd, @fields, $fstr);
+	my ($set, $uri, @entries, $name_qtd, @fields, $fstr, $base_url, $selected);
 
 	$Tag->perl({tables => 'menus'});
 
@@ -14,13 +14,27 @@ sub {
 	$fstr = join(',', @fields);
 
 	$set = $Db{menus}->query({sql => qq{select $fstr from menus where menu_name = $name_qtd order by parent asc, weight desc, code}, hashref => 1});
+	
+	if ($opt->{selected}) {
+		$base_url = $Session->{last_url};
+		$base_url =~ s%^/%%;
+	}
 
 	for (@$set) {
 		next unless $Tag->acl('check', $_->{permission});
 
+		if ($opt->{selected}) {
+			if (index($base_url, $_->{url}) == 0) {
+				$selected = qq{ class="$opt->{selected}"};
+			}
+			else {
+				$selected = '';
+			}
+		}
+
 		$uri = $Tag->area($_->{url});
 
-		push(@entries, qq{<li><a href="$uri">$_->{name}</a></li>});
+		push(@entries, qq{<li$selected><a href="$uri">$_->{name}</a></li>});
 	}
 
 	return q{<ul>} . join('', @entries) . q{</ul>};

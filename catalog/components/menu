@@ -1,2 +1,2 @@
-[menu_display __NAME__]
+[menu_display name="__NAME__" selected="selected"]
 
