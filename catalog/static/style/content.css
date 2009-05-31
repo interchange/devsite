@@ -327,6 +327,21 @@ clear: both;
 	text-align: left;
 }
 
+.oneThirdGrad .ticklist{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+.oneThirdGrad .ticklist li{
+	background: url(tick.png) left center no-repeat; 
+	padding-left: 25px;
+	padding-top: 2px;
+	padding-bottom: 6px;
+	margin: 6px 0 0 0;
+	text-align: left;
+}
+
 .oneThirdGrad h3{
    font-size: 26px;
 	margin-top: 10px;
