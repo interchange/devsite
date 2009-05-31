@@ -1,0 +1,92 @@
+<div class="oneThirdGrad">
+<h3>Stable version</h3>
+<p class="intro">
+Stable edition of Interchange for production environments.
+</p>
+
+<p>
+The current stable release of Interchange is <strong>5.6.1</strong>. It was released 16th November 2008.
+</p>
+
+<p>
+For a list of new features and fixes, you should check the <a href="#">What's New</a> list.
+</p>
+
+<h4>Download now:</h4>
+<ul>
+<li><a href="[area download]">Redhat packages (.rpm)</a></li>
+<li><a href="[area download]">Debian/Ubuntu packages (.deb)</a></li>
+<li><a href="[area download]">Cross platform packages (.tar.gz)</a></li>
+</ul>
+
+</div>
+
+
+<div class="oneThirdGrad">
+<h3>Nightly builds</h3>
+<p class="intro">
+See what's new in development version of Interchange.
+</p>
+
+<p>
+The current development release of Interchange is <strong>5.7.1</strong>. It was compiled on 16th November 2008. 
+</p>
+
+<p>
+For even fresher code you should visit out <a href="#">GIT Repository</a> list.
+</p>
+
+<h4>Download now:</h4>
+<ul>
+<li><a href="[area download]">Redhat packages (.rpm)</a></li>
+<li><a href="[area download]">Debian/Ubuntu packages (.deb)</a></li>
+<li><a href="[area download]">Cross platform packages (.tar.gz)</a></li>
+</ul>
+
+</div>
+
+<div class="oneThirdGrad">
+<h3>Installation</h3>
+<p class="intro">
+Get your Interchange running.
+</p>
+
+<p>
+Installing Interchange is about as complicated as any other server software in Linux. We have prepared <a href="#">Installation instructions</a> to help you on the way.
+</p>
+
+<p>
+In case you are not that good at Linux you can get support from some of the companies that offer <a href="#">Interchange professional support</a>.
+</p>
+
+<h4>Resources:</h4>
+<ul>
+<li><a href="[area download]">Installation instructions</a></li>
+<li><a href="[area download]">Get help from community</a></li>
+<li><a href="[area download]">Get professional support</a></li>
+</ul>
+
+</div>
+
+<div class="oneThirdGrad">
+<h3>Prerequisites</h3>
+<p class="intro">
+Things Interchange needs.
+</p>
+
+<ul>
+<li>Linux or similar operating system<br>(Linux, BSD, MacOS,...).</li>
+<li>Web server<br>(Apache, lighttpd, nginx,...)</li>
+<li>Perl 5.8 or higher</li>
+<li>Database<br>(PostgreSQL, MySQL, SQLLite,...)</li>
+</ul>
+
+<p>
+Most of the Linux distributions offer all packages required for Interchange to function properly.
+</p>
+<p>
+For details on how to make them work with Interchange, check <a href="#">Installation instructions</a>.
+</p>
+
+</div>
+
