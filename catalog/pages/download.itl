@@ -1,7 +1,4 @@
 [compose
-	title = "Download"
-	components.topheader="search_box"
-	components.banner="title menu_crumbs"
 	components.body="leftmenu download_page"
 
 	attributes.title.title="Download"
