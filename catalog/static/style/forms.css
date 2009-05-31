@@ -7,6 +7,12 @@
  *
  */
 
+/* Inline avoids wrapping due to form elements */
+
+form { 
+  display: inline;
+}
+
 /* Standard form elements styling */
 
 fieldset {
