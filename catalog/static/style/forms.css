@@ -15,25 +15,25 @@ form {
 
 /* Standard form elements styling */
 
-fieldset {
+.form fieldset {
   border: 1px solid #ccc;
   margin: 15px 0 30px 0;
   padding: 10px;
 }
 
-legend {
+.form legend {
   font-weight:bold;
   font-size:110%;
 }
 
 /* Label */
 
-label {
+.form label {
   display: block;
   position: relative;
 }
 
-label small {
+.form label small {
   position: absolute;
   right: 0;
   top: 0;
@@ -43,7 +43,7 @@ label small {
 
 /* Other standard elements (that don't need classes) */
 
-input,textarea,select{ 
+.form input, .form textarea, .form select{ 
   font-size: inherit;
   font-family: inherit;
   padding: 3px 0;
@@ -52,20 +52,20 @@ input,textarea,select{
 
 /* Checkbox styling (needs special class) */
 
-  p.checkbox {
+.form  p.checkbox {
   clear: both;
   float: none;
   position: relative;
 }
 
-p.checkbox input {
+.form p.checkbox input {
   left: 10px;
   width: 14px;
   position: absolute;
   top: 1px;
 }
 
-p.checkbox label {
+.form p.checkbox label {
   display: block;
   margin-left: 40px;
   width: 80%;

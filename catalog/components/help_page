@@ -5,88 +5,89 @@ Dig into the documentation.
 </p>
 
 <p>
-The current stable release of Interchange is <strong>5.6.1</strong>. It was released 16th November 2008.
+Interchange <a href="#">documentation</a> covers most areas of Interchange use.
 </p>
-
 <p>
-For a list of new features and fixes, you should check the <a href="#">What's New</a> list.
+The documentation includes several guides as well as references to Interchange building blocks such as tags, filters and variables.
 </p>
 
-<h4>Download now:</h4>
-<ul>
-<li><a href="[area download]">Redhat packages (.rpm)</a></li>
-<li><a href="[area download]">Debian/Ubuntu packages (.deb)</a></li>
-<li><a href="[area download]">Cross platform packages (.tar.gz)</a></li>
-</ul>
-
-</div>
-
-
-<div class="oneThirdGrad">
-<h3>Nightly builds</h3>
-<p class="intro">
-See what's new in development version of Interchange.
-</p>
-
-<p>
-The current development release of Interchange is <strong>5.7.1</strong>. It was compiled on 16th November 2008. 
-</p>
-
-<p>
-For even fresher code you should visit out <a href="#">GIT Repository</a> list.
-</p>
-
-<h4>Download now:</h4>
-<ul>
-<li><a href="[area download]">Redhat packages (.rpm)</a></li>
-<li><a href="[area download]">Debian/Ubuntu packages (.deb)</a></li>
-<li><a href="[area download]">Cross platform packages (.tar.gz)</a></li>
-</ul>
-
-</div>
-
-<div class="oneThirdGrad">
-<h3>Installation</h3>
-<p class="intro">
-Get your Interchange running.
-</p>
-
-<p>
-Installing Interchange is about as complicated as any other server software in Linux. We have prepared <a href="#">Installation instructions</a> to help you on the way.
-</p>
-
-<p>
-In case you are not that good at Linux you can get support from some of the companies that offer <a href="#">Interchange professional support</a>.
-</p>
-
-<h4>Resources:</h4>
+<h4>Quick links:</h4>
 <ul>
 <li><a href="[area download]">Installation instructions</a></li>
-<li><a href="[area download]">Get help from community</a></li>
-<li><a href="[area download]">Get professional support</a></li>
+<li><a href="[area documentation]">Browse the documentation</a></li>
+</ul>
+
+</div>
+
+
+<div class="oneThirdGrad">
+<h3>Mailing lists</h3>
+<p class="intro">
+Get answers to your questions.
+</p>
+
+<p>
+Interchange users mailing list holds years of precious knowledge available for your browsing and searching.
+</p>
+
+<p>
+If you cannot find the answer you were looking for, try asking on the list. You need to be subscribed to the list for posting.
+</p>
+
+<h4>Quick links:</h4>
+<ul>
+<li><a href="[area download]">How to ask questions on the mailing list</a></li>
+<li><a href="[area download]">Browse mailing list archives</a></li>
+<li><a href="[area download]">Subsrcibe to the users list</a></li>
 </ul>
 
 </div>
 
 <div class="oneThirdGrad">
-<h3>Prerequisites</h3>
+<h3>Live Help</h3>
 <p class="intro">
-Things Interchange needs.
+Chat with Interchange experts.
 </p>
 
+<p>
+Interchange live help is available as an <a href="#">IRC channel</a> or through <a href="#">Live Help</a>.
+</p>
+
+<p>
+Interchange experts from around the world gather to discuss Interchange issues and will be happy to answer your questions.
+</p>
+
+<h4>Quick links:</h4>
 <ul>
-<li>Linux or similar operating system<br>(Linux, BSD, MacOS,...).</li>
-<li>Web server<br>(Apache, lighttpd, nginx,...)</li>
-<li>Perl 5.8 or higher</li>
-<li>Database<br>(PostgreSQL, MySQL, SQLLite,...)</li>
+<li><a href="[area download]">How to request live help</a></li>
+<li><a href="[area download]">Live Help</a></li>
+<li><a href="[area download]">IRC setup instructions</a></li>
 </ul>
 
+</div>
+
+<div class="oneThirdGrad">
+<h3>Professional support</h3>
+<p class="intro">
+Get somebody for the job.
+</p>
+
 <p>
-Most of the Linux distributions offer all packages required for Interchange to function properly.
+There are quite a few companies offering expert Interchange help. 
 </p>
 <p>
-For details on how to make them work with Interchange, check <a href="#">Installation instructions</a>.
+If you request help <a href="#">through contact form</a> we will forward your mail to all companies, and they will respond to you personally
 </p>
+<p>
+In case you want to contact a specific company, we hold a <a href="#">list of companies</a> offering professional support. 
+</p>
+
+<h4>Quick links:</h4>
+<ul>
+<li><a href="[area download]">Contact form</a></li>
+<li><a href="[area download]">Companies offering support</a></li>
+</ul>
+
 
 </div>
 

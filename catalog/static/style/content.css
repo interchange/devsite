@@ -65,7 +65,7 @@ img {
 	margin: 0 auto 0 auto;
 	padding: 0 0 0 0;
 	height: 42px;
-	width: 870px;
+	width: 890px;
 	text-align: right;
 }
 
@@ -105,7 +105,7 @@ img {
 
 #nav {
 	float: right;
-	width:600px;
+	width:650px;
 	height: 84px;
 	position: relative;
 	vertical-align: bottom;
@@ -127,7 +127,7 @@ img {
 	background: transparent url("menu_right.gif") no-repeat right top;
 	margin:0 0 0 0;
 	padding:0 0 0 0;
-	width: 120px;
+	width: 115px;
 	text-align: center;
 	}
 	
@@ -152,7 +152,7 @@ img {
 /* End IE5 */
 
 #nav a:hover, #nav .selected a{
-	color:#353c42;
+	color:Black;
 	}
 	
 /* doesn't work in IE5.x or IE6 */
@@ -230,7 +230,7 @@ img {
 }
 
 .banner{
-	width: 950px;
+	width: 450px;
 	text-align: left;
 }
 
