@@ -1,10 +1,10 @@
 [compose
 	template=front
-	components.topheader="search_box"
 	components.htmlhead="slideshow_head"
 	components.teaser="slideshow"
 	components.intro="intro"
 	components.banner="download_box"
 	components.body="shop_owners_teaser developers_teaser news_teaser"
+	skipauto="menu_crumbs"	
 	attributes.htmlhead.css="front"
 ]
