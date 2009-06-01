@@ -3,5 +3,4 @@
 	components.body="leftmenu download_page"
 
 	attributes.title.title="Download"
-	attributes.title.size="2"
 ]

@@ -2,5 +2,4 @@
 	components.body="leftmenu help_page"
 
 	attributes.title.title="Help"
-	attributes.title.size="2"
 ]

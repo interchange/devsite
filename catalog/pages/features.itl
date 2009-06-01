@@ -2,5 +2,4 @@
 	components.body="leftmenu features_page"
 
 	attributes.title.title="Features"
-	attributes.title.size="2"
 ]
