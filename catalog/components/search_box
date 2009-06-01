@@ -1,5 +1,5 @@
 <div class="search_box">
-	<form id="search_form" method="get" action="[process href=Swish]">
+	<form id="search_form" method="get" action="[area Swish]">
 [form-session-id]
 		<input type="hidden" name="search_mailinglists" value="1">
 		<input type="text" name="mv_searchspec" class="s" title="Search">
