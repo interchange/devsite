@@ -1,6 +1,8 @@
 <div class="search_box">
-	<form id="search_form" method="post" action="/">
-		<input type="text" class="s" title="Search">
+	<form id="search_form" method="get" action="[process href=Swish]">
+[form-session-id]
+		<input type="hidden" name="search_mailinglists" value="1">
+		<input type="text" name="mv_searchspec" class="s" title="Search">
 		<input type="image" src="btn_search_box.gif"  class="go" alt="Search">
 	</form>
 </div>
