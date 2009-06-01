@@ -1,0 +1,4 @@
+[compose 
+	components.body="support_page"
+	attributes.title.title="Support"
+]

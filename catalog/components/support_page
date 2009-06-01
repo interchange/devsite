@@ -1,9 +1,3 @@
-__TOP__
-
-      <div class="rowOfBoxes dividingBorderAbove">
-        <div class="twoThirds noBorderOnLeft">
-	<h1>Interchange Support</h1>
-
 <p>
 __IC__ has a wide variety of <strong>community and commercial support</strong> options
 available for users. The [page users/community]Community page</a>
@@ -74,9 +68,3 @@ ml=10
 
 </div>
 </div>
-
-<div class='oneThird'>
-[include templates/devel]
-</div>
-
-__BOTTOM__
