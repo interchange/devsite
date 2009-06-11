@@ -32,24 +32,24 @@ STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rp
 STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
 brevp	Brev Patterson
 danb	Daniel Browning
-docelic	<a href="mailto:docelic@mail.inet.hr">Davor Ocelic</a>
+docelic	Davor Ocelic
 edl	Ed LaFrance
 greg	Greg Hanson
 jon	Jon Jensen
 jonc	Jonathan Clark
 jjustman	JT Justman
-jure	<a href="mailto:jure@tenalt.com">Jure Kodzoman</a>
-kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
+jure	Jure Kodzoman
+kwalsh	Kevin Walsh
 markj	Mark Johnson
 markl	Mark Lipscombe 
 mheins	Mike Heins
-pajamian	<a href="mailto:peter@pajamian.dhs.org">Peter Ajamian</a>
+pajamian	Peter Ajamian
 pvinci	Paul Vinciguerra
-racke	<a href="mailto:racke@linuxia.de">Stefan Hornburg</a>
+racke	Stefan Hornburg
 ramoore	Randy Moore
 ron	Ron Phipps
 ton	Ton Verhagen
-thunder	<a href="mailto:ic@3edge.com">Gert van der Spoel</a>
+thunder	Gert van der Spoel
 zeald	David Kelly
 markj	Mark Johnson
 mheins	Mike Heins
