@@ -5,26 +5,26 @@ __TOP__
         <div class="twoThirds noBorderOnLeft">
 	<h1>Interchange Development Group</h1>
 
-<h2>Core Team Members</h2>
+<h2>Active Core Team Members</h2>
 <p>
-[table-organize cols=4 table='width=100%']
+[table-organize cols=3 table='width=100%']
 [loop prefix=loop more=0 search=|
   fi=core
   st=db
-  tf=username
+  tf=name
+  sf=retired
+  op=em
+  se=0 
   ml=500
-  ra=1
   rf=*
 |]
 [list]
 [loop-alternate 0]
 <td class='th'>Name</td>
-<td class='th'>Username</td>
 <td class='th'>Since</td>
 <td class='th'>Tasks</td>
 [/loop-alternate]
 <td>[filter vars_and_comments][loop-param name][/filter]</td>
-<td>[loop-param username]</td>
 <td>[loop-param since]</td>
 <td>[loop-param task]</td>
 [/list]
@@ -32,6 +32,37 @@ __TOP__
 [/table-organize]
 </p>
 
+<p>&nbsp;</p>
+<h2>Retired Core Team Members</h2>
+<p>
+[table-organize cols=4 table='width=60%']
+[loop prefix=loop more=0 search=|
+  fi=core
+  st=db
+  tf=name
+  sf=retired
+  se=0
+  ne=1
+  ml=500
+  rf=*
+|]
+[list]
+[loop-alternate 0]
+<td class='th'>Name</td>
+<td class='th'>Since</td>
+<td class='th'>Retired</td>
+<td class='th'>Tasks</td>
+[/loop-alternate]
+<td>[filter vars_and_comments][loop-param name][/filter]</td>
+<td>[loop-param since]</td>
+<td>[loop-param retired]</td>
+<td>[loop-param task]</td>
+[/list]
+[/loop]
+[/table-organize]
+</p>
+
+<p>&nbsp;</p>
 <h2>Acknowledgements</h2>
 <p>
 Original author of Vend, ancestor to Minivend and Interchange, was Andrew

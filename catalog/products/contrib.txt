@@ -7,7 +7,6 @@ Bill Randle
 Birgitt Funk
 Bob Jordan
 Brent Kelly
-Brev Patterson
 Brian Bullen
 Brian Kosick
 Brian Miller
@@ -23,11 +22,9 @@ Dan Helfman
 Daniel Thompson
 Dave Wingate
 David Adams
-David Kelly
 Dennis Cronin
 Donald Alexander
 Don Grodecki
-Ed LaFrance
 Frank Bonita
 Frederic Steinfels
 Gunnar Hellekson
@@ -52,7 +49,6 @@ Keith Oberlin
 Kim Lauritz Christensen
 Larry Leszczynski
 Marc Austin
-Mark Lipscombe
 Mark Stosberg
 Massimiliano Ciancio
 Matthew Schick
