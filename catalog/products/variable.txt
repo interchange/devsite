@@ -30,6 +30,7 @@ SERVER_NAME	www.icdevgroup.org
 STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
 STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
 STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
+brevp	Brev Patterson
 danb	Daniel Browning
 docelic	<a href="mailto:docelic@mail.inet.hr">Davor Ocelic</a>
 edl	Ed LaFrance
@@ -40,6 +41,7 @@ jjustman	JT Justman
 jure	<a href="mailto:jure@tenalt.com">Jure Kodzoman</a>
 kwalsh	<a href="mailto:kevin@cursor.biz">Kevin Walsh</a>
 markj	Mark Johnson
+markl	Mark Lipscombe 
 mheins	Mike Heins
 pajamian	<a href="mailto:peter@pajamian.dhs.org">Peter Ajamian</a>
 pvinci	Paul Vinciguerra
