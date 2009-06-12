@@ -18,6 +18,6 @@ id	name	username	since	retired	task
 017	__pvinci__	pvinci	Sep 2003	0	Developer
 018	__pajamian__	pajamian	Aug 2006	0	Developer
 019	__ramoore__	ramoore	Dec 2002	0	Developer
-020	__ron__	ron	Aug 2002	0	Developer
+020	__ron__	ron	Feb 2007	0	Developer
 021	__racke__	racke	Jun 1999	0	Interchange team captain, Debian GNU package maintainer, I18N
 022	__ton__	ton	Jun 2001	0	Developer
