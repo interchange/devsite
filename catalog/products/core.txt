@@ -15,7 +15,7 @@ id	name	username	since	retired	task
 014	__markj__	markj	Feb 2003	0	Developer
 015	__markl__	markl	Jun 2009	0	Developer
 016	__mheins__	mheins	Aug 1995	0	Interchange founder
-017	__pvinci__	pvinci	Sep 2003	0	Developer
+017	__pvinci__	pvinci	Sep 2003	Jun 2009	Developer
 018	__pajamian__	pajamian	Aug 2006	0	Developer
 019	__ramoore__	ramoore	Dec 2002	0	Developer
 020	__ron__	ron	Feb 2007	0	Developer
