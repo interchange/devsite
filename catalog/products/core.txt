@@ -1,20 +1,23 @@
-name	username	since	task
-__danb__	danb	Jun 2001	Graphics, Design, etc.
-__docelic__	docelic	Jun 2004	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
-__ethan__	ethan	2005
-__greg__	greg	Sep 2004	
-__jonc__	jonc	early 2001	
-__jon__	jon	mid 2000	Release manager, Red Hat package maintainer, mailing lists admin
-__jjustman__	jjustman	Dec 2008
-__jure__	jure	Jun 2008
-__kwalsh__	kwalsh	Jan 2002	User support via irc.icdevgroup.org, mod_interchange Apache module
-__markj__	markj	2003		
-__mheins__	mheins		Interchange founder
-__pajamian__	pajamian	Aug 2006
-__pvinci__	pvinci		
-__racke__	racke	Jun 1999	Interchange team captain, Debian GNU package maintainer, I18N	
-__ramoore__	ramoore		
-__ron__	ron	Feb 2007	
-__thunder__	thunder	Aug 2006
-__ton__	ton	Jun 2001
-__zeald__	zeald	2003	Design etc.
+id	name	username	since	retired	task
+001	__brevp__	brevp	Mar 2001	Nov 2007	Developer
+002	__danb__	danb	Jun 2001	0	Graphics, Design
+003	__zeald__	zeald	May 2002	0	Design
+004	__docelic__	docelic	Jun 2004	0	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
+005	__edl__	edl	Sep 2001	Dec 2004	Developer
+006	__ethan__	ethan	Nov 2004	0	Developer
+007	__thunder__	thunder	Aug 2006	0	Developer
+008	__greg__	greg	Sep 2004	0	Developer
+009	__jonc__	jonc	Jan 2001	Jun 2009	Developer
+010	__jjustman__	jjustman	Dec 2008	0	Developer
+011	__jon__	jon	Jun 2000	0	Release manager, Red Hat package maintainer, mailing lists admin
+012	__jure__	jure	Jun 2008	0	icdevgroup.org website, Design
+013	__kwalsh__	kwalsh	Jan 2002	0	Developer, mod_interchange Apache module maintainer
+014	__markj__	markj	Feb 2003	0	Developer
+015	__markl__	markl	Jun 2009	0	Developer
+016	__mheins__	mheins	Aug 1995	0	Interchange founder
+017	__pvinci__	pvinci	Sep 2003	Jun 2009	Developer
+018	__pajamian__	pajamian	Aug 2006	0	Developer
+019	__ramoore__	ramoore	Dec 2002	0	Developer
+020	__ron__	ron	Feb 2007	0	Developer
+021	__racke__	racke	Jun 1999	0	Interchange team captain, Debian GNU package maintainer, I18N
+022	__ton__	ton	Jun 2001	0	Developer
