@@ -1,4 +1,5 @@
 name	task
+Alison Smith
 Andreas Koenig
 Andrew Rich
 Bill Carr
@@ -26,6 +27,7 @@ David Adams
 Dennis Cronin
 Donald Alexander
 Don Grodecki
+Eric Zarko
 Frank Bonita
 Frederic Steinfels
 Gary Benson
@@ -40,17 +42,20 @@ Jack Tsai
 Jason Holt
 Jason Kohles
 Javier Martin
+Jeff Barr
 Jeff Boes
 Jeff Carnahan
 Jeff Fearn
 Jeff Nappi
 Jochen Wiedmann
+Jonathan Walker
 Jordan Adler
 José Mª Revuelto
 Jurgen Botz
 Keiko
 Keith Oberlin
 Kim Lauritz Christensen
+Larry Huffman
 Larry Leszczynski
 Lyn St George
 Marc Austin
@@ -70,6 +75,7 @@ Paul Delys
 Paul Jordan
 Raj Goel
 Ray Desjardins
+René Hertell
 Shozo Murahashi
 Sonny Cook
 Steve Graham
