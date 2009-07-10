@@ -16,6 +16,7 @@ Chen Naor
 Christian Mueller
 Christopher Miller
 Christopher Thompson
+Christopher Wenham
 Dan Busarow
 Dan Collis-Puro
 Dan Helfman
@@ -27,12 +28,14 @@ Donald Alexander
 Don Grodecki
 Frank Bonita
 Frederic Steinfels
+Gary Benson
 Gunnar Hellekson
 Hamish Bradick
 Hans-Joachim Leidinger
 Heinz Wittenbecher
 Hiroyuki Cozy Kojima
 Ignacio Lizarán
+Ivan Kohler
 Jack Tsai
 Jason Holt
 Jason Kohles
@@ -42,22 +45,28 @@ Jeff Carnahan
 Jeff Fearn
 Jeff Nappi
 Jochen Wiedmann
+Jordan Adler
 José Mª Revuelto
 Jurgen Botz
 Keiko
 Keith Oberlin
 Kim Lauritz Christensen
 Larry Leszczynski
+Lyn St George
 Marc Austin
 Mark Stosberg
+Marty Tennison
 Massimiliano Ciancio
 Matthew Schick
 Max Cohan
+Michael Lehmkuhl
 Michael McCune
 Michael Wilk
+Mick Weiss
 Mike Frager
 Neil Evans
 Nelson Ferrari
+Paul Delys
 Paul Jordan
 Raj Goel
 Ray Desjardins
@@ -66,6 +75,7 @@ Sonny Cook
 Steve Graham
 Tim Baverstock
 Tom Friedel
+Tom Tucker
 Tommi Laberno
 Troy Davis
 Victor Nolton
