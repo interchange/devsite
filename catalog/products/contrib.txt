@@ -13,6 +13,7 @@ Brian Kosick
 Brian Miller
 Bruce Albrecht
 Cameron Prince
+Carl Bailey
 Chen Naor
 Christian Mueller
 Christopher Miller
@@ -51,12 +52,15 @@ Jochen Wiedmann
 Jonathan Walker
 Jordan Adler
 José Mª Revuelto
+Josh Braegger
 Jurgen Botz
+Kaare Rasmussen
 Keiko
 Keith Oberlin
 Kim Lauritz Christensen
 Larry Huffman
 Larry Leszczynski
+Lars Tode
 Lyn St George
 Marc Austin
 Mark Stosberg
@@ -73,11 +77,14 @@ Neil Evans
 Nelson Ferrari
 Paul Delys
 Paul Jordan
+Phil Smith
 Raj Goel
 Ray Desjardins
 René Hertell
+Sergiusz Jarczyk
 Shozo Murahashi
 Sonny Cook
+Spencer Christensen
 Steve Graham
 Tim Baverstock
 Tom Friedel
