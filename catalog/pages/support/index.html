@@ -17,7 +17,11 @@ providing professional services.
 
 <p>
 You can conveniently post commercial Interchange support, hosting and quote requests
-on our <strong>business mailing list</strong> ([filter mailto]interchange-biz@icdevgroup.org[/filter]) or <strong>contact one of the following companies directly</strong>:
+on our <strong>business mailing list</strong> ([filter mailto]interchange-biz@icdevgroup.org[/filter]) or <strong>contact one of the following companies directly</strong>.
+</p>
+
+<p>
+If you, or your company, provide services such as Interchange development, consultancy, hosting or training, and you would like to be added to this overview, send us an <a href="mailto:thunder@icdevgroup.org">e-mail</a> with your details and we'll be adding you as soon as possible. 
 </p>
 
 [query sql=|
@@ -36,6 +40,7 @@ more=1
 ml=10
 ]
 	[list]
+	     [sql-alternate 2]<div style="float:right;width:45%">[else]<br clear="all"/><div style="float:left;width:45%;">[/else][/sql-alternate]
 		<h2>[sql-param name]</h2>
 		<ul>
 		[query sql=| 
@@ -66,6 +71,7 @@ ml=10
 			[if-sql-param url]<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>[/if-sql-param]
 			[if sql-param contact_name]<li><strong> Contact person: </strong>[sql-param contact_name]</li>[/if]
 		</ul>
+		</div>
 	[/list]
 	[more-list]
 	[more]
