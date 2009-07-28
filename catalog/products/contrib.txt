@@ -22,12 +22,15 @@ Christopher Wenham
 Dan Busarow
 Dan Collis-Puro
 Dan Helfman
+Daniel Hutchinson
 Daniel Thompson
 Dave Wingate
 David Adams
+David Christensen
 Dennis Cronin
 Donald Alexander
 Don Grodecki
+Don Hathaway
 Eric Zarko
 Frank Bonita
 Frederic Steinfels
@@ -53,6 +56,7 @@ Jonathan Walker
 Jordan Adler
 José Mª Revuelto
 Josh Braegger
+Josh Lavin
 Jurgen Botz
 Kaare Rasmussen
 Keiko
@@ -66,6 +70,7 @@ Marc Austin
 Mark Stosberg
 Marty Tennison
 Massimiliano Ciancio
+Mat Jones
 Matthew Schick
 Max Cohan
 Michael Lehmkuhl
@@ -80,16 +85,21 @@ Paul Jordan
 Phil Smith
 Raj Goel
 Ray Desjardins
+Reid Sutherland
 René Hertell
+Ryan Perry
 Sergiusz Jarczyk
 Shozo Murahashi
 Sonny Cook
 Spencer Christensen
 Steve Graham
+Thomas J.M. Burton
 Tim Baverstock
 Tom Friedel
 Tom Tucker
 Tommi Laberno
+Toni Mueller
 Troy Davis
 Victor Nolton
 William Dan Terry
+Zachary Matthews
