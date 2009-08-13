@@ -41,6 +41,7 @@ LATEST_RPM_LOCATION	<a href="http://ftp.icdevgroup.org/interchange/[var LATEST_R
 LATEST_SRPM_LOCATION	<a href="http://ftp.icdevgroup.org/interchange/[var LATEST_SRPM_SERIES]/srpm/">SRPM</a>
 brevp	Brev Patterson
 danb	Daniel Browning
+david	David Christensen
 docelic	Davor Ocelic
 edl	Ed LaFrance
 greg	Greg Hanson
