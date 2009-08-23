@@ -32,9 +32,9 @@
 	<p class="newsSummary">
 [if session arg]
 [or value mv_search_match_count == 1]
-  [filter text2html][news-param body][/filter]
+  [news-param body]
 [else]
-  [filter 200. text2html][news-param body][/filter]<br>
+  [news-filter strip_html 200.][news-param body][/news-filter]<br>
   <a href="[area href="news" arg="[news-param code]"]">[L]Read more[/L]...</a>
 [/else]
 [/if]
