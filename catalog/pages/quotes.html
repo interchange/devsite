@@ -1,5 +1,9 @@
 [include templates/top]
 
+<div class="rowOfBoxes dividingBorderAbove">
+
+<div class="twoThirds noBorderOnLeft">
+
 <h1>Quotes from Users</h1>
 
 [query sql="select * from quotes order by company" list=1]
@@ -10,5 +14,14 @@
 </div>
 </p>
 [/query]
+
+</div>
+
+<div class="oneThird">
+[tmpn hide_quotes]1[/tmpn]
+[include templates/promo]
+</div>
+
+</div>
 
 [include templates/bottom]
