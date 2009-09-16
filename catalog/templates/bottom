@@ -1,20 +1,11 @@
     </div>
 
-    <!-- ##### Footer ##### -->
-
     <div id="footer">
-		<span class='doNotPrint'>
-		Hosting <a href="http://www.endpoint.com/">End Point Corporation</a> &bull;
-		Design
-			__docelic__, __haran__ &bull;
-		</span>
-		Copyright &copy; 2005-[time format="%Y"] __ICDEVGROUP__<br/>
-
-		[comment]
-		<strong>URI &raquo;</strong> [data session last_url]
-		&bull; <strong>Updated &raquo;</strong> [perl][/perl]
-		[/comment]
-		</div>
-	</body>
+        <span class='doNotPrint'>
+        Hosting <a href="http://www.endpoint.com/">End Point Corporation</a> &bull;
+        Design __docelic__, __haran__ &bull;
+        </span>
+        Copyright &copy; 2002-[time format="%Y"] __ICDEVGROUP__
+    </div>
+    </body>
 </html>
-

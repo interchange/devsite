@@ -4,9 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=ISO8859-1" />
-    <meta name="author" content="Davor Ocelic, docelic@icdevgroup.org" />
-    <meta name="generator" content="Interchange, http://www.icdevgroup.org/" />
-    <meta name="keywords" content="Interchange,minivend,minimate,application,server,database,display,electronic,catalog,shopping,cart,ecommerce,commerce,perl,mod_perl,web,online,sell,buy,auction,store,system" />
+    <meta name="keywords" content="Interchange,ecommerce,application,server,database,catalog,shopping,cart,perl,web,online,sell,buy,store" />
     <meta name="description" content="Interchange software website">
     <meta name="robots" content="all" />
 
@@ -19,18 +17,12 @@
     [/if]
 
 		<link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
-[comment]
-		<link rel="alternate" type="application/rss+xml" title="RSS" href=".xml" />
-[/comment]
 
     <title>[either][scratch page_title][or][L]Interchange[/L][/either]</title>
   </head>
 
   <body>
-    <!-- For non-visual user agents: -->
       <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
-
-    <!-- ##### Header ##### -->
 
     <div id="header">
       <div class="superHeader">
@@ -89,10 +81,10 @@
         </div>
       </div>
 
-      <!-- <div class="subHeader">
-			</div> -->
+[comment]
+      <div class="subHeader">
+      </div>
+[/comment]
     </div>
-
-    <!-- ##### Main Copy ##### -->
 
     <div id="main-copy">
