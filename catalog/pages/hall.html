@@ -75,11 +75,8 @@ EOT
 <p><b>[scratch page_title]</b></p>
 
 <p>
-With thousands of developers having implemented sites on Interchange
-(and its predecessor Minivend) since 1995, there are many, many great
-sites out there running on our technology. We only have a small sampling
-listed here, but we've tried to select a cross-section of implementations
-from small and large companies spanning all industries and purposes.
+With thousands of developers have implemented great sites on Interchange
+since 1995. Here we have a sampling of implementations from companies large and small, spanning many industries.
 There are currently [query
 	list=1
 	sql=|
@@ -91,22 +88,24 @@ WHERE active='Y'
 </p>
 
 <p>
-Disclaimer: The listing of these sites is in no way an endorsement by
-the Interchange Development Group. All sites are the responsibility of
-their respective owners, and we cannot guarantee the proper functioning
-of or quality of service provided by these sites.
-</p>
-
-<p>
 If there's a site that you've created or that you're aware of that should
 be listed here, please let us know about it with <a href="#form">the form
 at the bottom of this page</a>.
+</p>
+
+
+<p>
+Disclaimer: Our listing of these sites is not an endorsement by
+the Interchange Development Group. All sites are the responsibility of
+their respective owners, and we cannot guarantee the proper functioning
+of or quality of service provided by these sites.
 </p>
 
         </div>
       </div>
 
         <div class="oneThird">
+          [tmpn hide_quotes]1[/tmpn]
           [include templates/promo]
         </div>
 
@@ -140,12 +139,9 @@ ORDER BY site_name
 link_text][or][loop-param 
 site_name][/either][if-loop-param url]</a>[/if-loop-param]
 [loop-calc]
-	return '' unless q{[loop-param company]};
-	if (q{[loop-param company]} eq (q{[loop-param link_text]} || q{[loop-param site_name]})) {
-		return '';
-	} else {
-		return q{([loop-param company])};
-	}
+    return '' unless $Row->{company};
+    return '' if $Row->{company} eq ($Row->{link_text} || $Row->{site_name});
+    return $Row->{company};
 [/loop-calc]
 [if-loop-param developer]<br>By: [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
 [if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
@@ -170,12 +166,9 @@ ORDER BY site_name
 <li>
 [if-loop-param url]<a href="[loop-param url]">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
 [loop-calc]
-	return '' unless q{[loop-param company]};
-	if (q{[loop-param company]} eq (q{[loop-param link_text]} || q{[loop-param site_name]})) {
-		return '';
-	} else {
-		return q{([loop-param company])};
-	}
+    return '' unless $Row->{company};
+    return '' if $Row->{company} eq ($Row->{link_text} || $Row->{site_name});
+    return $Row->{company};
 [/loop-calc]
 [if-loop-param developer]-- developed by [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
 [if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
