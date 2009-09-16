@@ -1,26 +1,27 @@
-<h1>Promo</h1>
+<h1>About Interchange</h1>
 
 <ul>
-<li> [page about]About and History</a> </li>
-<li> <strong>__DEMO__!</strong> </li>
-[comment]<li> Features </li>[/comment]
+<li> <strong>__DEMO__</strong> </li>
+<li> [page hall]Hall of Fame</a> (sites running Interchange) </li>
 <li> [page platforms]Supported platforms</a> </li>
-<li> [page license]Copyright &amp; License</a> </li>
-<li> [page logos]Logos and ads</a> </li>
-<li> [page quotes]Quotes</a> </li>
-<li> [page hall]Hall of Fame</a> (noteworthy production sites running Interchange) </li>
+<li> [page about]Interchange history</a> </li>
+<li> [page license]Copyright &amp; license</a> </li>
+<li> [page logos]Logos and badges</a> </li>
+<li> [page quotes]Endorsements</a> </li>
 <li> [page contact]Contact</a> </li>
 </ul>
 
+[if !scratch hide_quotes]
 <p>
-<b>What Interchange users are saying:</b><br><br>
+<b>What Interchange users are saying:</b>
 </p>
 
 [query sql="select * from quotes" random=1 list=1]
 <div class="quote">
-<i>"[sql-param quote]"</i>,<br>
+<i>"[sql-param quote]"</i><br>
 [sql-param name], [if-sql-param company_pos][sql-param company_pos] at [/if-sql-param][if-sql-param company_url]<a href="[sql-param company_url]">[sql-param company]</a>[else][sql-param company][/else][/if-sql-param].
 </div>
 [/query]
 
 <p class='filler'></p>
+[/if]

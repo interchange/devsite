@@ -1,15 +1,15 @@
 <h1>Users &amp; Developers</h1>
 
 <ul>
+<li> <a href="[area download]">Downloads and source code</a> </li>
 <li> <a href="[area docs]">Documentation</a> </li>
-<li> <a href="[area download]">Downloads and Source Code</a> </li>
+<li> <a href="[area users/community]">Community resources</a> (mailing lists etc.)</li>
 <li> <a href="http://git.icdevgroup.org/?p=interchange.git;a=blob;f=UPGRADE;hb=HEAD">Upgrade notes</a> </li>
+<li> <a href="[area support/index]">Professional support</a> </li>
 <li> <a href="[area news]">News</a> </li>
-<li> <a href="[area devel/people]">Interchange Developers and Contributors</a> </li>
 <li> <a href="[area releases]">Chronological list of releases</a> </li>
-<li> <a href="http://rt.icdevgroup.org/">Bug Tracker</a> (use guest/guest for anonymous login)</li>
-<li> <a href="[area users/community]">Community Resources</a> (mailing lists etc.)</li>
-<li> <a href="[area support/index]">Professional Support</a> </li>
+<li> <a href="[area devel/people]">Developers and contributors</a> </li>
+<li> <a href="http://rt.icdevgroup.org/">Bug tracker</a> (use guest/guest for anonymous login)</li>
 </ul>
 
 <p class='filler'></p>
