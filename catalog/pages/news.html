@@ -2,12 +2,38 @@
 
       <div class="rowOfBoxes dividingBorderAbove">
         <div class="twoThirds noBorderOnLeft">
-				[include templates/news]
+[tmpn news_page]1[/tmpn]
+[include templates/news]
         </div>
       </div>
 
-			<div class="oneThird">
-				[include templates/news.list]
-			</div>
+      <div class="oneThird">
+<p><strong>News archive</strong></p>
+
+[loop prefix=news search=|
+    fi=news
+    st=db
+    tf=posted_on
+    to=r
+    ml=1000
+    ra=yes
+    rf=*
+|]
+
+[on-match]
+<ul>
+[/on-match]
+
+[list]
+<li>[convert-date format="%Y-%m-%d"][news-param posted_on][/convert-date]: <a href="[area href="news" arg="[news-param code]"]">[news-param title]</a></li>
+[/list]
+
+[on-match]
+</ul>
+[/on-match]
+[/loop]
+
+<p class="filler"></p>
+      </div>
 
 [include templates/bottom]

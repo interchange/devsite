@@ -1,20 +1,20 @@
-<h1>Latest News</h1>
+<h1>Interchange News</h1>
 
-[loop prefix=news more=1 search=|
+[loop prefix=news search=|
 	fi=news
 	st=db
 	tf=posted_on
 	to=r
-	ml=2
+	ml=[if scratch news_page]4[else]2[/else][/if]
 
-	[if session arg]
-	sf=code
-	op=eq
-	se=[data session arg]
-	[else]
-	ra=yes
-	[/else]
-	[/if]
+    [if session arg]
+    sf=code
+    op=eq
+    se=[data session arg]
+    [else]
+    ra=yes
+    [/else]
+    [/if]
 
 	rf=*
 |]
@@ -27,11 +27,12 @@
 <li>
 <a href="[area href="news" arg="[news-param code]"]" class="newsHeading">[news-param title]</a>
 
-<p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] by [if-news-param posted_email]<a href="mailto:[news-param posted_email]">[news-param posted_by]</a>[else][news-param posted_by][/else][/if-news-param]</p>
+<p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] by [either][var name="[news-param posted_by]"][or][news-param posted_by][/either]</p>
 
 	<p class="newsSummary">
 [if session arg]
 [or value mv_search_match_count == 1]
+[or scratch news_page]
   [news-param body]
 [else]
   [news-filter strip_html 200.][news-param body][/news-filter]<br>
@@ -45,10 +46,6 @@
 [on-match]
 </ul>
 [/on-match]
-
-[more-list]
-  <div align='center'>[more]</div>
-[/more-list]
 [/loop]
 
 <p class="filler"></p>
