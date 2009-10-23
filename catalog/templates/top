@@ -8,75 +8,77 @@
     <meta name="description" content="Interchange software website">
     <meta name="robots" content="all" />
 
-    [if !value web_style_plain]
-	    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css" media="screen, tv, projection" title="Default" />
-	    <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
-	    <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
-    [/if]
+[if !value web_style_plain]
+    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css" media="screen, tv, projection" title="Default" />
+    <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
+    <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
+[/if]
 
-		<link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
 
     <title>[either][scratch page_title][or][L]Interchange[/L][/either]</title>
   </head>
 
   <body>
-      <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+    <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
 
     <div id="header">
-      <div class="superHeader">
-	<form action="[process href=Swish]" method="GET">
+    <div class="superHeader">
+    <form action="[process href=Swish]" method="GET">
 
-	<div class="superTopHeader">
-	    [L]Powering web-based applications since 1995[/L]
-	</div>
-	<div class="dividingBorderAbove" style="padding-top: 0.5ex">
-	<span class="doNotDisplay">Navigation:</span>
-	[form-session-id]
-	[page index]Home</a> |
-	[page download]Download</a> | 
-	<a href="__GITWEB_INTERCHANGE_URL__">Gitweb</a> | 
-	<a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> | 
-	[page docs]Docs</a> | 
-	[page hall]Active sites</a> |
-	[page contact]Contact</a> |
+    <div class="superTopHeader">
+        [L]Powering web-based applications since 1995[/L]
+    </div>
+    <div class="dividingBorderAbove" style="padding-top: 0.5ex">
+    <span class="doNotDisplay">Navigation:</span>
+    [form-session-id]
+    [page index]Home</a> |
+    [page download]Download</a> |
+    <a href="__GITWEB_INTERCHANGE_URL__">Gitweb</a> |
+    <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> |
+    [page docs]Docs</a> |
+    [page hall]Active sites</a> |
+    [page contact]Contact</a> |
 
-	Search:&nbsp;
-	<input name="mv_searchspec" value="[cgi mv_searchspec]">
-	<input type="hidden" name="search_mailinglists" value="1">
-	<input type="submit" value="Go">
-							
+    Search:&nbsp;
+    <input name="mv_searchspec" value="[cgi mv_searchspec]">
+    <input type="hidden" name="search_mailinglists" value="1">
+    <input type="submit" value="Go">
+
 [comment]
-		|
-		[if value web_style_plain]
-			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
-		[else]
-			[page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
-		[/else]
-		[/if]
+        |
+        [if value web_style_plain]
+            [page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
+        [else]
+            [page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
+        [/else]
+        [/if]
 [/comment]
-	</form>
-     </div>
-      </div>
+    </form>
+    </div>
+    </div>
 
-      <div class="midHeader">
+    <div class="midHeader">
         <h1 class="headerTitle" lang="la">
-					[if !value web_style_plain]
-						[calc]
-						return $Tag->var('MV_PAGE', 1) eq 'index' ?
-							qq{
-							<img src="/style/intro.jpg" alt="Interchange" border="0"/>
-							}
-							: ''
-						[/calc]
-					[/if]
-				</h1>
+[if !value web_style_plain]
+[calc]
+    return $Tag->var('MV_PAGE', 1) eq 'index'
+        ? qq{<img src="/style/intro.jpg" alt="Interchange" border="0"/>}
+        : ''
+[/calc]
+[/if]
+    </h1>
 
+[comment]
         <div class="headerSubTitle" title=""></div>
+[/comment]
 
         <br class="doNotDisplay doNotPrint" />
 
+[comment]
         <div class="headerLinks">
         </div>
+[/comment]
       </div>
 
 [comment]
