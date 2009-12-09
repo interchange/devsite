@@ -17,7 +17,7 @@ GITWEB_XMLDOCS_URL	http://git.icdevgroup.org/?p=xmldocs.git
 GITHUB_XMLDOCS_URL	http://github.com/interchange/xmldocs/tree/master
 GNU	<a href="http://www.gnu.org/">GNU</a>
 IC	Interchange
-ICDEVGROUP	<a href="http://www.icdevgroup.org/">Interchange Development Group</a>
+ICDEVGROUP	Interchange Development Group
 IMAGE_DIR	/style
 DEMO	<a href="[area demo]">Online demo</a>
 DEMO1	<a href="http://demo.icdevgroup.org/demo1" target="_blank">demo</a> (will open a new window)
