@@ -3,7 +3,7 @@ STABLE_SERIES	5.6
 STABLE	5.6.2
 PREVIOUS_DEVEL_SERIES	5.5
 DEVEL_SERIES	5.7
-DEVEL	5.7.3
+DEVEL	5.7.4
 CGI_URL	/i/dev
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
 DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
