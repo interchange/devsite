@@ -38,7 +38,7 @@ sub {
 
 		if ($args[0] eq 'ByDate') {
 			$CGI->{mv_sort_field} = 'mod_date';
-			$CGI->{mv_sort_option} = "${rev}n";
+			$CGI->{mv_sort_option} = "${rev}f";
 		} elsif ($args[0] eq 'ByTitle') {
 			$CGI->{mv_sort_field} = 'title';
 			$CGI->{mv_sort_option} = "${norm}f";
