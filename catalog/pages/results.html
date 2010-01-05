@@ -37,13 +37,6 @@ sort_before=[scratch sort_before]"]">[loop-param label]</a></th>
 <td class="noWrap">[item-param mod_date]</td>
 <td>[item-param filesize]</td>
 <td>[item-param score]</td>
-</tr>[else]
-[if-item-param dbfile =~ rtfm]
-<tr><td class="noWrap">RTFM site</td>
-<td><a href="[item-param url]">[item-param title]</a></td>
-<td class="noWrap">[item-param mod_date]</td>
-<td>[item-param filesize]</td>
-<td>[item-param score]</td>
 </tr>
 [else]
 <tr><td class="noWrap">[item-param area]</td>
@@ -52,8 +45,6 @@ sort_before=[scratch sort_before]"]">[loop-param label]</a></th>
 <td>[item-param filesize]</td>
 <td>[item-param score]</td>
 </tr>
-[/else]
-[/if-item-param]
 [/else]
 [/if-item-param]
 [/else]
