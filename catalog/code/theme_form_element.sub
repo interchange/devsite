@@ -12,7 +12,10 @@ sub {
 	my ($name, $label, $type, $value, $attributes) = @_;
 	my ($out);
 	
-	$out = theme('form_element_label', $name, $label);
+	unless ($type eq 'hidden') {
+		$out = theme('form_element_label', $name, $label);
+	}
+
 	$out .= theme('form_element_field', $name,
 				   	$type,
 					$value,
