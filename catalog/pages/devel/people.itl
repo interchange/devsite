@@ -1,0 +1,4 @@
+[compose
+	components.body="leftmenu developers_list"
+	attributes.title.title="Developers"
+]
