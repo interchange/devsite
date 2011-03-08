@@ -5,7 +5,7 @@ id	name	username	since	retired	task
 004	__zeald__	zeald	May 2002	Jul 2009	Design
 005	__docelic__	docelic	Jun 2004	0	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
 006	__edl__	edl	Sep 2001	Dec 2004	Developer
-007	__ethan__	ethan	Nov 2004	0	Developer
+007	__ethan__	ethan	Nov 2004	Oct 2010	Developer
 008	__thunder__	thunder	Aug 2006	0	Developer
 009	__greg__	greg	Sep 2004	0	Developer
 010	__jonc__	jonc	Jan 2001	Jun 2009	Developer
