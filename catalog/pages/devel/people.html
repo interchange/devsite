@@ -35,7 +35,7 @@ __TOP__
 <p>&nbsp;</p>
 <h2>Retired Core Team Members</h2>
 <p>
-[table-organize cols=4 table='width=60%']
+[table-organize cols=4 table='width=100%']
 [loop prefix=loop more=0 search=|
   fi=core
   st=db
@@ -53,10 +53,10 @@ __TOP__
 <td class='th'>Retired</td>
 <td class='th'>Tasks</td>
 [/loop-alternate]
-<td>[filter vars_and_comments][loop-param name][/filter]</td>
-<td>[loop-param since]</td>
-<td>[loop-param retired]</td>
-<td>[loop-param task]</td>
+<td nowrap>[filter vars_and_comments][loop-param name][/filter]</td>
+<td nowrap>[loop-param since]</td>
+<td nowrap>[loop-param retired]</td>
+<td nowrap>[loop-param task]</td>
 [/list]
 [/loop]
 [/table-organize]
