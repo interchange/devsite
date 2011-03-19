@@ -3,7 +3,7 @@ id	name	username	since	retired	task
 002	__danb__	danb	Jun 2001	0	Graphics, Design
 003	__david__	david	Aug 2009	0	Developer
 004	__zeald__	zeald	May 2002	Jul 2009	Design
-005	__docelic__	docelic	Jun 2004	0	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
+005	__docelic__	docelic	Jun 2004	Mar 2011	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
 006	__edl__	edl	Sep 2001	Dec 2004	Developer
 007	__ethan__	ethan	Nov 2004	Oct 2010	Developer
 008	__thunder__	thunder	Aug 2006	0	Developer
@@ -12,7 +12,7 @@ id	name	username	since	retired	task
 011	__jjustman__	jjustman	Dec 2008	Jan 2010	Developer
 012	__jon__	jon	Jun 2000	0	Developer, RPM package maintainer, sysadmin
 013	__jure__	jure	Jun 2008	0	icdevgroup.org website, Design
-014	__kwalsh__	kwalsh	Jan 2002	0	Developer, mod_interchange Apache module maintainer
+014	__kwalsh__	kwalsh	Jan 2002	Mar 2011	Developer, mod_interchange Apache module maintainer
 015	__markj__	markj	Feb 2003	0	Developer
 016	__markl__	markl	Jun 2009	0	Developer
 017	__mheins__	mheins	Aug 1995	0	Interchange creator
