@@ -319,19 +319,16 @@ input, textarea, select {
 }
 
 .half {
-  text-align: justify;
   width: 46%;
   padding: 0 1.9%;
 }
 
 .twoThirds {
-  text-align: justify;
   width: 63%;
   padding: 0 1.9%;
 }
 
 .fullWidth {
-  text-align: justify;
   width: 96%;
   padding: 0 1.2em;
   border-left: none;
@@ -393,5 +390,4 @@ a.results {
 }
 
 .quote {
-  text-align: justify;
 }
