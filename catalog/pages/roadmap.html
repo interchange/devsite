@@ -1,0 +1,95 @@
+[include templates/top]
+
+<div class="rowOfBoxes dividingBorderAbove">
+
+<div class="twoThirds noBorderOnLeft">
+
+<h1>Roadmap</h1>
+
+<h2>5.x Branch</h2>
+<p>
+Interchange 5.x is the backward-compatible branch and will have new releases, both minor and major, 
+for as long as the core team is still supporting it, most likely for many more years given the 
+large number of serious ecommerce sites running successfully on it.
+</p>
+
+<h3>5.8.x Codename "Harp"</h3>
+<p>
+Pending changes for 5.8 are improving robot detection (david) and configuration
+of UTF-8 usage (racke).
+</p>
+<p>
+Release of 5.7.7 is scheduled for April 2011.<br>
+Release of 5.7.8 is scheduled for May 2011.<br>
+Release of 5.8.0 is scheduled for July 2011.<br>
+</p>
+<p><small>
+Backwards compatibility level: high.
+</small></p>
+
+<h3>5.10.x Codename "Flute"</h3>
+<p>
+The main focus for "Flute" is on integrating code from the Interchange WellWell subproject. 
+</p>
+<p>
+This adds the following features to Interchange 5:
+<p>
+<ul>
+<li>Better templating through [compose].</li>
+<li>Plugins and hooks.</li>
+<li>ACL with users, roles and permissions.</li>
+<li>Additional template engine based on <a href="http://search.cpan.org/perldoc?Template::Flute">Template::Flute</a>.</li>
+<li>PDF invoices</li>
+<li>Alternative database layer (crossbred from 
+<a href="http://search.cpan.org/perldoc?Dancer::Plugin::Database">Dancer::Plugin::Database</a> and 
+<a href="http://search.cpan.org/perldoc?Rose::DB::Object::QueryBuilder"> Rose::DB::Object::QueryBuilder</a>)</li>
+</ul>
+<p>
+Release of 5.10.0 is scheduled for July 2012.
+</p>
+<p><small>
+Backwards compatibility level: medium.
+</small></p>
+
+<h2>6.x Branch</h2>
+<p>
+Interchange 6 is completely built new on top of modern Perl, modern Perl frameworks and
+CPAN modules. Rather than being a complete application server, 
+as Interchange 5 and earlier are, 
+it is an application built on Plack/PSGI, <a href="http://www.perldancer.org/">Dancer</a>, CPAN modules, and requiring 
+Perl 5.10.1 or newer, using UTF-8 throughout, etc.
+</p>
+<h3>6.0.x Codename "Bongo"</h3>
+<p>
+"Bongo" reduces the Interchange core code to the bare minimum, removing
+all code attributed to frameworks (sessions, authentication, templating,
+dispatching, etc.).
+</p>
+<p>
+"Bongo" uses <a href="http://www.perldancer.org/">Dancer</a> as web application framework.
+The flexibility, modular design and minimalist approach matches the future philosophy of
+Interchange.
+</p>
+<p>
+Plugins provide additional functionality like payment gateways, coupons,
+shipping calculation, reviews, etc.
+</p>
+<p>
+Interchange 6 will uploaded to CPAN and POD becomes the documentation method,
+complemented by a <a href="http://www.perldancer.org/">Dancer</a> and 
+<a href="http://search.cpan.org/perldoc?Wiki::Toolkit">Wiki::Toolkit</a> based wiki.
+<p>
+Release of 6.0.0 is scheduled for July 2012.
+</p>
+<p><small>
+Backwards compatibility level: low.
+</small></p>
+</div>
+
+<div class="oneThird">
+[include templates/promo]
+</div>
+
+</div>
+
+[include templates/bottom]
