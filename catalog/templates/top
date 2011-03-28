@@ -34,6 +34,7 @@
     [form-session-id]
     [page index]Home</a> |
     [page download]Download</a> |
+    <a href="[area roadmap]">Roadmap</a> |
     <a href="__GITWEB_INTERCHANGE_URL__">Gitweb</a> |
     <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> |
     [page docs]Docs</a> |
