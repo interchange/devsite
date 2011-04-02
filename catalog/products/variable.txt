@@ -10,11 +10,11 @@ DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
 DOCBOOK	<a href="http://www.docbook.org/">DocBook</a>
 FREENODE	<a href="http://www.freenode.net/">FreeNode</a>
 GITWEB_INDEX_URL	http://git.icdevgroup.org/
-GITHUB_INDEX_URL	http://github.com/interchange/
+GITHUB_INDEX_URL	https://github.com/interchange/
 GITWEB_INTERCHANGE_URL	http://git.icdevgroup.org/?p=interchange.git
-GITHUB_INTERCHANGE_URL	http://github.com/interchange/interchange/tree/master
+GITHUB_INTERCHANGE_URL	https://github.com/interchange/interchange/tree/master
 GITWEB_XMLDOCS_URL	http://git.icdevgroup.org/?p=xmldocs.git
-GITHUB_XMLDOCS_URL	http://github.com/interchange/xmldocs/tree/master
+GITHUB_XMLDOCS_URL	https://github.com/interchange/xmldocs/tree/master
 GNU	<a href="http://www.gnu.org/">GNU</a>
 IC	Interchange
 ICDEVGROUP	Interchange Development Group
