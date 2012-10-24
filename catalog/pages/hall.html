@@ -135,13 +135,11 @@ ORDER BY site_name
 <img src="hall/[loop-code].jpg" width="202" height="152" border=0>
 [if-loop-param url]</a>[/if-loop-param]
 <br>
-[if-loop-param url]<a href="[loop-param url]" style="font-size: 12;" target="_blank">[/if-loop-param][either][loop-param 
-link_text][or][loop-param 
-site_name][/either][if-loop-param url]</a>[/if-loop-param]
+[if-loop-param url]<a href="[loop-param url]" style="font-size: 12;" target="_blank">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
 [loop-calc]
     return '' unless $Row->{company};
     return '' if $Row->{company} eq ($Row->{link_text} || $Row->{site_name});
-    return $Row->{company};
+    return '<br />' . $Row->{company};
 [/loop-calc]
 [if-loop-param developer]<br>By: [if-loop-param developer_link]<a href="[loop-param developer_link]">[/if-loop-param][loop-param developer][if-loop-param developer_link]</a>[/if-loop-param][/if-loop-param]
 [if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
