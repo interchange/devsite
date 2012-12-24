@@ -22,3 +22,4 @@ id	name	username	since	retired	task
 021	__ron__	ron	Feb 2007	0	Developer
 022	__racke__	racke	Jun 1999	0	Interchange team captain, Debian GNU package maintainer, I18N
 023	__ton__	ton	Jun 2001	0	Developer
+024	__jlavin__	jlavin	Feb 2012	0	Developer

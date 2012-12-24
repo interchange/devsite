@@ -45,6 +45,7 @@ david	David Christensen
 docelic	Davor Ocelic
 edl	Ed LaFrance
 greg	Greg Hanson
+jlavin	Josh Lavin
 jon	Jon Jensen
 jonc	Jonathan Clark
 jjustman	JT Justman
