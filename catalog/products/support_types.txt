@@ -1,5 +1,0 @@
-code	name	description
-hosting	Hosting	
-training	Training	
-consulting	Consulting	
-development	Development	
