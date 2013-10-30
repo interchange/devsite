@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multi-store sites in Interchange 5</title>
+<link rel="stylesheet" type="text/css" href="presentazion.css" media="screen,projection,handheld">
+<link rel="stylesheet" type="text/css" href="presentazion-print.css" media="print">
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="presentazion.js"></script>
+<!--
+    Many thanks for the presentation software!
+    https://github.com/lordarthas/Presentazion
+-->
+</head>
+<body>
+<div class="slideshow">
+
+<div class="slide">
+<h2>Multi-store setup in Interchange 5</h2>
+<p>Richard Templet<br />
+End Point Corporation<br />
+<a href="http://www.endpoint.com/">endpoint.com</a></p>
+</div>
+
+<div class="slide">
+<h2>What is Multi-store?</h2>
+<ul>
+<li>One Interchange daemon, many sites</li>
+<li>Shared images, configuation between sites</li>
+<li>Different pricing or logic between sites</li>
+<li>Different look and feel per site</li>
+</ul>
+
+</div>
+<div class="slide">
+<h3>There are 4 different areas that we setup to make this happen:</h3>
+<ul>
+<li>Apache</li>
+<li>Interchange catalog </li>
+<li>Interchange global</li>
+<li>database </li>
+</ul>
+</div>
+
+<div class="slide">
+<pre align="left">
+<h3>Standard directory tree</h3>
+user
+|-- live
+|   |-- bin 
+|   |-- catalogs
+|   |   |-- site1
+|   |   |-- site2
+|   |   |-- site3
+|   |   `-- shared
+|   |-- cgi-bin
+|   |-- htdocs
+|   |   |-- master_images
+|   |   |-- site1
+|   |   |-- site2
+|   |   |-- site3
+|   |   |-- shared_html
+|   |-- interchange
+</pre>
+</div>
+
+<div class="slide">
+<h3>Catalogs directory tree looks something like this:</h3>
+
+<pre align="left">
+|-- site1 
+|   |-- captcha -> ../../htdocs/site1/images/captcha/
+|   |-- include
+|   |   |-- user_mgmt -> ../../shared/include/user_mgmt
+|   |-- pages
+|   |   |-- flypage.html -> ../../shared/pages/flypage.html
+|   |-- products
+|   |   |-- shared_variable.txt -> ../../shared/products/shared_variable.txt
+`-- shared
+    |-- include
+    |   |-- user_mgmt
+    |-- pages
+    |   |-- flypage.html
+    |-- products
+    |   |-- shared_variable.txt
+</pre>
+</div>
+
+<div class="slide">
+<h3>Add to catalog.cfg:</h3>
+VariableDatabase shared_variable
+</div>
+
+<div class="slide">
+<h3>Interchange Global adjustmenets</h3>
+<ul>
+<li>Take advantage of Interchange global space</li>
+<li>Shared usertags, actions maps and configuration variables  </li>
+</ul>
+</div>
+
+<div class="slide">
+<h3>Database Setup Strategies</h3>
+<ul> 
+<li>No 'right' way to do it</li>
+<li>Different users per catalog</li>
+<li>Shared database tables</li>
+<li>Custom views</li>
+</ul>
+</div>
+
+<div class="slide">
+<h3>Questions?</h3>
+</div>
+
+
+<div id="mediatype"></div>
+</body>
+</html>
+

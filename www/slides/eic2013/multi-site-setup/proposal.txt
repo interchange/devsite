@@ -1,0 +1,17 @@
+http://act.yapc.eu/ye2013/
+YAPC::EU 2013 Kiev "Future Perl"
+
+Talk abstract:
+http://act.yapc.eu/ye2013/talk/4861
+
+Adventures in Perl packaging
+
+It is a source of convenience and just as often, annoyance, that Linux distributions come with Perl and some prepackaged CPAN modules. By the time developers get a chance to use any given version of a Linux distribution, its perl and CPAN modules are often old, sometimes very old.
+
+Just as important, no Linux distribution includes every CPAN module you'll need, so you're forced to either learn how to package them yourself and deal with repository issues, or else install from CPAN source files, making a mess of the clean distribution-managed perl.
+
+perlbrew, local::lib, Carton, etc. sidestep the issue and are very useful, but a poor substitute for a well-managed package ecosystem used on many servers.
+
+Even if you have all the CPAN modules you need in packages, what do you do if you need a newer version of a CPAN module? What if its API has changed?
+
+I'll talk about our experience building our own custom perl and CPAN modules for RHEL/CentOS 5 and 6 using our own repositories, mistakes made, lessons learned, RPM-building helpers, what others have done for their own RHEL/CentOS Perl needs, parallels from Debian and Ubuntu, and our plans for RHEL/CentOS 7.
