@@ -45,6 +45,7 @@ david	David Christensen
 docelic	Davor Ocelic
 edl	Ed LaFrance
 greg	Greg Hanson
+hexfusion	Sam Batschelet
 jlavin	Josh Lavin
 jon	Jon Jensen
 jonc	Jonathan Clark
@@ -58,7 +59,9 @@ pajamian	Peter Ajamian
 pvinci	Paul Vinciguerra
 racke	Stefan Hornburg
 ramoore	Randy Moore
+richard	Richard Templet
 ron	Ron Phipps
+syspete	Peter Mottram
 ton	Ton Verhagen
 thunder	Gert van der Spoel
 zeald	David Kelly
