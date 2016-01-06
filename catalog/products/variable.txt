@@ -1,9 +1,9 @@
 code	Variable
-STABLE_SERIES	5.8
-STABLE	5.8.2
-PREVIOUS_DEVEL_SERIES	5.7
-DEVEL_SERIES	5.9
-DEVEL	5.9.0
+STABLE_SERIES	5.10
+STABLE	5.10.0
+PREVIOUS_DEVEL_SERIES	5.9
+DEVEL_SERIES	5.11
+DEVEL	5.11.0
 CGI_URL	/i/dev
 DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
 DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
