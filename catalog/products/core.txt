@@ -1,6 +1,6 @@
 id	name	username	since	retired	task
 001	__brevp__	brevp	Mar 2001	Nov 2007	Developer
-002	__danb__	danb	Jun 2001	Nov 2011	Developer
+002	__danb__	danb	Jun 2001	Nov 2016	Developer
 003	__david__	david	Aug 2009	0	Developer
 004	__zeald__	zeald	May 2002	Jul 2009	Design
 005	__docelic__	docelic	Jun 2004	Mar 2011	XMLDOCS Interchange documentation system, icdevgroup.org website, I18N
