@@ -89,8 +89,8 @@ WHERE active='Y'
 
 <p>
 If there's a site that you've created or that you're aware of that should
-be listed here, please let us know about it with <a href="#form">the form
-at the bottom of this page</a>.
+be listed here, please let us know about it with a GitHub
+<a href="https://github.com/interchange/devsite/pulls">pull request on the interchange/devsite repository</a>.
 </p>
 
 
@@ -173,57 +173,6 @@ ORDER BY site_name
 [/query]
 </ul>
 
-<p align=center><a name="form"><hr width="50%"></a></p>
-
-<form method=POST action="[area @@MV_PAGE@@]">
-<input type=hidden name=mv_session_id value="[data session id]">
-<input type=hidden name=submit value=1>
-
-<h3>Submit a site for inclusion in the Interchange Hall of Fame</h3>
-
-<table border=0 cellpadding=2 cellspacing=0>
-<tr>
-<td>Site name:</td>
-<td><input type=text name=site_name size=25></td>
-</tr>
-<tr>
-<td>URL:</td>
-<td><input type=text name=url size=40></td>
-</tr>
-<tr>
-<td>Company (if different from site name):</td>
-<td><input type=text name=company size=25></td>
-</tr>
-<tr>
-<td>Developer:</td>
-<td><input type=text name=developer size=40 value="[value developer]">
-</tr>
-<tr>
-<td>Developer URL:</td>
-<td><input type=text name=developer_link size=40 value="[value developer_link]">
-</tr>
-<tr>
-<td>Noteworthy features:</td>
-<td><input type=text name=commentary size=60>
-</tr>
-<tr>
-<td>Contact name (not displayed in Hall of Fame):</td>
-<td><input type=text name=contact_name size=40>
-</tr>
-<td>Contact email (in case we have questions):</td>
-<td><input type=text name=contact_email size=40>
-</tr>
-</table>
-
-<p>Please note that the site will be reviewed before it is included in the
-Hall of Fame, and not all sites will be included. In particular, new sites may
-not be added until they've proven themselves for a few months, and are still
-running Interchange when we check them. Thanks for your understanding.
-</p>
-
-<p><input type="submit" value="Submit"></p>
-
-</form>
         </div>
       </div>
 
