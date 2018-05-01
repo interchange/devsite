@@ -1,2 +1,8 @@
-corewiki
-wiki
+*~
+\#*
+*.swp
+*.iml
+/.idea
+.DS_Store
+Thumbs.db
+.TemporaryItems/
