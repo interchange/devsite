@@ -5,17 +5,15 @@ use strict;
 
 my @files = `find /var/ftp/pub/interchange/ -name "ANNOUNCEMENT-*" | tac`;
 chomp for @files;
-@files = sort {  (stat $b)[9] <=> (stat $a)[9] } @files;
-
+@files = sort { (stat $b)[9] <=> (stat $a)[9] } @files;
 
 my $series;
 
 for (@files) {
-
 	my $file = $_;
 	my $mtime = (stat $file)[9];
 
-	( my $ftp_ann = $_ ) =~ s#/var/ftp#ftp://ftp.icdevgroup.org#;
+	( my $ftp_ann = $_ ) =~ s#/var/ftp#http://ftp.icdevgroup.org#;
 	( my $ftp_dir = $ftp_ann ) =~ s#ANNOUNC.*##;
 
 	$_ = $file;
@@ -25,8 +23,6 @@ for (@files) {
 		'<tr><td>Interchange ' . $series . '</td>'.
 		'<td align="right">' . scalar localtime($mtime) . '</td>' .
 		"<td><a href='$ftp_ann'>Announcement</a></td>" .
-		"<td><a href='$ftp_dir'>FTP release directory</a></td></tr>" .
+		"<td><a href='$ftp_dir'>Download</a></td></tr>" .
 		"\n";
-
 }
-

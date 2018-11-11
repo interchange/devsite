@@ -22,7 +22,6 @@ IMAGE_DIR	/style
 DEMO	<a href="[area demo]">Online demo</a>
 DEMO1	<a href="http://demo.icdevgroup.org/demo1" target="_blank">demo</a> (will open a new window)
 DEMO4	<a href="http://demo.icdevgroup.org/i/demo4" target="_blank">demo</a> (will open a new window)
-NIGHTLY_FTP	<a href="ftp://ftp.icdevgroup.org/pub/interchange/nightly_build/">nightly builds</a>
 NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly builds</a>
 PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
 SECURE_SERVER	https://www.icdevgroup.org/
