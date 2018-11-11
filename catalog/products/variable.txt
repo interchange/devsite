@@ -5,17 +5,14 @@ PREVIOUS_DEVEL_SERIES	5.9
 DEVEL_SERIES	5.11
 DEVEL	5.11.0
 CGI_URL	/i/dev
-DEBIAN	<a href="http://www.debian.org/">Debian GNU</a>
+DEBIAN	<a href="https://www.debian.org/">Debian GNU</a>
 DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
-DOCBOOK	<a href="http://www.docbook.org/">DocBook</a>
-FREENODE	<a href="http://www.freenode.net/">FreeNode</a>
-GITWEB_INDEX_URL	http://git.icdevgroup.org/
-GITHUB_INDEX_URL	https://github.com/interchange/
-GITWEB_INTERCHANGE_URL	http://git.icdevgroup.org/?p=interchange.git
-GITHUB_INTERCHANGE_URL	https://github.com/interchange/interchange/tree/master
-GITWEB_XMLDOCS_URL	http://git.icdevgroup.org/?p=xmldocs.git
-GITHUB_XMLDOCS_URL	https://github.com/interchange/xmldocs/tree/master
-GNU	<a href="http://www.gnu.org/">GNU</a>
+DOCBOOK	<a href="https://docbook.org/">DocBook</a>
+FREENODE	<a href="https://freenode.net/">FreeNode</a>
+GITHUB_INDEX_URL	https://github.com/interchange
+GITHUB_INTERCHANGE_URL	https://github.com/interchange/interchange
+GITHUB_XMLDOCS_URL	https://github.com/interchange/xmldocs
+GNU	<a href="https://www.gnu.org/">GNU</a>
 IC	Interchange
 ICDEVGROUP	Interchange Development Group
 IMAGE_DIR	/style
