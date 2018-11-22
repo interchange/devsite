@@ -6,9 +6,9 @@ DEVEL_SERIES	5.11
 DEVEL	5.11.0
 CGI_URL	/i/dev
 DEBIAN	<a href="https://www.debian.org/">Debian GNU</a>
-DIR_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/">directory</a>
+DIR_DEBIAN	<a href="https://ftp.interchangecommerce.org/interchange/debian/">directory</a>
 DOCBOOK	<a href="https://docbook.org/">DocBook</a>
-FREENODE	<a href="https://freenode.net/">FreeNode</a>
+FREENODE	<a href="https://freenode.net/">freenode</a>
 GITHUB_INDEX_URL	https://github.com/interchange
 GITHUB_INTERCHANGE_URL	https://github.com/interchange/interchange
 GITHUB_XMLDOCS_URL	https://github.com/interchange/xmldocs
@@ -17,24 +17,22 @@ IC	Interchange
 ICDEVGROUP	Interchange Development Group
 IMAGE_DIR	/style
 DEMO	<a href="[area demo]">Online demo</a>
-DEMO1	<a href="http://demo.icdevgroup.org/demo1" target="_blank">demo</a> (will open a new window)
-DEMO4	<a href="http://demo.icdevgroup.org/i/demo4" target="_blank">demo</a> (will open a new window)
-NIGHTLY_HTTP	<a href="http://ftp.icdevgroup.org/interchange/nightly_build/">nightly builds</a>
-PUBLIC_MLS	<a href="http://www.icdevgroup.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
-SECURE_SERVER	https://www.icdevgroup.org/
-SERVER_NAME	www.icdevgroup.org
-STABLE_DEBIAN	<a href="http://ftp.icdevgroup.org/interchange/debian/[var STABLE]/">directory</a>
-STABLE_RPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
-STABLE_SRPM	<a href="http://ftp.icdevgroup.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
+NIGHTLY_HTTP	<a href="https://ftp.interchangecommerce.org/interchange/nightly_build/">nightly builds</a>
+PUBLIC_MLS	<a href="https://www.interchangecommerce.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
+SECURE_SERVER	https://www.interchangecommerce.org/
+SERVER_NAME	www.interchangecommerce.org
+STABLE_DEBIAN	<a href="https://ftp.interchangecommerce.org/interchange/debian/[var STABLE]/">directory</a>
+STABLE_RPM	<a href="https://ftp.interchangecommerce.org/interchange/[var STABLE_SERIES]/rpm/">RPM</a>
+STABLE_SRPM	<a href="https://ftp.interchangecommerce.org/interchange/[var STABLE_SERIES]/srpm/">SRPM</a>
 LATEST_DEBIAN_SERIES	5.6
 LATEST_DEBIAN_VERSION	5.6.0
-LATEST_DEBIAN_LOCATION	<a href="http://ftp.icdevgroup.org/interchange/debian/[var LATEST_DEBIAN_VERSION]/">directory</a>
+LATEST_DEBIAN_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/debian/[var LATEST_DEBIAN_VERSION]/">directory</a>
 LATEST_RPM_VERSION	5.2.0
 LATEST_SRPM_VERSION	5.2.0
 LATEST_RPM_SERIES	5.2
 LATEST_SRPM_SERIES	5.2
-LATEST_RPM_LOCATION	<a href="http://ftp.icdevgroup.org/interchange/[var LATEST_RPM_SERIES]/rpm/">RPM</a>
-LATEST_SRPM_LOCATION	<a href="http://ftp.icdevgroup.org/interchange/[var LATEST_SRPM_SERIES]/srpm/">SRPM</a>
+LATEST_RPM_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/[var LATEST_RPM_SERIES]/rpm/">RPM</a>
+LATEST_SRPM_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/[var LATEST_SRPM_SERIES]/srpm/">SRPM</a>
 brevp	Brev Patterson
 danb	Daniel Browning
 david	David Christensen
@@ -46,7 +44,7 @@ jlavin	Josh Lavin
 jon	Jon Jensen
 jonc	Jonathan Clark
 jjustman	JT Justman
-jure	Jure Kodzoman
+jure	Jure Kodžoman
 kwalsh	Kevin Walsh
 markj	Mark Johnson
 markl	Mark Lipscombe 

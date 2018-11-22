@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<html lang="en-US">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="Interchange,ecommerce,application,server,database,catalog,shopping,cart,perl,web,online,sell,buy,store" />
     <meta name="description" content="Interchange software website">
     <meta name="robots" content="all" />
@@ -27,7 +26,7 @@
     <form action="[process href=Swish]" method="GET">
 
     <div class="superTopHeader">
-        [L]Powering web-based applications since 1995[/L]
+        [L]Powering ecommerce since 1995[/L]
     </div>
     <div class="dividingBorderAbove" style="padding-top: 0.5ex">
     <span class="doNotDisplay">Navigation:</span>

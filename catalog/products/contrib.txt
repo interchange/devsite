@@ -39,7 +39,7 @@ Hamish Bradick
 Hans-Joachim Leidinger
 Heinz Wittenbecher
 Hiroyuki Cozy Kojima
-Ignacio Lizarán
+Ignacio LizarÃ¡n
 Ivan Kohler
 Jack Tsai
 Jason Holt
@@ -53,7 +53,7 @@ Jeff Nappi
 Jochen Wiedmann
 Jonathan Walker
 Jordan Adler
-José Mª Revuelto
+JosÃ© MÂª Revuelto
 Josh Braegger
 Josh Lavin
 Jurgen Botz
@@ -86,7 +86,7 @@ Phil Smith
 Raj Goel
 Ray Desjardins
 Reid Sutherland
-René Hertell
+RenÃ© Hertell
 Ryan Perry
 Sergiusz Jarczyk
 Shozo Murahashi
