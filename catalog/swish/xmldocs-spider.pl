@@ -44,10 +44,10 @@ sub filter {
 }
 
 @servers = (
-			{
-			 base_url => 'http://docs.icdevgroup.org/cgi-bin/online/index.html',
-			 email => 'racke@icdevgroup.org',
-			 test_url => \&filter_url,
-			 filter_content => \&filter,
-			}
-			);
+	{
+		base_url => 'https://docs.interchangecommerce.org/cgi-bin/online/index.html',
+		email => 'jon@endpoint.com',
+		test_url => \&filter_url,
+		filter_content => \&filter,
+	}
+);
