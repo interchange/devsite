@@ -8,7 +8,7 @@
     <meta name="robots" content="all" />
 
 [if !value web_style_plain]
-    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css" media="screen, tv, projection" title="Default" />
+    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css?v=38" media="screen, tv, projection" title="Default" />
     <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
     <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
 [/if]
@@ -23,26 +23,32 @@
 
     <div id="header">
     <div class="superHeader">
-    <form action="[process href=Swish]" method="GET">
 
     <div class="superTopHeader">
         [L]Powering ecommerce since 1995[/L]
     </div>
-    <div class="dividingBorderAbove" style="padding-top: 0.5ex">
+    <div class="dividingBorderMenu">
     <span class="doNotDisplay">Navigation:</span>
-    [form-session-id]
-    [page index]Home</a> |
-    [page download]Download</a> |
-    <a href="[area roadmap]">Roadmap</a> |
-    <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> |
-    [page docs]Docs</a> |
-    [page hall]Active sites</a> |
-    [page contact]Contact</a> |
+    [page index]Home</a> &nbsp;·&nbsp;
+    [page download]Download</a> &nbsp;·&nbsp;
+    <a href="[area roadmap]">Roadmap</a> &nbsp;·&nbsp;
+    <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> &nbsp;·&nbsp;
+    [page docs]Docs</a> &nbsp;·&nbsp;
+    [page hall]Active sites</a> &nbsp;·&nbsp;
+    [page contact]Contact</a> &nbsp;·&nbsp;
 
-    Search:&nbsp;
-    <input name="mv_searchspec" value="[cgi mv_searchspec]">
-    <input type="hidden" name="search_mailinglists" value="1">
-    <input type="submit" value="Go">
+<script>
+  (function() {
+    var cx = '003149815663579506619:lwyirev_oq0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 
 [comment]
         |
@@ -53,7 +59,6 @@
         [/else]
         [/if]
 [/comment]
-    </form>
     </div>
     </div>
 

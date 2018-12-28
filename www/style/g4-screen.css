@@ -101,9 +101,7 @@ input, textarea, select {
 /* ##### Header ##### */
 
 .superHeader {
-  /*color: rgb(130,128,154);*/
   color: rgb(0,0,0);
-  /*background-color: rgb(33,50,66);*/
   background-color: rgb(255,255,255);
   text-align: center;
   margin: 0;
@@ -342,6 +340,14 @@ input, textarea, select {
   border-left: none;
 }
 
+.dividingBorderMenu {
+  border-top: 1px solid rgb(204,204,204);
+  padding-top: 0.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .dividingBorderAbove {
   border-top: 1px solid rgb(204,204,204);
 }
@@ -390,4 +396,9 @@ a.results {
 }
 
 .quote {
+}
+
+div#___gcse_0 {
+	display: inline-block;
+	width: 30em;
 }
