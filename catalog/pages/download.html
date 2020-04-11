@@ -2,132 +2,62 @@ __TOP__
 
       <div class="rowOfBoxes dividingBorderAbove">
         <div class="twoThirds noBorderOnLeft">
+
 <h1>Downloading Interchange</h1>
 
 <p>
-Before downloading, you can try out our
-__DEMO__.
+For success with __IC__, see the [page docs]documentation</a> including upgrade notes, and subscribe to the interchange-users mailing list linked from the [page users/community]community page</a>.
 </p>
-
-<p>
-The current stable release of Interchange is
-<b>__STABLE__</b>.<br/>
-The current development release of Interchange is
-<b>__DEVEL__</b>.<br/>
-(For documentation downloads, please see [page docs]Documentation</a>.)
-</p>
-
-<p>
-For a successful involvement with __IC__, consider subscribing to
-some of the __PUBLIC_MLS__.
-</p>
-
-<p>
-Existing users should refer to the
-<a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/UPGRADE">UPGRADE</a>
-document for information on incompatible changes and upgrade instructions.
-For an exhaustive list of changes, see the
-<a href="https://ftp.interchangecommerce.org/interchange/__PREVIOUS_DEVEL_SERIES__/WHATSNEW">WHATSNEW</a>
-document from the previous development series.
-For upgrades from legacy code (from MiniVend to Interchange 5.0), see the
-<a href="/docs/upgrade.html">Upgrading</a> document
-in our [page docs]documentation</a> set.
-</p>
-
 
 <h2>Stable releases</h2>
 
-<h3>Cross-platform packages</h3>
-
 <p>
-<a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/tar/interchange-__STABLE__.tar.gz"><tt>interchange-__STABLE__.tar.gz</tt></a>,
-<a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/tar/interchange-__STABLE__.tar.bz2"><tt>interchange-__STABLE__.tar.bz2</tt></a>,
-<a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/tar/interchange-__STABLE__.tar.xz"><tt>interchange-__STABLE__.tar.xz</tt></a>,
-and <a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/">other releases</a>
+__IC__ is primarily run on x86_64 Linux in distributions Debian, Ubuntu, RHEL/​CentOS, Fedora, Arch, and Gentoo. It has also been used on i386 Linux, FreeBSD, OpenBSD, NetBSD, Solaris, macOS, and some more obscure Unixes.
 </p>
 
-[comment]
-	Disabled, as it's basically cruft.
-
-<h4>MD5 message digests:</h4>
-<p><pre>
-[file tmp/MD5SUMS]
-</pre></p>
-
-<h4>SHA1 message digests:</h4>
-<p><pre>
-[file tmp/SHA1SUMS]
-</pre></p>
-[/comment]
-
-<h4>GnuPG/PGP</h4>
 <p>
-<a href="https://ftp.interchangecommerce.org/keys/">GnuPG keys of Interchange developers</a> are available to maintain communication privacy and validate digital signatures.
+The current release of __IC__ is <b>__STABLE__</b>, available in cross-platform package
+<a href="https://ftp.interchangecommerce.org/interchange/__STABLE_SERIES__/tar/interchange-__STABLE__.tar.gz"><tt>interchange-__STABLE__.tar.gz</tt></a>.
+<a href="https://ftp.interchangecommerce.org/interchange/">Previous releases</a> are also available.
 </p>
 
-
-<h3>Debian GNU packages</h3>
 <p>
-Debian GNU package users should first read the <a href="https://ftp.interchangecommerce.org/interchange/__LATEST_DEBIAN_SERIES__/debian/README.debian">README.debian file</a>. You can find the packages and <b>apt-get</b> setup instructions in a separate __LATEST_DEBIAN_LOCATION__ (you can also browse the top-level __DIR_DEBIAN__ for other versions).<br/><br/>
-Latest Debian GNU packaged version is: <b>__LATEST_DEBIAN_VERSION__</b>
+<a href="https://ftp.interchangecommerce.org/keys/">PGP/GnuPG keys of Interchange developers</a> are available to validate digital signatures and communicate privately.
 </p>
 
-<h3>RPM packages</h3>
+<p>Platform-specific Debian and RPM packages are no longer actively maintained. We recommend installing from the above cross-platform package.</p>
+
+<h2>Git source code repository</h2>
+
 <p>
-RPM package users should first read the <a href="https://ftp.interchangecommerce.org/interchange/__LATEST_SRPM_SERIES__/rpm/README.txt">Binary (S)RPM README file</a>. You can find the packages in a __LATEST_RPM_LOCATION__ and __LATEST_SRPM_LOCATION__ directories.<br/><br/>
-Latest RPM packaged version is: <b>__LATEST_RPM_VERSION__</b><br/>
-Latest SRPM packaged version is: <b>__LATEST_SRPM_VERSION__</b><br/>
-</p>
-
-
-<h2>Development code</h2>
-
-<h3>Source code repository (Git)</h3>
-<p>
-You can browse the source code and see changes made to it over time using our <a href="__GITHUB_INTERCHANGE_URL__">GitHub repository</a>.
-You can also use a Git client to download a copy of the repository
-to your computer:
+You can browse the source code and see changes made to it over time in Git using our <a href="__GITHUB_INTERCHANGE_URL__">GitHub repository</a>.
+You can also use a Git client to download a copy of the repository to your computer:
 <pre>
 git clone https://github.com/interchange/interchange.git
 </pre>
 </p>
-<p>
-Everyone is welcome to contribute to the project by forking our <a href="__GITHUB_INTERCHANGE_URL__">GitHub repository</a>, committing changes to their own GitHub fork, and making a pull request to us. Or send us a patch. Either way, discuss your changes with us on the <a href="https://www.interchangecommerce.org/mailman/listinfo/interchange-users">interchange-users mailing list</a>.
-</p>
-
-
-<h3>Developer builds</h3>
 
 <p>
-<a href="https://ftp.interchangecommerce.org/interchange-nightly.tar.gz"><tt>interchange-nightly.tar.gz</tt></a>, other __NIGHTLY_HTTP__, <a href="https://ftp.interchangecommerce.org/interchange/__DEVEL_SERIES__/">preview releases</a>
-</p>
-
-
-<h2>Chronological overview of past Interchange releases</h2>
-<p>
-You can see the chronological list of past __IC__ releases
-(along with announcement texts and download links)
-on our [page releases]releases</a> page.
-</p>
-
-
-<h1>Legacy Information</h1>
-<p>
-We keep legacy packages of
-<a href="https://ftp.interchangecommerce.org/minivend4/">Minivend 4</a>,
-<a href="https://ftp.interchangecommerce.org/tallyman/">Tallyman</a>,
-<a href="https://ftp.interchangecommerce.org/minivend3/">Minivend 3</a>, 
-<a href="https://ftp.interchangecommerce.org/minivend2/">Minivend 2</a>, 
-<a href="https://ftp.interchangecommerce.org/minivend1/">Minivend 1</a>,
-and even 
-<a href="https://ftp.interchangecommerce.org/vend/">Vend</a> available
-for download.
+That latest automatic development version build is at <a href="https://ftp.interchangecommerce.org/interchange-nightly.tar.gz"><tt>interchange-nightly.tar.gz</tt></a>, and past __NIGHTLY_HTTP__ are available.
 </p>
 
 <p>
-You can also browse the Git repositories for
-MiniVend (including Vend) and Tallyman
-at our <a href="__GITHUB_INDEX_URL__">GitHub account</a>.
+Everyone is welcome to contribute to the project by forking our <a href="__GITHUB_INTERCHANGE_URL__">GitHub repository</a>, committing changes to their own GitHub fork, and making a pull request to us. Or send us a patch. Either way, discuss your changes with us on the interchange-users mailing list linked from the [page users/community]community page</a>.
+</p>
+
+
+<h2>Chronological list of releases</h2>
+
+<table>
+[file tmp/releases.list]
+</table>
+
+<p>
+We keep a <a href="https://ftp.interchangecommerce.org/minivend4/">legacy package archive</a> of old Vend, Minivend, and Tallyman releases.
+</p>
+
+<p>
+You can also browse the Git repositories for MiniVend (including Vend) at our <a href="__GITHUB_INDEX_URL__/minivend">GitHub account</a>.
 </p>
 
 

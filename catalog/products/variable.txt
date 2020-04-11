@@ -62,4 +62,3 @@ zeald	David Kelly
 markj	Mark Johnson
 mheins	Mike Heins
 ethan	Ethan Rowe
-haran	<a href="http://haran.freeshell.org/oswd/">haran</a>
