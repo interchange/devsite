@@ -7,12 +7,15 @@
 <h1>Quotes from Users</h1>
 
 [query sql="select * from quotes order by company" list=1]
-<p>
 <div class="quote">
-<i>"[sql-param quote]"</i><br>
-[sql-param name], [if-sql-param company_pos][sql-param company_pos] at [/if-sql-param][if-sql-param company_url]<a href="[sql-param company_url]">[sql-param company]</a>[else][sql-param company][/else][/if-sql-param].
+<cite>[sql-param quote]</cite>
+[sql-param name], [if-sql-param company_pos][sql-param company_pos] at [/if-sql-param][if-sql-param company_url]<a href="[sql-param company_url]">[sql-param company]</a>[else][sql-param company][/else][/if-sql-param]
 </div>
-</p>
+
+[sql-alternate except_last]
+<hr width="10%" align="left" style="margin-top: 1.5rem; margin-bottom: 1.5rem; border: 0.1rem solid;">
+[/sql-alternate]
+
 [/query]
 
 </div>
