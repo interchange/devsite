@@ -7,11 +7,9 @@
     <meta name="description" content="Interchange software website">
     <meta name="robots" content="all" />
 
-[if !value web_style_plain]
     <link rel="stylesheet" type="text/css" href="/style/g4-screen.css?v=38" media="screen, tv, projection" title="Default" />
     <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
     <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
-[/if]
 
     <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
 
@@ -48,45 +46,22 @@
 </script>
 <gcse:search></gcse:search>
 
-[comment]
-        |
-        [if value web_style_plain]
-            [page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=0"]Rich mode</a>
-        [else]
-            [page href=process form="mv_todo=return&mv_nextpage=@@MV_PAGE@@&web_style_plain=1"]Plain mode</a>
-        [/else]
-        [/if]
-[/comment]
     </div>
     </div>
 
     <div class="midHeader">
         <h1 class="headerTitle" lang="la">
-[if !value web_style_plain]
-[calc]
+[calcn]
     return $Tag->var('MV_PAGE', 1) eq 'index'
         ? qq{<img src="/style/intro.jpg" alt="Interchange" border="0"/>}
         : ''
-[/calc]
-[/if]
+[/calcn]
     </h1>
-
-[comment]
-        <div class="headerSubTitle" title=""></div>
-[/comment]
 
         <br class="doNotDisplay doNotPrint" />
 
-[comment]
-        <div class="headerLinks">
-        </div>
-[/comment]
       </div>
 
-[comment]
-      <div class="subHeader">
-      </div>
-[/comment]
     </div>
 
     <div id="main-copy">
