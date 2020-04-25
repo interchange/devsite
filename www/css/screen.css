@@ -1,32 +1,25 @@
-/***************************************
- * TITLE: Prosimii Screen Stylesheet   * 
- * URI  : prosimii/prosimii-screen.css *
- * MODIF: 2004-Apr-28 21:43 +0800      *
- ***************************************/
-
-
-/* ##### Common Styles ##### */
-
 body {
-  font-family: verdana, helvetica, arial, sans-serif;
-  font-size: 73%;  /* Enables font size scaling in MSIE */
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 html > body {
-  font-size: 9pt;
+  font-size: 11pt;
 }
 
 acronym, .titleTip {
-  border-bottom: 1px dotted rgb(61,92,122);
+  border-bottom: 1px dotted #3d5c7a;
   cursor: help;
   margin: 0;
   padding: 0 0 0.4px 0;
 }
 
 a {
-  /*color: rgb(61,92,122);*/
   color: #a51212;
   background-color: transparent;
   text-decoration: underline;
@@ -36,7 +29,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  /*color: rgb(117,144,174);*/
   color: #a51212;
 }
 
@@ -84,50 +76,52 @@ dd {
   display: none !important;
 }
 
-
 input, textarea, select {
   border: 1px dotted #004183;
 }
 
 .th {
-	font-weight: bold;
-	font-size: 120%;
+  font-weight: bold;
+  font-size: 120%;
 }
 
 .noWrap { 
   white-space: nowrap;
 }
 
-/* ##### Header ##### */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.logo {
+  padding: 0;
+}
+
+.logo img {
+  padding: 0 1em;
+}
 
 .superHeader {
-  color: rgb(0,0,0);
-  background-color: rgb(255,255,255);
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   margin: 0;
   padding: 0.5ex 10px;
 }
 
-.superTopHeader {
-  text-align: center;
-  /*font-variant: small-caps;*/
-	font-size: 145%;
-	font-weight: bold;
-	background-color: #004183;
-	color: white;
-	margin-bottom: 0.1ex;
-	padding: 5px;
-}
-
 .superHeader span {
-  color: rgb(195,196,210);
+  color: #a51212;
   background-color: transparent;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .superHeader a {
-  /*color: rgb(195,196,210);*/
   color: #a51212;
   background-color: transparent;
   text-decoration: none;
@@ -136,7 +130,6 @@ input, textarea, select {
 }
 
 .superHeader a:hover {
-  /*color: rgb(193,102,90);*/
   color: #a51212;
   background-color: transparent;
   text-decoration: underline;
@@ -144,17 +137,40 @@ input, textarea, select {
 
 .midHeader {
   color: white;
-  /*background-color: rgb(61,92,122);*/
-  background-color: rgb(255,255,255);
+  background-color: #ffffff;
   margin: 0;
   padding: 0.26ex 10px;
+}
+
+/*
+
+Photo by John Lockwood @justjohnl downloaded from https://unsplash.com/photos/FcLq69V7Rsc
+
+Used under license:
+
+All photos published on Unsplash can be used for free. You can use them for commercial and noncommercial purposes. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.
+
+More precisely, Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash.
+
+*/
+#banner {
+  background-image: url(/img/john-lockwood-FcLq69V7Rsc-unsplash-mod.jpg);
+  background-size: cover;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner h1 {
+  margin: 0;
 }
 
 .headerTitle {
   font-size: 300%;
   margin: 0;
   padding: 0;
-	text-align: center;
+  text-align: center;
 }
 
 .headerSubTitle {
@@ -184,15 +200,14 @@ input, textarea, select {
 }
 
 .headerLinks a:hover {
-  color: rgb(195,196,210);
+  color: #c3c4d2;
   background-color: transparent;
   text-decoration: underline;
 }
 
 .subHeader {
   color: black;
-  /*background-color: rgb(117,144,174);*/
-  background-color: rgb(255,255,255);
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -208,33 +223,31 @@ input, textarea, select {
 }
 
 .subHeader a:hover, .subHeader .highlight {
-  color: rgb(255,204,0);
+  color: #ffcc00;
   background-color: transparent;
   text-decoration: none;
 }
 
-
-/* ##### Main Copy ##### */
-
 #main-copy {
   margin: 0;
-  padding: 0.5em 10px;
-  clear: left;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #main-copy h1 {
-  color: rgb(117,144,174);
+  color: #7590ae;
   background-color: transparent;
-  font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
   font-size: 200%;
   margin: 0;
   padding: 0;
 }
 
 #main-copy h2 {
-  color: rgb(61,92,122);
+  color: #3d5c7a;
   background-color: transparent;
-  font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
   font-weight: normal;
   font-size: 151%;
   margin: 0;
@@ -248,9 +261,8 @@ input, textarea, select {
 }
 
 .newsHeading {
-  color: rgb(61,92,122);
+  color: #3d5c7a;
   background-color: transparent;
-  font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
   font-size: 125%;
   font-weight: bold;
   text-decoration: none;
@@ -260,7 +272,7 @@ input, textarea, select {
 }
 
 .newsHeading:hover {
-  color: rgb(117,144,174);
+  color: #7590ae;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -283,7 +295,7 @@ input, textarea, select {
 }
 
 .more a {
-  color: rgb(61,92,122);
+  color: #3d5c7a;
   background-color: transparent;
   font-size: 92%;
   text-decoration: underline;
@@ -292,18 +304,21 @@ input, textarea, select {
 }
 
 .more a:hover {
-  color: rgb(117,144,174);
+  color: #7590ae;
   text-decoration: none;
 }
 
 .rowOfBoxes {
-  clear: both;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .quarter, .oneThird, .half, .twoThirds, .fullWidth {
   margin: 1em 0;
   float: left;
-  border-left: 1px solid rgb(204,204,204);
+  border-left: 1px solid #cccccc;
 }
 
 .quarter {
@@ -336,62 +351,44 @@ input, textarea, select {
   border: 1px solid white;
 }
  
-.noBorderOnLeft {
-  border-left: none;
-}
-
 .dividingBorderMenu {
-  border-top: 1px solid rgb(204,204,204);
   padding-top: 0.25em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dividingBorderAbove {
-  border-top: 1px solid rgb(204,204,204);
+.rowOfBoxes > div:first-child {
+  border-left: none;
 }
 
-/* More elegant alternatives to .noBorderOnLeft & .dividingBorderAbove
- * that don't require the creation of new classes - but which are not
- * supported by MSIE - are the following:
- *
- * .rowOfBoxes > div:first-child {
- *   border-left: none;
- * }
- *
- * .rowOfBoxes + .rowOfBoxes {
- *   border-top: 1px solid rgb(204,204,204);
- * }
- */
-
-
-/* ##### Footer ##### */
+.rowOfBoxes + .rowOfBoxes {
+  border-top: 1px solid #cccccc;
+}
 
 #footer {
-  color: rgb(51,51,102);
-  background-color: rgb(239,239,239);
+  color: #333366;
+  background-color: #efefef;
   font-size: 87%;
   text-align: center;
   line-height: 1.25em;
-  margin: 2em 0 0 0;
-  padding: 1ex 10px;
-  clear: left;
+  padding: 0.5em 0;
+  height: 1.25em;
 }
 
 #footer a {
-  color: rgb(0,68,204);
+  color: #0044cc;
   background-color: transparent;
   text-decoration: underline;
+  padding: 0;
 }
 
 #footer a:hover {
   text-decoration: none;
 }
 
-/* Results page submenu */
 a.results { 
-  color: rgb(61,92,122);
+  color: #3d5c7a;
   text-decoration: none;
 }
 
@@ -399,6 +396,45 @@ a.results {
 }
 
 div#___gcse_0 {
-	display: inline-block;
-	width: 30em;
+  display: inline-block;
+  width: 30em;
+}
+
+#commits-list li {
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 1px solid darkgray;
+  padding: 10px;
+}
+
+#commits-list li:last-child {
+  border: none;
+}
+
+#commits-list p {
+  font-size: 14px;
+  margin: 0;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#container .box {
+  color: black;
+  float: left;
+  line-height: 1.5;
+  margin: 0.5em;
+  text-align: left;
+  font-size: 10px;
+  height: 280px;
+  width: 204px;
+}
+
+.box img {
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #000000;
 }

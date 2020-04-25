@@ -16,7 +16,7 @@ GNU	<a href="https://www.gnu.org/">GNU</a>
 IC	Interchange
 ICDEVGROUP	Interchange Development Group
 IMAGE_DIR	/style
-DEMO	<a href="[area demo]">Online demo</a>
+DEMO	[page demo]Live demo</a>
 NIGHTLY_HTTP	<a href="https://ftp.interchangecommerce.org/interchange/nightly_build/">nightly builds</a>
 PUBLIC_MLS	<a href="https://www.interchangecommerce.org/mailman/listinfo/">Public Interchange Mailing Lists</a>
 SECURE_SERVER	https://www.interchangecommerce.org/
@@ -36,7 +36,7 @@ LATEST_SRPM_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/[v
 brevp	Brev Patterson
 danb	Daniel Browning
 david	David Christensen
-docelic	Davor Ocelic
+docelic	Davor Ocelić
 edl	Ed LaFrance
 greg	Greg Hanson
 hexfusion	Sam Batschelet

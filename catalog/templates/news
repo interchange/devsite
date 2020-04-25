@@ -35,8 +35,8 @@
 [or scratch news_page]
   [news-param body]
 [else]
-  [news-filter strip_html 200.][news-param body][/news-filter]<br>
-  <a href="[area href="news" arg="[news-param code]"]">[L]Read more[/L]...</a>
+  [news-filter strip_html 300.][news-param body][/news-filter]
+  [page href=news arg="[news-param code]"]&#91;more&#93;</a>
 [/else]
 [/if]
 	</p>
@@ -47,5 +47,9 @@
 </ul>
 [/on-match]
 [/loop]
+
+[if global MV_PAGE ne 'news']
+<p>See earlier [page news]news about Interchange</a>.</p>
+[/if]
 
 <p class="filler"></p>

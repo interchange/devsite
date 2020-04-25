@@ -1,17 +1,22 @@
-[tmpn page_title][L]Interchange web-based application server[/L][/tmpn]
+[tmpn page_title]Interchange commerce application server[/tmpn]
 [include templates/top]
 
-      <div class="rowOfBoxes dividingBorderAbove">
-        <div class="oneThird noBorderOnLeft">
-				[include templates/news]
-        </div>
+<div id="banner"></div>
 
-        <div class="oneThird">
-					[include templates/promo]
-        </div>
-        <div class="oneThird">
-					[include templates/devel]
-        </div>
-      </div>
+<div class="rowOfBoxes">
+	<div class="oneThird noBorderOnLeft">
+		[include templates/news]
+	</div>
+	<div class="oneThird">
+		<h1>Recent Commits</h1>
+		<ul id="commits-list"></ul>
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<script src="/js/github-commits.js"></script>
+		<p>See more at the <a href="https://github.com/interchange/interchange">Interchange GitHub project</a>.</p>
+	</div>
+	<div class="oneThird">
+		[include templates/links]
+	</div>
+</div>
 
 [include templates/bottom]

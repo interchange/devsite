@@ -1,0 +1,102 @@
+[include templates/top]
+
+<div class="rowOfBoxes dividingBorderAbove">
+	<div class="twoThirds noBorderOnLeft">
+
+<h1>The History of Interchange</h1>
+
+<p>
+__IC__ is a descendent of Vend, an e-commerce solution originally developed by Andrew Wilcox in early 1995. __mheins__ took the first publicly-​released version, Vend 0.2, and added searching and DBM catalog storage features to create MiniVend. Mike released MiniVend 0.2m7 on December 28, 1995. Subsequent versions of MiniVend took parts from Vend 0.3, especially the <tt>vlink</tt> and <tt>Server.pm</tt> modules, which were adapted to run with MiniVend. In the four years that followed, __mheins__ expanded and enhanced MiniVend, creating a powerful and versatile e-commerce development platform. MiniVend grew to support thousands of businesses and their e-commerce sites.
+</p>
+
+<p>
+Separately, an experienced e-commerce development team founded Akopia. Their goal was to create a sophisticated open source e-commerce platform that was both feature-​rich and easy to use. Their product, Tallyman, was intuitive, and had great content-​management features, but lacked many of MiniVend’s capabilities.
+</p>
+
+<p>
+Akopia acquired MiniVend in June 2000. Mike Heins and the Tallyman developers combined MiniVend 4 with Tallyman’s features to create __IC__. In order to preserve compatibility, it was decided that the name “MiniVend” and prefixes like <tt>mv_</tt> and <tt>MVC_</tt> continue to appear in source code and configuration files. __IC__’s first stable release was version 4.6.
+</p>
+
+<p>
+In January 2001, Red Hat acquired Akopia and created its new E-Business Solutions Division. Red Hat sponsored the development of __IC__ 4.8 and the Red Hat E-Commerce Suite.
+</p>
+
+<p>
+In mid-2002 Red Hat stopped supporting __IC__ development, and its core developers formed the __ICDEVGROUP__ to coordinate development independently. Their first stable release was __IC__ 5.0.
+</p>
+
+<p>
+In 2004/2005, the __IC__ documentation system was completely redesigned in to achieve better output results and bring the documentation up to date.
+</p>
+
+<p>
+Around 2007 Stefan Hornburg spearheaded a new __IC__ catalog template called WellWell, with a number of contributors and users.
+</p>
+
+<p>
+From around 2009 through 2015 possible future directions for __IC__ were discussed and experiments developed. An incompatible new __IC__ 6 was begun, code-​named first Bongo and then Nitesi. It “stands on the shoulders of giants” such as Plack/​PSGI, Dancer, CPAN modules, and modern Perl, and uses UTF-8 throughout. Plugins provide additional functionality like payment gateways, coupons, shipping calculation, reviews, etc. While it was used on a couple of production sites, it never became a general replacement for __IC__ 5.
+</p>
+
+<p>
+Today, __IC__ 5 continues to power many busy ecommerce sites. It is well-​maintained and supported, with new integrations and features being added as needed. The current stable release is version __STABLE__. See [page download]the download page</a> to access the source code repository and package downloads now!
+</p>
+
+
+<h1>Retired Core Team Members</h1>
+<p>
+[table-organize cols=4 table='width=100%']
+[loop prefix=loop more=0 search=|
+  fi=core
+  st=db
+  tf=id
+  sf=retired
+  se=0
+  ne=1
+  ml=500
+  rf=*
+|]
+[list]
+[loop-alternate 0]
+<td class='th'>Name</td>
+<td class='th'>Since</td>
+<td class='th'>Retired</td>
+<td class='th'>Tasks</td>
+[/loop-alternate]
+<td nowrap>[filter vars_and_comments][loop-param name][/filter]</td>
+<td nowrap>[loop-param since]</td>
+<td nowrap>[loop-param retired]</td>
+<td nowrap>[loop-param task]</td>
+[/list]
+[/loop]
+[/table-organize]
+</p>
+
+<h1>Other contributors</h1>
+
+[table-organize cols=3 table='width=100%']
+[loop prefix=loop more=0 search=|
+  fi=contrib
+  st=db
+  tf=name
+  ml=500
+  rf=*
+  ra=1
+|]
+[list]
+<td>[loop-param name]</td>
+[/list]
+[/loop]
+[/table-organize]
+
+<p>
+And, of course, the entire Perl team without whom __IC__ could not exist.
+</p>
+
+
+</div>
+
+<div class="oneThird">
+[include templates/links]
+</div>
+
+[include templates/bottom]

@@ -1,0 +1,199 @@
+body {
+  color: black;
+  background-color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11pt;
+  margin: 0;
+  padding: 0;
+}
+
+acronym, .titleTip {
+  font-style: italic;
+  border-bottom: none;
+}
+
+acronym:after, .titleTip:after {
+  content: "(" attr(title) ")";
+  font-size: 90%;
+  font-style: normal;
+  padding-left: 1ex;
+}
+
+a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a[href]:after {
+  content: "<" attr(href) ">";
+  font-size: 90%;
+  padding-left: 1ex;
+}
+
+ol {
+  margin: -0.25em 0 1em 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+  margin: -0.25em 0 1em 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 1ex 0 0 1.5em;
+  padding: 0;
+}
+
+ol li {
+  margin: 1ex 0 0 1.5em;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+}
+
+.doNotPrint {
+  display: none;
+}
+
+#header {
+}
+
+.superHeader {
+  display: none;
+}
+
+.midHeader {
+  color: black;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.headerTitle {
+  font-size: 200%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.headerSubTitle {
+  font-size: 110%;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+  padding: 0 0 1ex 0;
+}
+
+.headerLinks {
+  display: none;
+}
+
+.subHeader {
+  display: none;
+}
+
+#side-bar {
+  display: none !important;
+}
+
+#main-copy {
+  margin: 0 !important;
+  padding: 0;
+}
+
+#main-copy h1 {
+  font-size: 120%;
+  margin: 2ex 0 1ex 0;
+  padding: 0;
+}
+
+#main-copy h2 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 2ex 0 0.5ex 0;
+}
+
+#main-copy h1 + h2 {
+  padding-top: 0;
+}
+
+#main-copy p {
+  margin: 0 0 2ex 0;
+  padding: 0;
+}
+
+h2 a:after {
+  content: "" !important;
+}
+
+.newsDate {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.newsDate:before {
+  content: "[";
+  font-style: normal;
+}
+
+.newsDate:after {
+  content: "]";
+  font-style: normal;
+}
+
+.newsSummary {
+  display: inline;
+  margin: 0 0 0 1ex !important;
+  padding: 0;
+}
+
+.more {
+  display: none;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.quarter, .oneThird, .half, .twoThirds, .fullWidth {
+  margin: 0;
+  padding: 0;
+}
+
+#footer {
+  color: black;
+  background-color: transparent;
+  font-size: 100%;
+  text-align: center;
+  margin: 2em 0 0 0;
+  padding: 1ex 0 0 0;
+  border-top: 1px solid black;
+  display: block;
+}
+
+#footer a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}

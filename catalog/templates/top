@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="Interchange,ecommerce,application,server,database,catalog,shopping,cart,perl,web,online,sell,buy,store" />
-    <meta name="description" content="Interchange software website">
+    <meta name="description" content="Interchange commerce open source project website" />
     <meta name="robots" content="all" />
 
-    <link rel="stylesheet" type="text/css" href="/style/g4-screen.css?v=38" media="screen, tv, projection" title="Default" />
-    <link rel="stylesheet alternative" type="text/css" href="/style/g4-print.css" media="screen" title="Print Preview" />
-    <link rel="stylesheet" type="text/css" href="/style/g4-print.css" media="print" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" />
+    <link rel="stylesheet" href="/css/screen.css" media="screen" />
+    <link rel="stylesheet" href="/css/print.css" media="print" />
 
     <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
 
-    <title>[either][scratch page_title][or][L]Interchange[/L][/either]</title>
+    <title>[either][scratch page_title][or]Interchange commerce[/either]</title>
   </head>
 
   <body>
-    <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+    <div id="top">
+      <a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a>
+    </div>
 
     <div id="header">
-    <div class="superHeader">
+      <a class="logo" href="[area index]">
+        <img src="/logos/interchange-logo-2020.svg" alt="Interchange commerce logo" style="float: left" />
+      </a>
 
-    <div class="superTopHeader">
-        [L]Powering ecommerce since 1995[/L]
-    </div>
-    <div class="dividingBorderMenu">
-    <span class="doNotDisplay">Navigation:</span>
-    [page index]Home</a> &nbsp;·&nbsp;
-    [page download]Download</a> &nbsp;·&nbsp;
-    <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a> &nbsp;·&nbsp;
-    [page docs]Docs</a> &nbsp;·&nbsp;
-    [page hall]Active sites</a> &nbsp;·&nbsp;
+      <div class="superHeader">
+        <div class="dividingBorderMenu">
+          <span class="doNotDisplay">Navigation:</span>
+          [page download]Download</a>  · 
+          <a href="__GITHUB_INTERCHANGE_URL__">GitHub</a>  · 
+          [page docs]Docs</a>  · 
+          [page hall]Gallery</a>  · 
 
 <script>
   (function() {
@@ -46,22 +45,8 @@
 </script>
 <gcse:search></gcse:search>
 
-    </div>
-    </div>
-
-    <div class="midHeader">
-        <h1 class="headerTitle" lang="la">
-[calcn]
-    return $Tag->var('MV_PAGE', 1) eq 'index'
-        ? qq{<img src="/style/intro.jpg" alt="Interchange" border="0"/>}
-        : ''
-[/calcn]
-    </h1>
-
-        <br class="doNotDisplay doNotPrint" />
-
+        </div>
       </div>
-
     </div>
 
     <div id="main-copy">

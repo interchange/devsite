@@ -1,88 +1,80 @@
 __TOP__
 
-      <div class="rowOfBoxes dividingBorderAbove">
-        <div class="twoThirds noBorderOnLeft">
-	<h1>Interchange Support</h1>
+<div class="rowOfBoxes dividingBorderAbove">
+<div class="twoThirds noBorderOnLeft">
+
+<h1>Professional Support</h1>
 
 <p>
-__IC__ has a wide variety of <strong>community and commercial support</strong> options
-available for users. The [page users/community]Community page</a>
-details the support options available to users from the Interchange
-community, including mailing lists and IRC.
-</p>
-<p>
-<b>Commercial support</b> is available from many companies
-providing professional services.
+__IC__ has a wide variety of community and commercial support options available for users.
 </p>
 
 <p>
-You can conveniently post commercial Interchange support, hosting and quote requests
-on our <strong>business mailing list</strong> ([filter mailto]interchange-biz@interchangecommerce.org[/filter]) or <strong>contact one of the following companies directly</strong>.
+The [page users/community]Community page</a> details the support options available to users from the Interchange community, including mailing lists and chat.
 </p>
 
 <p>
-If you, or your company, provide services such as Interchange development, consultancy, hosting or training, and you would like to be added to this overview, send us an <a href="mailto:thunder@icdevgroup.org">e-mail</a> with your details and we'll be adding you as soon as possible. 
+Commercial support is available from many companies, including these:
 </p>
 
-[query sql=|
-SELECT c.code, c.name, c.address, c.zip, c.city, c.state, c.country, c.phone, c.fax, c.email, c.url, c.contact_name
-FROM companies c
-	[if cgi support_type]
-		,support_companies sc
-		WHERE c.code = sc.company_code 
-		AND sc.support_code ='[cgi support_type]' 
-	[/if]
-ORDER BY c.name
-|
-table=companies
-type=list
-more=1
-ml=20
+[query
+	sql=|
+		SELECT c.code, c.name, c.address, c.zip, c.city, c.state, c.country, c.phone, c.email, c.url, c.contact_name
+		FROM companies c
+		ORDER BY c.name
+	|
+	table=companies
+	type=list
+	ml=50
 ]
-	[list]
-	     [sql-alternate 2]<div style="float:right;width:45%">[else]<br clear="all"/><div style="float:left;width:45%;">[/else][/sql-alternate]
-		<h2>[sql-param name]</h2>
-		<ul>
-		[query sql=| 
-		SELECT s.code, s.name
-		FROM support_companies c, support_types s
-		WHERE c.support_code = s.code AND c.company_code='[sql-param code]' ORDER BY s.name|
+	[sql-alternate 2]<div style="float:right;width:45%">[else]<br clear="all"/><div style="float:left;width:45%;">[/else][/sql-alternate]
+	<h2>[sql-param name]</h2>
+	<ul>
+	[query
+		sql=| 
+			SELECT s.code, s.name
+			FROM support_companies c, support_types s
+			WHERE c.support_code = s.code
+				AND c.company_code = '[sql-param code]'
+			ORDER BY s.name
+		|
 		table=companies
 		type=list
-		prefix=support]
-		[on-match]
+		prefix=support
+	]
+	[on-match]
 		<li><strong>Services:</strong>
-		[/on-match]
-		[support-list]
-		[support-param name][if value mv_search_match_count > [support-increment]], [/if]
-		[/support-list]
-		[on-match]
+	[/on-match]
+	[support-list]
+	[support-param name][if value mv_search_match_count > [support-increment]], [/if]
+	[/support-list]
+	[on-match]
 		</li>
-		[/on-match]
-		[/query]
-			<li><strong> Address: </strong> [if-sql-param address][sql-param address], [/if-sql-param]
-			[if-sql-param country !~ /UK|US/][sql-param zip][/if-sql-param]
-			[sql-param city],
-			[if-sql-param state][sql-param state][if-sql-param country =~ /UK|US/] [sql-param zip][/if-sql-param],[/if-sql-param]
-			[data table="country" key="[sql-param country]" field="name"]</li>
-			[if-sql-param phone]<li><strong> Phone: </strong> [sql-param phone]</li>[/if-sql-param]
-			[if-sql-param fax]<li><strong> Fax: </strong> [sql-param fax]</li>[/if-sql-param]
-			[if-sql-param email]<li><strong> Email: </strong> [sql-param email]</li>[/if-sql-param]
-			[if-sql-param url]<li><strong> URL: </strong> [page href="[sql-param url]"/][sql-param url]</a></li>[/if-sql-param]
-			[if sql-param contact_name]<li><strong> Contact person: </strong>[sql-param contact_name]</li>[/if]
-		</ul>
-		</div>
-	[/list]
-	[more-list]
-	[more]
-	[/more-list]
+	[/on-match]
+	[/query]
+		<li><strong>Address:</strong> [if-sql-param address][sql-param address], [/if-sql-param]
+		[if-sql-param country !~ /UK|US/][sql-param zip][/if-sql-param]
+		[sql-param city],
+		[if-sql-param state][sql-param state][if-sql-param country =~ /UK|US/] [sql-param zip][/if-sql-param],[/if-sql-param]
+		[data table="country" key="[sql-param country]" field="name"]</li>
+		[if-sql-param phone]<li><strong>Phone:</strong> [sql-param phone]</li>[/if-sql-param]
+		[if-sql-param email]<li><strong>Email:</strong> [sql-param email]</li>[/if-sql-param]
+		[if-sql-param url]<li><strong>URL:</strong> <a href="[sql-param url]">[sql-param url]</a></li>[/if-sql-param]
+		[if-sql-param contact_name]<li><strong>Contact person:</strong> [sql-param contact_name]</li>[/if-sql-param]
+	</ul>
+	</div>
 [/query]
 
-</div>
+<br clear="all" />
+
+<p>
+If you, or your company, provide services of Interchange development, consultancy, hosting or training, and you would like to be added to this overview, email the mailing list or open a GitHub pull request to let us know.
+</p>
+
 </div>
 
 <div class='oneThird'>
-[include templates/devel]
+[include templates/links]
 </div>
 
 __BOTTOM__

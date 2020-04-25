@@ -3,9 +3,8 @@
     <div id="footer">
         <span class='doNotPrint'>
         Hosting by <a href="https://www.endpoint.com/">End Point Corporation</a> •
-        Design by __docelic__, haran •
         </span>
-        Copyright © 2002–[time format="%Y"] <a href="/">__ICDEVGROUP__</a>
+        Copyright © 2002–[time format="%Y"] __ICDEVGROUP__
     </div>
     </body>
 </html>

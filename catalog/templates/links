@@ -1,12 +1,13 @@
-<h1>About Interchange</h1>
+<h1>Site Areas</h1>
 
 <ul>
-<li> <strong>__DEMO__</strong> </li>
-<li> [page hall]Hall of Fame</a> (sites running Interchange) </li>
-<li> [page about]Interchange history</a> </li>
-<li> [page license]Copyright &amp; license</a> </li>
-<li> [page logos]Logos &amp; badges</a> </li>
-<li> [page quotes]Endorsements</a> </li>
+<li>[page about]About Interchange</a></li>
+<li>__DEMO__</li>
+<li>[page hall]Gallery of sites</a> running Interchange</li>
+<li>[page download]Downloads &amp; source code</a></li>
+<li>[page docs]Documentation</a></li>
+<li>[page users/community]Community resources</a> (mailing lists etc.)</li>
+<li>[page support/index]Professional support</a></li>
 </ul>
 
 [if !scratch hide_quotes]
@@ -20,6 +21,8 @@
 [sql-param name], [if-sql-param company_pos][sql-param company_pos] at [/if-sql-param][if-sql-param company_url]<a href="[sql-param company_url]">[sql-param company]</a>[else][sql-param company][/else][/if-sql-param]
 </div>
 [/query]
+
+<p>See [page quotes]other endorsements of Interchange</a>.</p>
 
 <p class='filler'></p>
 [/if]

@@ -1,126 +1,47 @@
-<STYLE type="text/css">
-#container {
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-}
-#container .box {
-color: black;
-float: left;
-line-height: 1.5;
-margin: 0.5em;
-text-align: left;
-font-size: 10px;
-height: 280px;
-width: 204px;
-
-}
-
-.box img{
-  padding: 0px;
-  margin: 0px;
-  border: 1px solid #000000;
-}
-
-</STYLE>
-
 __TOP__
 
+<div class="rowOfBoxes dividingBorderAbove">
+<div class="twoThirds noBorderOnLeft">
 
-      <div class="rowOfBoxes dividingBorderAbove">
-        <div class="twoThirds noBorderOnLeft">
-
-[comment]
-[if cgi submit]
-[perl table=hallfame]
-	my $db = $Db{hallfame} or die "no db handle\n";
-
-	$CGI->{add_date} = $Tag->time(undef, {}, '%Y-%m-%d %H:%M:%S');
-
-	my @fields = qw(
-		site_name url link_text company developer developer_link
-		commentary contact_name contact_email add_date
-	);
-	my @values = map { local $_ = $CGI->{$_}; s/^\s+//; s/\s+$//; $_ } @fields;
-	$db->set_slice(undef, \@fields, \@values);
-
-	my $msg = "A new submission to the Interchange Hall of Fame has been received:\n\n";
-	for (my $i = 0; $i < @fields; $i++) {
-		$msg .= "$fields[$i]: $values[$i]\n";
-	}
-	$msg .= "\nPlease review it for approval when you have time.\n";
-
-	$Tag->email(
-		'ic-hall-fame@endpoint.com',
-		'New Interchange Hall of Fame submission',
-		undef,
-		'icdev@icdevgroup.org',
-		undef,
-		{},
-		$msg,
-	);
-
-	for (qw( contact_name contact_email )) {
-		$Values->{$_} = $CGI->{$_};
-	}
-
-	return <<'EOT';
-<p align="center" style="font-weight: bold; color: red">
-Your submission has been added to our database and
-will be reviewed shortly. Thank you!
-</p>
-EOT
-[/perl]
-[/if]
-[/comment]
-
-<p><b>[scratch page_title]</b></p>
+<h1>Gallery of sites running Interchange</h1>
 
 <p>
-Thousands of developers have implemented great sites on Interchange
-since 1995. Here we have a sampling of sites from companies large and small, spanning many industries.
-There are currently [query
+Thousands of developers have implemented sites on Interchange since 1995. Here we have a sampling of 
+[query
 	list=1
 	sql=|
-SELECT COUNT(*)
+SELECT count(*)
 FROM hallfame
-WHERE active='Y'
+WHERE active = 'Y'
 	|
-][sql-code][/query] sites listed.
+][sql-code][/query]
+sites from companies large and small, spanning many industries.
 </p>
 
 <p>
-If there's a site that you've created or that you're aware of that should
-be listed here, please let us know about it with a GitHub
+If there’s an Interchange site that should be listed here, please let us know about it with a GitHub
 <a href="https://github.com/interchange/devsite/pulls">pull request on the interchange/devsite repository</a>.
 </p>
 
+</div>
 
-<p>
-Disclaimer: Our listing of these sites is not an endorsement by
-the Interchange Development Group. All sites are the responsibility of
-their respective owners, and we cannot guarantee the proper functioning
-of or quality of service provided by these sites.
-</p>
+<div class="oneThird">
+	[tmpn hide_quotes]1[/tmpn]
+	[include templates/links]
+</div>
 
-        </div>
-      </div>
+</div>
 
-        <div class="oneThird">
-          [tmpn hide_quotes]1[/tmpn]
-          [include templates/promo]
-        </div>
+<div class="rowOfBoxes dividingBorderAbove">
+<div class="fullwidth">
 
-
-     <div class="rowOfBoxes dividingBorderAbove">
-        <div class="fullwidth noBorderOnLeft">
-
-<table width="100%">
+<div align="center">
+<table width="95%">
 <tr>
 <td>
 <div id="container">
 
-<H3>Cross-Section of Noteworthy Interchange Implementations</H3>
+<h3>Cross-Section of Noteworthy Interchange Implementations</h3>
 [query
 	list=1
 	prefix=loop
@@ -128,13 +49,13 @@ of or quality of service provided by these sites.
 SELECT *
 FROM hallfame
 WHERE active = 'Y'
-AND rank < 50
+	AND rank < 50
 ORDER BY site_name
 	|
 ]
 <div class="box">
 [if-loop-param url]<a href="[loop-param url]" target="_blank">[/if-loop-param]
-<img src="hall/[loop-code].jpg" width="202" height="152" border=0>
+<img src="/img/hall/[loop-code].jpg" width="202" height="152" border=0>
 [if-loop-param url]</a>[/if-loop-param]
 <br>
 [if-loop-param url]<a href="[loop-param url]" style="font-size: 12;" target="_blank">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
@@ -149,7 +70,10 @@ ORDER BY site_name
 [/query]
 </div>
 </td></tr></table>
-<H3>Other Sites Using Interchange Technology</H3>
+</div>
+
+<div style="margin-left: 3%">
+<h3>Other Sites Using Interchange</h3>
 
 <ul>
 [query
@@ -159,7 +83,7 @@ ORDER BY site_name
 SELECT *
 FROM hallfame
 WHERE active = 'Y'
-AND rank >= 50
+	AND rank >= 50
 ORDER BY site_name
 	|
 ]
@@ -174,14 +98,11 @@ ORDER BY site_name
 [if-loop-param commentary]<br>[loop-param commentary][/if-loop-param]
 [/query]
 </ul>
+</div>
 
-        </div>
-      </div>
+</div>
+</div>
 
-
-
-
-
-      </div>
+</div>
 
 __BOTTOM__
