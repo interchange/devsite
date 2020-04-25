@@ -34,7 +34,23 @@ Around 2007 Stefan Hornburg spearheaded a new __IC__ catalog template called Wel
 </p>
 
 <p>
+In 2008 for Interchange 5.6, Sonny Cook and others added complete Unicode support for the UTF-8 character-set encoding, after several years of partial ad-hoc approaches to using UTF-8 in Interchange. Improvements and accommodation to Perl’s finicky Safe module continued over the next year or so.
+</p>
+
+<p>
 From around 2009 through 2015 possible future directions for __IC__ were discussed and experiments developed. An incompatible new __IC__ 6 was begun, code-​named first Bongo and then Nitesi. It “stands on the shoulders of giants” such as Plack/​PSGI, Dancer, CPAN modules, and modern Perl, and uses UTF-8 throughout. Plugins provide additional functionality like payment gateways, coupons, shipping calculation, reviews, etc. While it was used on a couple of production sites, it never became a general replacement for __IC__ 5.
+</p>
+
+<p>
+During those same years __IC__ 5 saw a steady flow of improvements, including full IPv6 support, bcrypt password hashing with automatic promotion from older hash types, new and updated payment gateway modules, increased performance, support for fine-grained HTTP caching control and modern cookie features, increased default security by limiting access to session dump & code evaluation features, and many new convenience features making development more efficient.
+</p>
+
+<p>
+Late 2015 saw the release of a new Interchange demo catalog (application) called Strap, replacing the previous “Standard” demo. Strap was created by Josh Lavin based on Bootstrap and included many new features: UTF-8 by default, SEO-friendly URLs, gift certificates, stock alerts, address books, default email for user names, bcrypt passwords, password reset links in email instead of reminders sending old passwords, and simpler templating and configuration. This made it much easier to use many longstanding Interchange features out of the box.
+</p>
+
+<p>
+In 2018 the minimum Perl version was increased to 5.14.1, after many years of conservative support for Perl versions as old as 5.8.5. This allowed core Interchange code to take advantage of newer Perl syntax, updated standard modules, and better Unicode support in Perl.
 </p>
 
 <p>
