@@ -25,7 +25,8 @@
 [/on-match]
 
 [list]
-<li>[convert-date format="%Y-%m-%d"][news-param posted_on][/convert-date]: <a href="[area href="news" arg="[news-param code]"]">[news-param title]</a></li>
+<li>[convert-date format="%Y-%m-%d"][news-param posted_on][/convert-date]:
+[if-news-param body =~ /\S/]<a href="[area href="news" arg="[news-param code]"]">[/if-news-param][news-param title][if-news-param body =~ /\S/]</a>[/if-news-param]</li>
 [/list]
 
 [on-match]

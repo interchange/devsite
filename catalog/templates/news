@@ -27,7 +27,7 @@
 <li>
 <a href="[area href="news" arg="[news-param code]"]" class="newsHeading">[news-param title]</a>
 
-<p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] by [either][var name="[news-param posted_by]"][or][news-param posted_by][/either]</p>
+<p class="newsDate">[L]Posted on[/L] [convert-date][news-param posted_on][/convert-date] [if-news-param posted_by]by [either][var name="[news-param posted_by]"][or][news-param posted_by][/either][/if-news-param]</p>
 
 	<p class="newsSummary">
 [if session arg]
@@ -48,7 +48,7 @@
 [/on-match]
 [/loop]
 
-[if global MV_PAGE ne 'news']
+[if !scratch news_page]
 <p>See earlier [page news]news about Interchange</a>.</p>
 [/if]
 
