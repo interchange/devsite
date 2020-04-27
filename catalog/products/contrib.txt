@@ -1,4 +1,4 @@
-name	task
+name
 Alison Smith
 Andreas Koenig
 Andrew Rich
@@ -67,6 +67,7 @@ Larry Leszczynski
 Lars Tode
 Lyn St George
 Marc Austin
+Marco Pessotto
 Mark Stosberg
 Marty Tennison
 Massimiliano Ciancio
