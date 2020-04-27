@@ -12,7 +12,7 @@ id	name	username	since	retired	task
 011	__jon__	jon	Jun 2000	0	Developer, RPM package maintainer, sysadmin
 012	__jlavin__	jlavin	Feb 2012	Feb 2018	Developer
 013	__jjustman__	jjustman	Dec 2008	Jan 2010	Developer
-014	__jure__	jure	Jun 2008	0	Interchange 6, Design
+014	__jure__	jure	Jun 2008	Apr 2020	Interchange 6, Design
 015	__kwalsh__	kwalsh	Jan 2002	Mar 2011	Developer, mod_interchange Apache module maintainer
 016	__markj__	markj	Feb 2003	0	Developer
 017	__markl__	markl	Jun 2009	Oct 2014	Developer
