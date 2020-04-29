@@ -36,12 +36,12 @@ If there’s an Interchange site that should be listed here, please let us know 
 <div class="fullwidth">
 
 <div align="center">
-<table width="95%">
-<tr>
-<td>
-<div id="container">
+<div>
+<div>
 
-<h3>Cross-Section of Noteworthy Interchange Implementations</h3>
+<h3>Featured Interchange Sites</h3>
+
+<div class="gallery-container">
 [query
 	list=1
 	prefix=loop
@@ -54,11 +54,10 @@ ORDER BY site_name
 	|
 ]
 <div class="box">
-[if-loop-param url]<a href="[loop-param url]" target="_blank">[/if-loop-param]
-<img src="/img/hall/[loop-code].jpg" width="202" height="152" border=0>
-[if-loop-param url]</a>[/if-loop-param]
-<br>
-[if-loop-param url]<a href="[loop-param url]" style="font-size: 12;" target="_blank">[/if-loop-param][either][loop-param link_text][or][loop-param site_name][/either][if-loop-param url]</a>[/if-loop-param]
+<a href="[loop-param url]" target="_blank">
+<img src="/img/hall/[loop-code].jpg" /><br />
+[either][loop-param link_text][or][loop-param site_name][/either]
+</a>
 [loop-calc]
     return '' unless $Row->{company};
     return '' if $Row->{company} eq ($Row->{link_text} || $Row->{site_name});
@@ -69,7 +68,8 @@ ORDER BY site_name
 </div>
 [/query]
 </div>
-</td></tr></table>
+</div>
+</div>
 </div>
 
 <div style="margin-left: 3%">
