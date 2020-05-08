@@ -55,7 +55,7 @@ Commercial support is available from many companies, including these:
 	[/query]
 		<li><strong>Address:</strong> [if-sql-param address][sql-param address], [/if-sql-param]
 		[if-sql-param country !~ /UK|US/][sql-param zip][/if-sql-param]
-		[sql-param city],
+		[if-sql-param city][sql-param city],[/if-sql-param]
 		[if-sql-param state][sql-param state][if-sql-param country =~ /UK|US/] [sql-param zip][/if-sql-param],[/if-sql-param]
 		[data table="country" key="[sql-param country]" field="name"]</li>
 		[if-sql-param phone]<li><strong>Phone:</strong> [sql-param phone]</li>[/if-sql-param]
