@@ -33,14 +33,8 @@ $(document).ready(function() {
 
                     const info = $('<p></p>');
 
-                    const author = $('<a></a>', {
-                        href: commit.author.html_url
-                    });
-                    author.text(commit.author.login);
-
                     const date = new Date(commit.commit.committer.date);
-                    info.text(' committed on ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear());
-                    info.prepend(author);
+                    info.text('committed on ' + months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear());
                     elem.append(info);
                 });
         },
