@@ -38,17 +38,19 @@ danb	Daniel Browning
 david	David Christensen
 docelic	Davor Ocelić
 edl	Ed LaFrance
+ethan	Ethan Rowe
 greg	Greg Hanson
 hexfusion	Sam Batschelet
-jlavin	Josh Lavin
-jon	Jon Jensen
-jonc	Jonathan Clark
 jjustman	JT Justman
+jlavin	Josh Lavin
+jonc	Jonathan Clark
+jon	Jon Jensen
 jure	Jure Kodžoman
 kwalsh	Kevin Walsh
 markj	Mark Johnson
 markl	Mark Lipscombe 
 mheins	Mike Heins
+mpessotto	Marco Pessotto
 pajamian	Peter Ajamian
 pvinci	Paul Vinciguerra
 racke	Stefan Hornburg
@@ -56,9 +58,6 @@ ramoore	Randy Moore
 richard	Richard Templet
 ron	Ron Phipps
 syspete	Peter Mottram
-ton	Ton Verhagen
 thunder	Gert van der Spoel
+ton	Ton Verhagen
 zeald	David Kelly
-markj	Mark Johnson
-mheins	Mike Heins
-ethan	Ethan Rowe
