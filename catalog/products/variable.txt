@@ -8,7 +8,6 @@ CGI_URL	/i/dev
 DEBIAN	<a href="https://www.debian.org/">Debian GNU</a>
 DIR_DEBIAN	<a href="https://ftp.interchangecommerce.org/interchange/debian/">directory</a>
 DOCBOOK	<a href="https://docbook.org/">DocBook</a>
-FREENODE	<a href="https://freenode.net/">freenode</a>
 GITHUB_INDEX_URL	https://github.com/interchange
 GITHUB_INTERCHANGE_URL	https://github.com/interchange/interchange
 GITHUB_XMLDOCS_URL	https://github.com/interchange/xmldocs

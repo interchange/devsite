@@ -34,15 +34,16 @@
 </p>
 
 	<p class="newsSummary">
-[if session arg]
-[or value mv_search_match_count == 1]
-[or scratch news_page]
-  [news-param body]
-[else]
-  [news-filter strip_html 300.][news-param body][/news-filter]
-  [page href=news arg="[news-param code]"]&#91;more&#93;</a>
-[/else]
-[/if]
+[news-calc]
+	return $Row->{body}
+		if $Session->{arg} or $Values->{mv_search_match_count} == 1 or $Scratch->{news_page};
+
+	my $max_len = 300;
+	my @out = $Tag->filter({ op => "strip_html $max_len." }, $Row->{body});
+	length($Row->{body}) > $max_len
+		and push @out, $Tag->page({ href => 'news', arg => $Row->{code} }) . '&#91;more&#93;</a>';
+	join(' ', @out)
+[/news-calc]
 	</p>
 </li>
 [/list]
