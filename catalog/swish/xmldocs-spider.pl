@@ -46,7 +46,7 @@ sub filter {
 @servers = (
 	{
 		base_url => 'https://docs.interchangecommerce.org/cgi-bin/online/index.html',
-		email => 'jon@endpoint.com',
+		email => 'jon@endpointdev.com',
 		test_url => \&filter_url,
 		filter_content => \&filter,
 	}
