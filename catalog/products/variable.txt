@@ -32,6 +32,7 @@ LATEST_RPM_SERIES	5.2
 LATEST_SRPM_SERIES	5.2
 LATEST_RPM_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/[var LATEST_RPM_SERIES]/rpm/">RPM</a>
 LATEST_SRPM_LOCATION	<a href="https://ftp.interchangecommerce.org/interchange/[var LATEST_SRPM_SERIES]/srpm/">SRPM</a>
+baerg	Andrew Baerg
 brevp	Brev Patterson
 danb	Daniel Browning
 david	David Christensen

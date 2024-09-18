@@ -22,8 +22,9 @@ id	name	username	since	retired	task
 021	__pajamian__	pajamian	Aug 2006	0	Developer
 022	__syspete__	syspete	Oct 2014	0	Interchange 6 developer
 023	__ramoore__	ramoore	Dec 2002	Jul 2009	Developer
-024	__richard__	richard	Oct 2014	0	Developer
-025	__ron__	ron	Feb 2007	0	Developer
+024	__richard__	richard	Oct 2014	Sep 2024	Developer
+025	__ron__	ron	Feb 2007	Sep 2024	Developer
 026	__hexfusion__	hexfusion	Oct 2014	0	Developer
 027	__racke__	racke	Jun 1999	0	Interchange team captain, Debian package maintainer, I18N
 028	__ton__	ton	Jun 2001	Oct 2014	Developer
+000	__baerg__	baerg	May 2023	0	Developer
